@@ -1,0 +1,31 @@
+<resources>
+
+
+    <array name="welcome_screen_layouts">
+        <item>@layout/fragment_welcome_slide_welcome</item>
+        <item>@layout/fragment_welcome_slide_join_meetings</item>
+        <item>@layout/fragment_welcome_slide_manage_audio</item>
+        <item>@layout/fragment_welcome_slide_view_content</item>
+        <item>@layout/fragment_welcome_slide_chat</item>
+    </array>
+
+    <array name="welcome_screen_layouts_ctl">
+        <item>@layout/fragment_welcome_slide_welcome</item>
+        <item>@layout/fragment_welcome_slide_join_meetings</item>
+        <item>@layout/fragment_welcome_slide_manage_audio</item>
+        <item>@layout/fragment_welcome_slide_view_content</item>
+    </array>
+
+    <item name="welcome_slide_welcome_margin_sides" type="dimen">@dimen/welcome_slide_content_margin_small</item>
+
+
+    <item name="welcome_slide_meetings_margin_sides" type="dimen">@dimen/welcome_slide_content_margin_small</item>
+
+    <item name="welcome_slide_audio_margin_sides" type="dimen">@dimen/welcome_slide_content_margin_small</item>
+
+    <item name="welcome_slide_files_margin_sides" type="dimen">@dimen/welcome_slide_content_margin_small</item>
+
+    <item name="welcome_slide_chat_margin_sides" type="dimen">@dimen/welcome_slide_content_margin_small</item>
+
+
+</resources>

@@ -1,0 +1,4 @@
+ext.getBranchName = { ->
+    def details = versionDetails()
+    return details.branchName.toString().trim()
+}

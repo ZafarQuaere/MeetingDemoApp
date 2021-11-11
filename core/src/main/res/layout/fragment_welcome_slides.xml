@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.pgi.convergence.utils.CustomViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/control_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/welcome_onboard_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <com.pgi.convergence.utils.CirclePageIndicator
+            android:id="@+id/view_pager_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/welcome_onboard_margin_bottom"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@+id/button_get_started"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:enabled="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:background="@drawable/rounded_corner_onboard"
+            android:paddingLeft="@dimen/welcome_button_get_started_side_padding"
+            android:paddingRight="@dimen/welcome_button_get_started_side_padding"
+            android:text="@string/continue_txt"
+            android:textColor="@color/white"
+            android:paddingTop="@dimen/margin_10_dp"
+            android:textSize="@dimen/welcome_onboard_text_size"
+            android:textAllCaps="false"
+            android:textAlignment="gravity"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_horizontal"
+            android:textStyle="normal"
+            android:visibility="visible"/>
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_enter_url_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</RelativeLayout>

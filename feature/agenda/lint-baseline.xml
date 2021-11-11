@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 3.5.3" client="gradle" variant="prodDebug" version="3.5.3">
+
+    <issue
+        id="UselessParent"
+        message="This `LinearLayout` layout or its `LinearLayout` parent is useless"
+        errorLine1="        &lt;LinearLayout"
+        errorLine2="         ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/agenda_shimmer.xml"
+            line="14"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="RelativeOverlap"
+        message="`@id/tv_today` can overlap `@id/tv_agenda_word` if @string/agenda, @string/today grow due to localized text expansion"
+        errorLine1="      &lt;androidx.appcompat.widget.AppCompatTextView"
+        errorLine2="       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_meetings.xml"
+            line="159"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingStart` you should probably also define `paddingEnd` for right-to-left symmetry"
+        errorLine1="          android:paddingStart=&quot;@dimen/dp_16&quot;"
+        errorLine2="          ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_meetings.xml"
+            line="142"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingEnd` you should probably also define `paddingStart` for right-to-left symmetry"
+        errorLine1="          android:paddingEnd=&quot;@dimen/dp_16&quot;"
+        errorLine2="          ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_meetings.xml"
+            line="167"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingRight` you should probably also define `paddingLeft` for right-to-left symmetry"
+        errorLine1="        android:paddingRight=&quot;@dimen/dp_16&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_meetings.xml"
+            line="271"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;@dimen/dp_15&quot;` to better support right-to-left layouts"
+        errorLine1="        android:layout_marginLeft=&quot;@dimen/dp_15&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/agenda_shimmer.xml"
+            line="8"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;@dimen/margin_20_dp&quot;` to better support right-to-left layouts"
+        errorLine1="        android:layout_marginRight=&quot;@dimen/margin_20_dp&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/agenda_shimmer.xml"
+            line="9"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:paddingRight` with `android:paddingEnd=&quot;@dimen/dp_16&quot;` to better support right-to-left layouts"
+        errorLine1="        android:paddingRight=&quot;@dimen/dp_16&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_meetings.xml"
+            line="271"
+            column="9"/>
+    </issue>
+
+</issues>

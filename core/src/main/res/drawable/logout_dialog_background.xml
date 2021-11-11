@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/logout_dialog_background" />
+
+    <corners
+        android:bottomLeftRadius="@dimen/xxsmall"
+        android:bottomRightRadius="@dimen/xxsmall"
+        android:topLeftRadius="@dimen/xxsmall"
+        android:topRightRadius="@dimen/xxsmall" />
+
+</shape>

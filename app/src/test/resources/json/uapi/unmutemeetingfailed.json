@@ -1,0 +1,9 @@
+{
+  "eventType": "UNMUTE_MEETING_FAILED",
+  "timestamp": "2018-10-10T18:43:10.966Z",
+  "error": {
+    "code": 0,
+    "pgsErrorCode": 0,
+    "errorText": "Error text"
+  }
+}

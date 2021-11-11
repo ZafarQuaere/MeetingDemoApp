@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/tab_host_bg_color"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/tv_chat"
+        android:layout_marginBottom="@dimen/dp_3"
+        android:visibility="gone"
+        android:padding="@dimen/default_circle_indicator_stroke_width"
+        android:background="@drawable/tv_chat_count_borders"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_6_sp"/>
+
+    <TextView
+        android:id="@+id/tv_chat"
+        android:layout_width="wrap_content"
+        android:maxWidth="@dimen/margin_85_dp"
+        android:gravity="top"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_alignParentTop="true"
+        android:background="@color/tab_host_bg_color"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/text_14_sp"
+        android:textColor="@color/tab_text_color"
+        android:layout_below="@+id/text"
+        android:layout_centerVertical="true"
+        android:textAllCaps="true"
+        android:layout_height="wrap_content"
+        android:text="@string/tab_text_chat"/>
+
+</RelativeLayout>

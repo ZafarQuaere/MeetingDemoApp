@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey_ss"
+    android:fitsSystemWindows="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_top_container"
+        android:layout_height="wrap_content">
+        <include layout="@layout/banner_no_internet_connection" />
+        <RelativeLayout
+            android:id="@+id/rl_top_bar_container"
+            android:layout_height="@dimen/height_66_dp"
+            android:background="@color/tab_host_bg_color"
+            android:layout_below="@+id/internet_reconnecting_banner_layout"
+            android:layout_width="match_parent"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/tv_gm5_full_name_web"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="@dimen/xxmedium_text"
+                android:textStyle="bold"
+                android:textColor="@color/chatRemovingToolbarBackground"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_5_dp"
+                android:layout_marginStart="@dimen/margin_20_dp"
+                android:layout_marginEnd="@dimen/margin_5_dp"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/tv_total_participant"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tv_gm5_full_name_web"
+                android:layout_marginStart="@dimen/margin_20_dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="1"
+                android:textColor="@color/paricipant_color"
+                android:textSize="@dimen/text_14_sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tv_exit_meeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/margin_15_dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/tv_participant_name"
+                android:text="@string/exit"
+                android:fontFamily="sans-serif-medium"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text_14_sp"
+                android:textColor="@color/primary_color_500"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:visibility="visible"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_web_meeting_view"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/rl_top_bar_container"
+            android:layout_above="@+id/ll_meeting_controls"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabs"
+                    style="@style/TabViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAlignment="textStart"
+                    app:tabRippleColor="@null"
+                    android:textColor="@color/tab_text_color"
+                    android:textSize="@dimen/text_14_sp"
+                    android:textStyle="normal"
+                    app:tabBackground="@color/tab_host_bg_color"
+                    app:tabSelectedTextColor="@color/tab_selected_color"
+                    app:tabTextColor="@color/tab_text_color"/>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <com.pgi.convergence.utils.CustomViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/appBarLayout"
+                android:background="@android:color/white"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_meeting_controls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            <include layout="@layout/meeting_controls_view"/>
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/fl_chatfragment_place_holder"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/ll_meeting_controls"
+            android:layout_below="@+id/internet_reconnecting_banner_layout"
+            android:layout_height="wrap_content"/>
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/floatingSnackBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_top_bar_container"
+            android:layout_above="@+id/ll_meeting_controls"
+            android:layout_gravity="center_horizontal|bottom"/>
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/shimmer_view_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_bg_color"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/btn_close_shimmer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="@dimen/margin_16_dp"
+            android:src="@drawable/connect_xbtn" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_fragment_place_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <include
+        layout="@layout/progress_bar_fullscreen"
+        android:visibility="gone"></include>
+
+</FrameLayout>

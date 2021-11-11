@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <data>
+    <import type="com.pgi.convergence.agenda.R"/>
+    <import type="android.view.View" />
+    <import type="com.pgi.convergence.data.enums.home.HomeCardType" />
+    <variable
+        name="user"
+        type="com.pgi.convergence.agenda.ui.MeetingsAgendaViewModel" />
+  </data>
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center_vertical|center_horizontal"
+      android:background="@color/bg_home">
+
+    <View
+        android:id="@+id/gradient"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1_dp"
+        android:elevation="@dimen/margin_5_dp"
+        android:background="@drawable/gradient" />
+
+    <RelativeLayout
+        android:id="@+id/rl_meetings_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/chatBackgroundGray"
+        android:paddingBottom="@dimen/margin_13_dp">
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/iv_avatar"
+          android:layout_width="@dimen/dp_40"
+          android:layout_height="@dimen/dp_40"
+          android:layout_below="@+id/tv_my_meeting_room"
+          android:layout_marginStart="@dimen/dp_16"
+          android:layout_marginTop="@dimen/dp_16"
+          android:layout_marginEnd="@dimen/dp_16"
+          android:contentDescription="@string/activity_tab_toolbar_avatar"
+          android:src="@{user.profileImage}"
+          android:visibility="@{user.profileImage != null ? View.VISIBLE : View.INVISIBLE}"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="parent" />
+
+      <TextView
+          android:id="@+id/tv_name_initials"
+          android:layout_width="@dimen/dp_40"
+          android:layout_height="@dimen/dp_40"
+          android:layout_below="@+id/tv_my_meeting_room"
+          android:fontFamily="sans-serif"
+          android:layout_marginStart="@dimen/dp_16"
+          android:layout_marginTop="@dimen/dp_16"
+          android:layout_marginEnd="@dimen/dp_16"
+          android:gravity="center"
+          android:contentDescription="@string/activity_tab_toolbar_avatar"
+          android:textColor="@color/white"
+          android:background="@drawable/oval"
+          android:backgroundTint="@color/primary_color_500"
+          android:text="@{user.initials}"
+          android:visibility="@{user.profileImage == null ? View.VISIBLE : View.INVISIBLE}"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          android:textSize="@dimen/_22sp"
+          android:letterSpacing="-0.04"
+          android:textStyle="normal"/>
+
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/tv_my_meeting_room"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="top|start"
+          android:layout_marginStart="@dimen/dp_16"
+          android:layout_marginTop="@dimen/margin_12_dp"
+          android:fontFamily="sans-serif-medium"
+          android:lineSpacingExtra="@dimen/margin_6sp"
+          android:paddingTop="@dimen/margin_5_dp"
+          android:text="@string/my_meeting_room"
+          android:textColor="@color/additionalMessageDataGray"
+          android:textSize="@dimen/margin_top_14sp"
+          android:textStyle="normal" />
+
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:id="@+id/rl_meeting_container_view"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/tv_my_meeting_room"
+          android:layout_toEndOf="@+id/iv_avatar">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_meeting_room_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="@dimen/space_4sp"
+
+            android:text="@{user.meetingRoomName}"
+            android:textColor="@color/toolbarText"
+            android:textSize="@dimen/margin_16sp"
+            android:textStyle="normal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_meeting_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_meeting_room_name"
+
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="@dimen/margin_6sp"
+            android:lines="@integer/default_weight"
+            android:longClickable="true"
+            android:onClick="@{() -> user.startMeeting()}"
+            android:text="@{String.format(user.appComponent.getResources().getString(R.string.host_meeting_room_url), user.joinUrl)}"
+            android:textColor="@color/primary_color_500"
+            android:textSize="@dimen/margin_top_14sp"
+            android:textStyle="normal" />
+      </RelativeLayout>
+      <androidx.appcompat.widget.AppCompatImageView
+          android:id="@+id/iv_overflow_meetings"
+          android:layout_width="@dimen/dp_24"
+          android:layout_height="@dimen/dp_24"
+          android:layout_below="@id/tv_my_meeting_room"
+          android:src="@drawable/ic_overflow"
+          android:onClick="@{() -> user.onOverFlowMenuClicked()}"
+          android:duplicateParentState="true"
+          android:layout_alignParentEnd="true"
+          android:layout_centerInParent="true"
+          android:layout_marginTop="@dimen/dp_16"
+          android:layout_marginEnd="@dimen/dp_16"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_agenda_arrow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_below="@+id/rl_meetings_header">
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/tv_agenda_word"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentStart="true"
+          android:layout_centerInParent="true"
+          android:fontFamily="sans-serif-medium"
+          android:lineSpacingExtra="@dimen/margin_6sp"
+          android:paddingStart="@dimen/dp_16"
+          android:paddingTop="@dimen/margin_13_dp"
+          android:text="@string/agenda"
+          android:textColor="@color/additionalMessageDataGray"
+          android:textSize="@dimen/margin_top_14sp"
+          android:textStyle="normal" />
+
+      <androidx.appcompat.widget.AppCompatImageView
+          android:id="@+id/iv_arrow"
+          android:layout_width="@dimen/xlarge"
+          android:layout_height="@dimen/xlarge"
+          android:layout_alignParentEnd="true"
+          android:layout_centerInParent="true"
+          android:paddingTop="@dimen/margin_10_dp"
+          android:src="@drawable/arrow_drop_down"
+          android:visibility="invisible"/>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/tv_today"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toStartOf="@+id/iv_arrow"
+          android:fontFamily="sans-serif-medium"
+          android:lineSpacingExtra="@dimen/margin_6sp"
+          android:paddingTop="@dimen/dp_13"
+          android:paddingEnd="@dimen/dp_16"
+          android:text="@string/today"
+          android:layout_alignParentEnd="true"
+          android:layout_centerInParent="true"
+          android:textColor="@color/additionalMessageDataGray"
+          android:textSize="@dimen/margin_top_14sp"
+          android:textStyle="normal"
+          android:visibility="@{user.checkIfMsalUserisAutheticated() ? View.VISIBLE : View.GONE }">
+
+      </androidx.appcompat.widget.AppCompatTextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_agenda"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_agenda_arrow"
+        android:background="@color/bg_home"
+        android:gravity="center"
+        android:visibility="@{user.sharedPref.isfirstTimeMsalUser() || user.getAgendaData.size() == 0 ? View.VISIBLE : View.GONE }">
+
+      <androidx.appcompat.widget.AppCompatImageView
+          android:id="@+id/iv_no_meetings"
+          android:layout_width="match_parent"
+          android:layout_height="150dp"
+          android:src="@drawable/ic_no_meetings"/>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/tv_agenda"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/iv_no_meetings"
+          android:layout_centerInParent="true"
+          android:fontFamily="sans-serif"
+          android:lineSpacingExtra="@dimen/space_4sp"
+          android:paddingTop="@dimen/margin_24dp"
+          android:text="@string/no_agenda"
+          android:textColor="@color/toolbarText"
+          android:textSize="@dimen/margin_16sp"
+          android:visibility="@{user.checkIfMsalUserisAutheticated() &amp;&amp; user.getAgendaData.size() == 0 ? View.GONE : View.VISIBLE }"
+          android:textStyle="normal" />
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/tv_connect_to_calendar_or_search"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/tv_agenda"
+          android:layout_centerHorizontal="true"
+          android:fontFamily="sans-serif"
+          android:lineSpacingExtra="@dimen/margin_6sp"
+          android:text="@string/connect_to_calendar_or_search"
+          android:textColor="@color/primary_color_500"
+          android:textSize="@dimen/margin_top_14sp"
+          android:onClick="@{() -> user.authenticateMsalUser()}"
+          android:visibility="@{user.checkIfMsalUserisAutheticated() &amp;&amp; user.getAgendaData.size() == 0 ? View.GONE : View.VISIBLE }"
+          android:textStyle="normal" />
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/tv_search_meeting"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/tv_connect_to_calendar_or_search"
+          android:layout_centerInParent="true"
+          android:fontFamily="sans-serif"
+          android:lineSpacingExtra="@dimen/margin_6sp"
+          android:text="@string/search_meeting_now"
+          android:textColor="@color/additionalMessageDataGray"
+          android:textSize="@dimen/margin_top_14sp"
+          android:visibility="@{user.checkIfMsalUserisAutheticated() &amp;&amp; user.getAgendaData.size() == 0 ? View.GONE : View.VISIBLE }"
+          android:textStyle="normal" />
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/tv_all_clear"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/iv_no_meetings"
+          android:layout_centerInParent="true"
+          android:fontFamily="sans-serif"
+          android:lineSpacingExtra="@dimen/space_4sp"
+          android:paddingTop="@dimen/margin_24dp"
+          android:text="@string/all_clear"
+          android:textColor="@color/toolbarText"
+          android:textSize="@dimen/margin_16sp"
+          android:textStyle="normal"
+          android:visibility="@{user.checkIfMsalUserisAutheticated() &amp;&amp; user.getAgendaData.size() == 0 ? View.VISIBLE : View.GONE }" />
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/tv_no_upcoming_meetings"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/tv_all_clear"
+          android:layout_centerHorizontal="true"
+          android:fontFamily="sans-serif"
+          android:lineSpacingExtra="@dimen/margin_6sp"
+          android:text="@string/no_upcoming_meetings"
+          android:textColor="@color/no_upcoming_meetings"
+          android:textSize="@dimen/margin_top_14sp"
+          android:textStyle="normal"
+          android:visibility="@{user.checkIfMsalUserisAutheticated() &amp;&amp; user.getAgendaData.size() == 0 ? View.VISIBLE : View.GONE }"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_agenda_recycleview_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="@dimen/dp_16"
+        android:layout_below="@+id/rl_agenda_arrow">
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/rv_meetings_agenda"
+          android:layout_height="match_parent"
+          android:layout_width="match_parent"
+          android:longClickable="true"
+          android:clickable="true"
+          android:visibility="@{!user.sharedPref.isfirstTimeMsalUser() &amp;&amp; user.getAgendaData.size() != 0 ? View.VISIBLE : View.GONE }"
+          app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+          android:focusable="true"
+          android:adapter="@{user.getAgendaData.size() > 0 ? user.meetingsAgendaAdapter : null}"
+          android:scrollbars="vertical"/>
+    </LinearLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/floatingSnackBar"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/margin_5_dp"
+        android:layout_marginEnd="@dimen/margin_5_dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal|bottom">
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+  </RelativeLayout>
+</layout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="true" android:state_enabled="true" android:state_pressed="false">
+        <layer-list>
+            <item android:width="@dimen/margin_38_dp" android:height="@dimen/margin_38_dp">
+                <shape android:shape="oval">
+                    <solid android:color="@color/warn_color_600" />
+                </shape>
+            </item>
+            <item android:width="@dimen/margin_26_dp" android:height="@dimen/margin_26_dp" android:drawable="@drawable/ic_mic_off" android:gravity="center_vertical|center_horizontal"></item>
+        </layer-list>
+    </item>
+    <item android:state_checked="true" android:state_enabled="true" android:state_pressed="true">
+        <layer-list>
+            <item android:width="@dimen/margin_38_dp" android:height="@dimen/margin_38_dp">
+                <shape android:shape="oval">
+                    <solid android:color="@color/warn_color_800" />
+                </shape>
+            </item>
+            <item android:width="@dimen/margin_26_dp" android:height="@dimen/margin_26_dp" android:drawable="@drawable/ic_mic_off" android:gravity="center_vertical|center_horizontal"></item>
+        </layer-list>
+    </item>
+
+    <item android:state_checked="true" android:state_enabled="false">
+        <bitmap android:gravity="center_vertical|center_horizontal" android:src="@drawable/muted_menu" />
+    </item>
+
+    <item android:state_checked="false" android:state_enabled="true" android:state_pressed="false">
+        <layer-list>
+            <item android:width="@dimen/margin_38_dp" android:height="@dimen/margin_38_dp">
+                <shape android:shape="oval">
+                    <solid android:color="@color/accent_color_400" />
+                </shape>
+            </item>
+            <item android:width="@dimen/margin_26_dp" android:height="@dimen/margin_26_dp" android:drawable="@drawable/ic_mic" android:gravity="center_vertical|center_horizontal"></item>
+        </layer-list>
+    </item>
+    <item android:state_checked="false" android:state_enabled="true" android:state_pressed="true">
+        <layer-list>
+            <item android:width="@dimen/margin_38_dp" android:height="@dimen/margin_38_dp">
+                <shape android:shape="oval">
+                    <solid android:color="@color/accent_color_700" />
+                </shape>
+            </item>
+            <item android:width="@dimen/margin_26_dp" android:height="@dimen/margin_26_dp" android:drawable="@drawable/ic_mic" android:gravity="center_vertical|center_horizontal"></item>
+        </layer-list>
+    </item>
+
+    <item android:state_checked="false" android:state_enabled="false">
+        <bitmap android:width="@dimen/margin_38_dp" android:height="@dimen/margin_38_dp" android:gravity="center_vertical|center_horizontal" android:src="@drawable/screenshare_fullscreen_mute_btn_mdpi" />
+    </item>
+</selector>

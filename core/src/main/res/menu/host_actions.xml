@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu android:id="@+id/menu_host_controls"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_private_chat_with"
+        android:checkable="true"
+        android:title="@string/menu_private_chat_with"/>
+    <item
+        android:id="@+id/menu_mute"
+        android:checkable="true"
+        android:title="@string/menu_mute"/>
+    <item
+        android:id="@+id/menu_promote"
+        android:checkable="true"
+        android:title="@string/menu_promote"/>
+    <item
+        android:id="@+id/menu_dismiss"
+        android:checkable="true"
+        android:title="@string/menu_dismiss"/>
+</menu>

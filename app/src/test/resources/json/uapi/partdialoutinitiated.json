@@ -1,0 +1,15 @@
+{
+  "eventType": "PARTICIPANT_DIAL_OUT_INITIATED",
+  "timestamp": "2018-10-10T18:43:13.942Z",
+  "dialoutId": "arg1",
+  "audioParticipantId": "arg11",
+  "phoneNumber": "arg3",
+  "countryCode": "arg4",
+  "phoneExtension": "arg5",
+  "extensionDelay": 100,
+  "firstName": "arg7",
+  "lastName": "arg8",
+  "companyName": "arg9",
+  "webParticipantId": "arg2",
+  "locale": "en"
+}

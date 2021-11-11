@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/bg_home">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/call_me_toolbar_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/baseToolbarHeight"
+        android:elevation="@dimen/margin_8_dp"
+        android:translationZ="@dimen/margin_5_dp"
+        android:background="@color/search_toolbar_bg"
+        android:padding="@dimen/margin_8_dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageView
+            android:id="@+id/iv_back_btn_dial_out"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/dp_16"
+            android:elevation="@dimen/margin_5_dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back_grey" />
+
+        <TextView
+            android:id="@+id/tv_audio_panel_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:layout_toEndOf="@id/iv_back_btn_dial_out"
+            android:lineSpacingExtra="@dimen/margin_8sp"
+            android:layout_marginStart="@dimen/margin_22_dp"
+            android:text="@string/phone_number"
+            android:layout_centerVertical="true"
+            android:textColor="@color/rightMessageTextGray"
+            android:textSize="@dimen/margin_20sp"
+            android:textStyle="normal"
+            tools:ignore="RtlSymmetry"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_9"
+        android:layout_below="@+id/call_me_toolbar_header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_dialout_numbers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/margin_20_dp"
+                android:layout_marginEnd="@dimen/margin_20_dp"
+                android:nestedScrollingEnabled="false" />
+
+            <RelativeLayout
+                android:id="@id/btn_add_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv_dialout_numbers"
+                android:layout_marginStart="@dimen/margin_28_dp"
+                android:layout_marginEnd="@dimen/margin_32_dp"
+                android:layout_marginBottom="@dimen/dial_in_list_item_bottom_margin">
+
+                <TextView
+                    android:id="@+id/tvAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="sans-serif"
+                    android:text="+"
+                    android:textColor="@color/primary_color_500"
+                    android:textSize="@dimen/margin_30sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tv_add_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_28_dp"
+                    android:layout_toEndOf="@+id/tvAdd"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif"
+                    android:maxLines="1"
+                    android:paddingEnd="@dimen/dialout_item_padding"
+                    android:text="@string/add_number"
+                    android:textColor="@color/primary_color_500"
+                    android:textSize="@dimen/margin_16sp"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btn_dial_out"
+        android:layout_width="@dimen/dialout_view_btn_dial_out_width"
+        android:layout_height="@dimen/dialout_view_btn_dial_out_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/margin_32_dp"
+        android:layout_marginEnd="@dimen/margin_32_dp"
+        android:layout_marginBottom="@dimen/margin_20_dp"
+        android:background="@drawable/connect_voip_btn"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/call_me"
+        android:visibility="invisible"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dialout_view_btn_dial_out_txt_size"
+        android:textStyle="normal" />
+</RelativeLayout>

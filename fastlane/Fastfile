@@ -1,0 +1,238 @@
+opt_out_usage
+fastlane_version "2.141.0"
+default_platform :android
+
+platform :android do
+    desc "Run tests and Branch analysis"
+      lane :runSonar do |options|
+        gradle(
+          task: "clean",
+          properties: {
+            "flavor" => options[:flavor]
+          },          
+          print_command: false
+        )
+        gradle(
+          task: "test",
+          flavor: options[:flavor],
+          build_type: options[:buildType],
+          properties: {
+            "flavor" => options[:flavor]
+          },
+          flags: "--info --scan -Pusername=#{options[:artifactoryUserName]} -Ppwd=#{options[:artifactoryPwd]}",
+          print_command: false
+        )
+        gradle(
+          task: "jacocoTestReport",
+          print_command: false
+        )
+        gradle(
+          task: "sonarqube",
+          properties: {
+            "flavor" => options[:flavor]
+          },
+          flags: "--info -Dsonar.branch.name=#{options[:branchName]} -Dsonar.branch.target=#{options[:sonarTarget]}",
+          print_command: false
+        )
+      end
+
+    desc "Run tests and PR analysis"
+      lane :runPRSonar do |options|
+        gradle(
+          task: "clean",
+          properties: {
+            "flavor" => options[:flavor]
+          },
+          print_command: false
+        )
+        gradle(
+          task: "test",
+          flavor: options[:flavor],
+          build_type: options[:buildType],
+          properties: {
+            "flavor" => options[:flavor]
+          },
+          flags: "--info --scan -Pusername=#{options[:artifactoryUserName]} -Ppwd=#{options[:artifactoryPwd]}",
+          print_command: false
+        )
+        gradle(
+          task: "jacocoTestReport",
+          print_command: false
+        )
+        gradle(
+          task: "sonarqube",
+          properties: {
+            "flavor" => options[:flavor]
+          },
+          flags: "--info -Dsonar.pullrequest.branch=#{options[:branchName]} -Dsonar.pullrequest.key=#{options[:branchName]} -Dsonar.pullrequest.base=#{options[:sonarTarget]} -Dsonar.pullrequest.bitbucketserver.headSha=#{options[:commitId]}",
+          print_command: false
+        )
+      end
+
+    desc "Build and deploy app"
+      lane :buildAndDeploy do |options|
+        title = "#{options[:product]} Android App"
+        buildLevel = options[:buildLevel] || "default"
+        buildEnv = options[:buildEnv]
+        apk_output_path = "#{Dir.pwd}/../build/outputs/apk/#{options[:flavor]}/#{options[:product]}Android.apk"
+        repo_path = "/com/pgi/convergence/android/#{options[:branchName]}/#{options[:product]}Android-#{options[:buildId]}.apk" 
+        flavor = "release" 
+        tag_prefix = "#{options[:product]}/#{flavor}*"
+        analyze_commits(match: tag_prefix, releaseVersion: buildLevel, debug: true)
+        nextVersion = lane_context[SharedValues::RELEASE_NEXT_VERSION]
+        if (options[:branchName] == "develop" && buildLevel != "default" && buildEnv == "Prod")
+          repo_path = "/com/pgi/convergence/mobile/releases/#{options[:product]}Android-#{nextVersion}.#{options[:buildId]}.apk" 
+        end
+        bundle(flavor: options[:flavor], 
+                buildType: options[:buildType], 
+                artifactoryUserName: options[:artifactoryUserName], 
+                artifactoryPwd: options[:artifactoryPwd], 
+                buildId: options[:buildId], 
+                apkOutPutPath: apk_output_path, 
+                version: nextVersion
+        )
+        signBundle(keystorePath: options[:keystorePath], 
+                    keystoreAlias: options[:keystoreAlias], 
+                    keystorePassword: options[:keystorePassword], 
+                    keystoreAliasPassword: options[:keystoreAliasPassword], 
+                    apkOutPutPath: apk_output_path
+        )
+        extractApk(keystorePath: options[:keystorePath], 
+                    keystoreAlias: options[:keystoreAlias], 
+                    keystorePassword: options[:keystorePassword], 
+                    keystoreAliasPassword: options[:keystoreAliasPassword], 
+                    apkOutPutPath: apk_output_path
+        )
+        upload_to_artifactory(artifactoryUserName: options[:artifactoryUserName], 
+                              artifactoryPwd: options[:artifactoryPwd],
+                              artifactoryServer: options[:artifactoryServer],
+                              apkOutPutPath: apk_output_path, 
+                              repoPath: repo_path
+        )
+        if (options[:branchName] == "develop" && buildLevel != "default" && buildEnv == "Prod")
+          upload_to_play_store(track:'beta',
+                               package_name: options[:packageName],
+                               version_name: nextVersion,
+                               version_code: options[:buildId],
+                               skip_upload_apk: true,
+                               skip_upload_screenshots: true,
+                               skip_upload_images: true,
+                               skip_upload_changelogs: true,
+                               skip_upload_metadata: true,
+                               mapping: lane_context[SharedValues::GRADLE_MAPPING_TXT_OUTPUT_PATH],
+                               json_key: options[:googleKey],
+                               aab: lane_context[SharedValues::GRADLE_AAB_OUTPUT_PATH]
+          )
+          post_deploy(flavor: flavor, title: title, product: options[:product], buildId: options[:buildId], username: options[:bitbucketUserName], pwd: options[:bitbucketPwd] )
+        elsif (options[:branchName] == "develop" && buildEnv == "Prod")
+          upload_to_play_store(track:'alpha',
+                               package_name: options[:packageName],
+                               version_name: nextVersion,
+                               version_code: options[:buildId],
+                               skip_upload_apk: true,
+                               skip_upload_screenshots: true,
+                               skip_upload_images: true,
+                               skip_upload_changelogs: true,
+                               skip_upload_metadata: true,
+                               mapping: lane_context[SharedValues::GRADLE_MAPPING_TXT_OUTPUT_PATH],
+                               json_key: options[:googleKey],
+                               aab: lane_context[SharedValues::GRADLE_AAB_OUTPUT_PATH]
+          )
+        end
+      end
+
+    desc "Bundle app"
+      lane :bundle do |options|
+        gradle(
+          task: "lint",
+          print_command: false
+        )
+        gradle(
+          task: "bundle",
+          flavor: options[:flavor],
+          build_type: options[:buildType],
+          flags: "-Pusername=#{options[:artifactoryUserName]} -Ppwd=#{options[:artifactoryPwd]}",
+          properties: {
+            "vcode" => options[:buildId],
+            "vname" => options[:version],
+            "flavor" => options[:flavor]
+          },
+          print_command: false
+        )
+      end
+
+    desc "Sign a bundle"
+      lane :signBundle do |options|
+        sh("jarsigner -keystore #{options[:keystorePath]} -storepass #{options[:keystorePassword]}  #{lane_context[SharedValues::GRADLE_AAB_OUTPUT_PATH]} #{options[:keystoreAlias]}")
+      end
+
+    desc "Extract and sign apk"
+      lane :extractApk do |options|
+        check_if_file_exists(options[:keystorePath])
+        bundletool(
+          ks_path: options[:keystorePath],
+          ks_password: options[:keystorePassword],
+          ks_key_alias: options[:keystoreAlias],
+          ks_key_alias_password: options[:keystoreAliasPassword],
+          bundletool_version: "0.15.0",
+          aab_path: lane_context[SharedValues::GRADLE_AAB_OUTPUT_PATH],
+          apk_output_path: options[:apkOutPutPath],
+          verbose: true
+        )
+      end
+
+    desc "Upload to artifactory"
+      lane :upload_to_artifactory do |options|
+        artifactory(
+          username: options[:artifactoryUserName],
+          password: options[:artifactoryPwd],
+          endpoint: options[:artifactoryServer],
+          file: options[:apkOutPutPath],
+          repo: "libs-release-local",
+          repo_path: options[:repoPath]
+        )
+      end
+
+    desc "Generates release notes for slack and create the next tag"
+      lane :post_deploy do |options|
+        flavor = options[:flavor]
+        title = "#{options[:product]} Android App"
+        next_version = lane_context[SharedValues::RELEASE_NEXT_VERSION]
+        notes = conventional_changelog(title: title, format: 'slack',  artifactoryUrl: lane_context[SharedValues::ARTIFACTORY_DOWNLOAD_URL])
+        changelog = conventional_changelog(title: title, format: 'markdown', artifactoryUrl: lane_context[SharedValues::ARTIFACTORY_DOWNLOAD_URL])
+        file_prepend("#{Dir.pwd}/../changelog.md", "#{changelog}\n\n\n\n")
+        add_git_tag(tag: "#{options[:product]}/#{flavor}/#{next_version}/#{options[:buildId]}")
+        git_commit(path: "#{Dir.pwd}/../changelog.md", message: "Release Version #{next_version}")
+        push_to_git_remote(
+          remote: "https://#{options[:username]}:#{options[:pwd]}@bitbucket.pgi-tools.com/scm/cm/ngmobile-android-meetings.git",
+          force: true,
+          tags: true
+        )
+        slack(
+          message: notes,
+          success: true,
+          slack_url: "https://hooks.slack.com/services/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",
+          default_payloads: [:git_branch, :last_git_commit_message]
+        )
+      end
+
+    def file_prepend(file, str)
+      new_contents = ""
+      File.open(file, 'r+') do |fd|
+        contents = fd.read
+        new_contents = str << contents
+      end
+      # Overwrite file but now with prepended string on it
+      File.open(file, 'w') do |fd| 
+        fd.write(new_contents)
+      end
+    end
+
+    def check_if_file_exists(path) 
+      unless File.file?(path)
+        puts("File not found #{path}")
+        return false
+      end
+      puts("File #{path} exists")
+    end
+end

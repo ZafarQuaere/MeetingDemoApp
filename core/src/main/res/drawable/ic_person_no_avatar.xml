@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <solid android:color="@color/primary_color_500" />
+        </shape>
+    </item>
+
+    <item
+        android:left="@dimen/call_no_avatar_padding"
+        android:right="@dimen/call_no_avatar_padding"
+        android:top="@dimen/call_no_avatar_padding"
+        android:bottom="@dimen/call_no_avatar_padding"
+        android:drawable="@drawable/ic_person_transparent" />
+</layer-list>

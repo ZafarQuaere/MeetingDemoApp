@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/dp_16"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textDialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/margin_20sp"
+        android:textColor="@color/enable_chat_dialog_title_color"
+        android:textStyle="normal"
+        android:fontFamily="sans-serif-medium"
+        android:lineSpacingExtra="@dimen/intro_title_spacing"
+        android:text="@string/private_chat"/>
+
+    <Switch
+        android:id="@+id/switchEnableDisable"
+        android:layout_below="@+id/textDialogTitle"
+        android:layout_marginStart="@dimen/margin_15_dp"
+        android:layout_marginTop="@dimen/dp_26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primary_color_500"
+        android:textSize="@dimen/margin_16sp"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="@dimen/space_4sp"
+        android:checked="true"
+        android:theme="@style/ChatEnableSwitch"
+        android:switchPadding="@dimen/margin_20_dp"
+        android:text="@string/enable_private_chat"/>
+
+    <TextView
+        android:id="@+id/textSave"
+        android:layout_marginTop="@dimen/margin_55_dp"
+        android:layout_marginBottom="@dimen/margin_5_dp"
+        android:layout_marginEnd="@dimen/dp_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/margin_5_dp"
+        android:paddingHorizontal="@dimen/margin_11_dp"
+        android:background="@color/btn_bg_card"
+        android:letterSpacing="@dimen/feedback_text_letter_spacing"
+        android:lineSpacingExtra="@dimen/dialog_cancel_line_spacing"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:textSize="@dimen/text_14_sp"
+        android:fontFamily="sans-serif-medium"
+        android:elevation="@dimen/dp_5"
+        android:textAllCaps="true"
+        android:layout_below="@+id/switchEnableDisable"
+        android:text="@string/save"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_alignBottom="@+id/textSave"
+        android:paddingBottom="@dimen/margin_8_dp"
+        android:layout_marginEnd="@dimen/margin_55_dp"
+        android:layout_toLeftOf="@+id/textSave"
+        android:id="@+id/textCancel"
+        android:textAllCaps="true"
+        android:layout_width="wrap_content"
+        android:letterSpacing="@dimen/feedback_text_letter_spacing"
+        android:lineSpacingExtra="@dimen/dialog_cancel_line_spacing"
+        android:textStyle="normal"
+        android:textSize="@dimen/text_14_sp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/primary_color_500"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"/>
+
+</RelativeLayout>

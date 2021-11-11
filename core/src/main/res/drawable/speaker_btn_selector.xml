@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:state_enabled="true" android:state_pressed="false">
+        <layer-list>
+            <item android:height="@dimen/dp_80" android:width="@dimen/dp_80" >
+                <shape android:shape="oval">
+                    <solid android:color="@color/primary_color_500"/>
+                </shape>
+            </item>
+            <item android:gravity="center_vertical|center_horizontal" android:drawable="@drawable/ic_speaker">
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_checked="true" android:state_enabled="true" android:state_pressed="true">
+        <layer-list>
+            <item android:height="@dimen/dp_80" android:width="@dimen/dp_80" >
+                <shape android:shape="oval">
+                    <solid android:color="@color/primary_color_700"/>
+                </shape>
+            </item>
+            <item android:gravity="center_vertical|center_horizontal" android:drawable="@drawable/ic_speaker">
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_checked="false" android:state_enabled="true" android:state_pressed="false">
+        <bitmap android:gravity="center_vertical|center_horizontal" android:src="@drawable/audiomeeting_speaker_btn_active" />
+    </item>
+    <item android:state_checked="false" android:state_enabled="true" android:state_pressed="true">
+        <bitmap android:gravity="center_vertical|center_horizontal" android:src="@drawable/audiomeeting_speaker_active_pressed" />
+    </item>
+    <item android:state_enabled="false">
+        <bitmap android:gravity="center_vertical|center_horizontal" android:src="@drawable/audiomeeting_speaker_disabled" />
+    </item>
+</selector>

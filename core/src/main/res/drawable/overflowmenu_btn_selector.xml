@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+        <item>
+            <shape android:shape="oval">
+                <solid android:color="#ffffff"/>
+                <size android:width="@dimen/dp_56" android:height="@dimen/dp_56" />
+            </shape>
+        </item>
+    <item android:gravity="center_vertical|center_horizontal" android:drawable="@drawable/ic_overflow_btn">
+    </item>
+</layer-list>
+

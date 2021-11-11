@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey_ss">
+
+    <FrameLayout
+        android:id="@+id/fp_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/pdfPage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minWidth="600dp"
+            android:minHeight="800dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/active_talker_bg"/>
+
+        <ImageButton
+            android:id="@+id/btn_presentation_fullscreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="@dimen/margin_12_dp"
+            android:layout_marginBottom="@dimen/margin_12_dp"
+            android:background="@drawable/presentation_screenshare_fullscreen_btn">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/recording_indicator_fp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_horizontal"
+            android:layout_marginRight="@dimen/margin_10_dp"
+            android:layout_marginTop="@dimen/margin_10_dp"
+            android:src="@drawable/recording_icon"
+            android:background="@null"
+            android:visibility="invisible">
+        </ImageButton>
+
+        <ProgressBar
+            android:id="@+id/progress_file_presentation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="8dp"
+            android:indeterminateTint="@android:color/darker_gray"/>
+
+        <include
+            layout="@layout/landscape_full_controls"
+            android:visibility="invisible">
+        </include>
+    </FrameLayout>
+</RelativeLayout>

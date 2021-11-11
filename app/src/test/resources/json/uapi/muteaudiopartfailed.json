@@ -1,0 +1,10 @@
+{
+  "eventType": "MUTE_AUDIO_PARTICIPANT_FAILED",
+  "timestamp": "2018-10-10T18:43:11.910Z",
+  "audioParticipantId": "arg1",
+  "error": {
+    "code": 0,
+    "pgsErrorCode": 0,
+    "errorText": "Error text"
+  }
+}

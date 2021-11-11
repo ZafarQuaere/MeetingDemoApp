@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/transparent_bg_color">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/waitingAppBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/waiting_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/search_toolbar_bg"
+                android:padding="@dimen/margin_8_dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/waiting_back_btn"
+                    android:layout_width="@dimen/toolbarIconsSize"
+                    android:layout_height="@dimen/toolbarIconsSize"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/margin_10_dp"
+                    android:src="@drawable/ic_arrow_back" />
+                <TextView
+                    android:id="@+id/tv_waiting_room_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/margin_20sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingStart="@dimen/dp_32"
+                    android:textStyle="normal"
+                    android:textColor="@color/rightMessageTextGray"
+                    android:lineSpacingExtra="@dimen/margin_8sp"
+                    tools:ignore="RtlSymmetry">
+                </TextView>
+            </androidx.appcompat.widget.Toolbar>
+            <View
+                android:id="@+id/gradient"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gradient_height"
+                android:background="@drawable/toolbar_gradient"
+                android:elevation="@dimen/margin_5_dp"
+                android:alpha="0.4"/>
+        </com.google.android.material.appbar.AppBarLayout>
+    <include
+        android:id="@+id/lo_wait"
+        layout="@layout/waiting_room_fragment"
+        android:visibility="gone"/>
+    <include
+        android:id="@+id/lo_denied"
+        layout="@layout/waiting_room_denied"
+        android:visibility="gone"/>
+    <include
+        android:id="@+id/lo_locked"
+        layout="@layout/waiting_room_locked"
+        android:visibility="gone"/>
+    <include
+        android:id="@+id/lo_full"
+        layout="@layout/waiting_room_full"
+        android:visibility="gone"/>
+    <include
+        android:id="@+id/lo_ended"
+        layout="@layout/waiting_room_ended"
+        android:visibility="gone"/>
+</RelativeLayout>
+</layout>
+

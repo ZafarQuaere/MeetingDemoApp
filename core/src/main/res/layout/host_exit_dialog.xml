@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_host_dialog_cnfrm_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/host_exit_leave_meeting_confirmation_msg"
+        android:textColor="@color/dialog_text_meeting_room"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        android:layout_marginStart="@dimen/margin_20_dp"
+        android:layout_marginEnd="@dimen/margin_20_dp"
+        android:layout_marginTop="@dimen/margin_20_dp"
+        android:layout_marginBottom="@dimen/margin_20_dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1_dp"
+        android:layout_marginEnd="@dimen/margin_2_dp"
+        android:layout_marginStart="@dimen/margin_2_dp"
+        android:background="@color/line_saperator_dialog" />
+
+    <TextView
+        android:id="@+id/tv_host_dialog_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/host_exit_dialog_exit_btn"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-medium"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:textStyle="normal"
+        android:textColor="@color/dialog_btn_text_color"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="@dimen/margin_15_dp"
+        android:layout_marginEnd="@dimen/margin_15_dp"
+        android:paddingTop="@dimen/margin_15_dp"
+        android:paddingBottom="@dimen/margin_15_dp"
+        android:textAllCaps="true"
+        android:clickable="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1_dp"
+        android:layout_marginEnd="@dimen/margin_2_dp"
+        android:layout_marginStart="@dimen/margin_2_dp"
+        android:background="@color/line_saperator_dialog" />
+
+    <TextView
+        android:id="@+id/tv_host_dialog_leave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/host_exit_dialog_leave_btn"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="normal"
+        android:textColor="@color/dialog_btn_text_color"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="@dimen/margin_15_dp"
+        android:layout_marginEnd="@dimen/margin_15_dp"
+        android:paddingTop="@dimen/margin_15_dp"
+        android:paddingBottom="@dimen/margin_15_dp"
+        android:textAllCaps="true"
+        android:clickable="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1_dp"
+        android:layout_marginEnd="@dimen/margin_2_dp"
+        android:layout_marginStart="@dimen/margin_2_dp"
+        android:background="@color/line_saperator_dialog" />
+
+    <TextView
+        android:id="@+id/tv_host_dialog_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/host_exit_dialog_negative_btn"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="normal"
+        android:textColor="@color/cancel_btn_text_color"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="@dimen/margin_15_dp"
+        android:layout_marginEnd="@dimen/margin_15_dp"
+        android:paddingTop="@dimen/margin_15_dp"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:paddingBottom="@dimen/margin_15_dp"
+        android:textAllCaps="true"
+        android:clickable="true"/>
+
+</LinearLayout>

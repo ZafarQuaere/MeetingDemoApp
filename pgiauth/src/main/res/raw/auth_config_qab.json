@@ -1,0 +1,15 @@
+{
+  "client_id": "e37112ee-4250-41e9-a96f-ac16e1738abc",
+  "redirect_uri": "androididentity://com.globalmeet.app",
+  "authorization_scope": "openid profile email app.globalmeet:logging app.globalmeet:Pulsar app.globalmeet:uapi app.globalmeet:webservices app.globalmeet:screenshare app.globalmeet:gmsearch app.globalmeet:gmservices.core",
+  "discovery_uri": "",
+  "authorization_endpoint_uri": "https://identity.qab.globalmeet.net/oauth2/auth",
+  "token_endpoint_uri": "https://identity.qab.globalmeet.net/oauth2/token",
+  "registration_endpoint_uri": "",
+  "user_info_endpoint_uri": "https://identity.qab.globalmeet.net/oauth2/userinfo",
+  "logout_endpoint_uri": "https://identity.qab.globalmeet.net/users/logout",
+  "revoke_endpoint_uri": "https://identity.qab.globalmeet.net/oauth2/revoke?token=",
+  "https_required": true,
+  "brand_id": "14476",
+  "label": "qab"
+}

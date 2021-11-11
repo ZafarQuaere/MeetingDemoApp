@@ -1,0 +1,15 @@
+{
+  "client_id": "1fd17d84-a877-4b26-ba16-11a8e290feeb",
+  "redirect_uri": "androididentity://com.globalmeet.app",
+  "authorization_scope": "openid profile email app.globalmeet:logging app.globalmeet:Pulsar app.globalmeet:uapi app.globalmeet:webservices app.globalmeet:screenshare app.globalmeet:gmsearch app.globalmeet:gmservices.core",
+  "discovery_uri": "",
+  "authorization_endpoint_uri": "https://identity1.dev.globalmeet.net/oauth2/auth",
+  "token_endpoint_uri": "https://identity1.dev.globalmeet.net/oauth2/token",
+  "registration_endpoint_uri": "",
+  "user_info_endpoint_uri": "https://identity1.dev.globalmeet.net/oauth2/userinfo",
+  "logout_endpoint_uri": "https://identity1.dev.globalmeet.net/users/logout",
+  "revoke_endpoint_uri": "https://identity1.dev.globalmeet.net/oauth2/revoke?token=",
+  "https_required": true,
+  "brand_id": "14476",
+  "label": "dev"
+}

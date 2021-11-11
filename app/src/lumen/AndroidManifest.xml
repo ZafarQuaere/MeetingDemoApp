@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:name="com.pgi.convergencemeetings.base.ConvergenceApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/my_backup_rules"
+        android:icon="@mipmap/app_icon"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:resizeableActivity="false"
+        android:supportsPictureInPicture="false"
+        android:usesCleartextTraffic="true">
+
+        <meta-data
+            android:name="asset_statements"
+            android:resource="@string/ctl_asset_statements" tools:replace="android:resource"/>
+
+        <activity android:name="com.pgi.convergencemeetings.landingpage.ui.CustomURIHandleActivity"
+            android:launchMode="singleTask" android:noHistory="true" tools:node="replace">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="launchRoom"
+                    android:scheme="lumenworkplace"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:scheme="https" android:pathPattern="/boot.html*"/>
+                <data android:host="@string/app_link_host_na" android:scheme="https" android:pathPattern="/boot.html*"/>
+                <data android:host="@string/app_link_host_eu" android:scheme="https" android:pathPattern="/boot.html*"/>
+                <data android:host="@string/app_link_host_ap" android:scheme="https" android:pathPattern="/boot.html*"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

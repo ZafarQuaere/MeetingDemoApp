@@ -1,0 +1,10 @@
+{
+  "responseType": "ERROR",
+  "timestamp": "2018-10-10T18:43:16.405Z",
+  "errors": [
+    {
+      "errorCode": 10024,
+      "errorMessage": "Access token has expired"
+    }
+  ]
+}

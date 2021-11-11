@@ -1,0 +1,16 @@
+boolean isCiServer = System.getenv().containsKey("JENKINS_HOME")
+buildCache {
+    local {
+        enabled = !isCiServer
+        removeUnusedEntriesAfterDays = 30
+    }
+	remote(HttpBuildCache) {
+        url = 'https://cachenode.pgi-tools.com/cache/'
+        push = isCiServer
+        allowUntrustedServer = true
+        credentials {
+            username = 'jenkins'
+            password = 'GMANDROID'
+        }
+    }
+}

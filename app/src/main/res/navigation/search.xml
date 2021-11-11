@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search"
+    app:startDestination="@id/meetings_search">
+  <fragment
+      android:id="@+id/meetings_search"
+      android:name="com.pgi.convergencemeetings.search.ui.JoinMeetingFragment"
+      android:label="@string/meeting_search_fragment"
+      tools:layout="@layout/fragment_join_meeting" >
+  </fragment>
+</navigation>

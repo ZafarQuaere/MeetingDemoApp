@@ -1,0 +1,10 @@
+{
+  "eventType": "GUEST_DIAL_OUT_FAILED",
+  "timestamp": "2018-10-10T18:43:11.338Z",
+  "dialoutId": "arg1",
+  "error": {
+    "code": 0,
+    "pgsErrorCode": 0,
+    "errorText": "Error text"
+  }
+}

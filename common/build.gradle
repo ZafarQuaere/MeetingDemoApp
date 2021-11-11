@@ -1,0 +1,50 @@
+import com.pgi.convergence.Deps
+
+apply plugin: "com.android.library"
+apply from: "$rootProject.projectDir/tasks/common.gradle"
+
+android {
+    flavorDimensions "default"
+
+    productFlavors {
+        prod {
+            dimension "default"
+        }
+        stage {
+            dimension "default"
+        }
+        qab {
+            dimension "default"
+        }
+        qac {
+            dimension "default"
+        }
+        dev {
+            dimension "default"
+        }
+        lumen {
+            dimension "default"
+        }
+        lumenqab {
+            dimension "default"
+        }
+        lumenqac {
+            dimension "default"
+        }
+        lumendev {
+            dimension "default"
+        }
+    }
+}
+
+tasks.whenTaskAdded {task ->
+    if(task.name.contains("compileQacDebugAndroidTestJavaWithJavac")) {
+        task.enabled = false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation project(path: ":network")
+    kapt Deps.annotationlibs.get("lifecycle")
+}

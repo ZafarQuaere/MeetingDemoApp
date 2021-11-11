@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_view_header_height">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/nav_view_backgraund_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/nav_view_header_avatar"
+        android:layout_width="@dimen/nav_view_user_avatar_image_size"
+        android:layout_height="@dimen/nav_view_user_avatar_image_size"
+        android:layout_marginStart="@dimen/nav_view_user_avatar_margin_start"
+        android:layout_marginTop="@dimen/nav_view_user_avatar_margin_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/nav_view_header_user_name"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/nav_view_header_avatar_initial"
+        android:layout_width="@dimen/nav_view_user_avatar_image_size"
+        android:layout_height="@dimen/nav_view_user_avatar_image_size"
+        android:layout_marginTop="@dimen/nav_view_user_avatar_margin_top"
+        android:layout_marginStart="@dimen/nav_view_user_avatar_margin_start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/nav_view_header_user_name"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="RE"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/ts_avatar_initial"
+        android:textStyle="normal"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/nav_view_header_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:lineSpacingExtra="@dimen/nav_view_text_spacing"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/nav_view_text_size_active"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@id/nav_view_header_avatar"
+        app:layout_constraintTop_toBottomOf="@id/nav_view_header_avatar"
+        app:layout_constraintBottom_toTopOf="@id/nav_view_header_status_indicator"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/nav_view_header_status_indicator"
+        android:layout_width="@dimen/small"
+        android:layout_height="@dimen/small"
+        android:layout_marginBottom="@dimen/medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/nav_view_header_user_name"
+        app:layout_constraintTop_toBottomOf="@id/nav_view_header_user_name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/nav_view_header_status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/nav_view_status_margin_start"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="@dimen/nav_view_text_spacing"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/nav_view_text_size_active"
+        android:textStyle="normal"
+        app:layout_constraintTop_toTopOf="@id/nav_view_header_status_indicator"
+        app:layout_constraintBottom_toBottomOf="@id/nav_view_header_status_indicator"
+        app:layout_constraintStart_toEndOf="@id/nav_view_header_status_indicator" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/nav_view_header_dropdown_arrow"
+        android:layout_width="@dimen/large"
+        android:layout_height="@dimen/large"
+        android:layout_marginEnd="@dimen/nav_view_dropdown_arrow_margin_end"
+        android:focusable="true"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_arrow_drop_down"
+        app:layout_constraintBottom_toBottomOf="@id/nav_view_header_status_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/nav_view_header_status_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>

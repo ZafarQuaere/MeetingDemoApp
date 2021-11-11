@@ -1,0 +1,5 @@
+{
+  "eventType": "ACTIVE_TALKERS",
+  "timestamp": "2018-10-10T18:43:13.864Z",
+  "talkingParticipants": ["audioParticipantId-1", "audioParticipantId-2"]
+}

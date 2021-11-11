@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lytProfilePic"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="@dimen/margin_10_dp"
+    android:layout_centerVertical="true"
+    android:layout_height="wrap_content">
+
+    <com.pgi.convergence.utils.AvatarComponent
+        android:id="@+id/avatarLayout"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/av_layout_width"
+        android:layout_height="@dimen/av_layout_height"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:layout_marginEnd="@dimen/margin_15_dp"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icProfile"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/margin_15_dp"
+        android:layout_marginStart="@dimen/margin_10_dp"
+        android:src="@drawable/meetingexp_tab_participants_icon_inactive" />
+
+    <TextView
+        android:id="@+id/textNameInitials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/recent_meetings_circle_drawable"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_participant_circle"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/margin_10_dp"
+        android:layout_marginEnd="@dimen/margin_15_dp"
+        android:visibility="invisible" />
+</RelativeLayout>

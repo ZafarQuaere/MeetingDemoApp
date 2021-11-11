@@ -1,0 +1,40 @@
+apply plugin: "com.android.library"
+apply from: "$rootProject.projectDir/tasks/common.gradle"
+
+android {
+    flavorDimensions "default"
+    productFlavors {
+        prod {
+            dimension "default"
+        }
+        stage {
+            dimension "default"
+        }
+        qab {
+            dimension "default"
+        }
+        qac {
+            dimension "default"
+        }
+        dev {
+            dimension "default"
+        }
+        lumen {
+            dimension "default"
+        }
+        lumenqab {
+            dimension "default"
+        }
+        lumenqac {
+            dimension "default"
+        }
+        lumendev {
+            dimension "default"
+        }
+    }
+}
+
+dependencies {
+    api fileTree(dir: "libs", include: ["*.jar"])
+    api project(path: ":pgilogging")
+}

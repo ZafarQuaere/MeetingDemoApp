@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_add_number_dialog_bg"
+    android:paddingTop="@dimen/margin_20_dp"
+    android:paddingBottom="@dimen/margin_20_dp"
+    android:paddingLeft="@dimen/margin_22_dp"
+    android:paddingRight="@dimen/margin_22_dp">
+
+    <TextView
+        android:id="@+id/tv_add_num_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/add_number_title"
+        android:textColor="@color/chatRemovingToolbarBackground"
+        android:textSize="@dimen/add_num_view_title_txt_size"
+        android:textStyle="normal" />
+
+   <RelativeLayout
+    android:id="@+id/rl_cntry_code"
+    android:layout_width="@dimen/height_70_dp"
+    android:layout_height="@dimen/height_52_dp"
+    android:layout_above="@+id/viewBottomBar"
+    android:layout_alignParentStart="true"
+    android:layout_marginEnd="@dimen/margin_5_dp"
+    android:background="@drawable/rounded_half_add_number_edittext_bg">
+
+    <EditText
+        android:id="@+id/et_cntry_code"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/margin_20_dp"
+        android:ems="10"
+        android:layout_alignParentBottom="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/phone_edittext_selector"
+        android:fontFamily="sans-serif"
+        android:hint="@string/cntry_code_example"
+        android:imeOptions="actionNext"
+        android:inputType="phone"
+        android:digits="0123456789+"
+        android:maxLength="4"
+        android:lineSpacingExtra="@dimen/margin_11sp"
+        android:textColor="@color/edit_text_dialog_color"
+        android:textSize="@dimen/add_num_view_et_cntry_code_txt_size"
+        android:textStyle="normal"
+        tools:ignore="RtlSymmetry" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_52_dp"
+        android:layout_marginTop="@dimen/margin_26_dp"
+        android:layout_below="@+id/tv_add_num_title"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/margin_5_dp"
+        android:layout_toEndOf="@id/rl_cntry_code"
+        android:background="@drawable/rounded_half_add_number_edittext_bg">
+
+    <EditText
+        android:id="@+id/et_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:paddingStart="@dimen/margin_20_dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/phone_num_example"
+        android:inputType="phone"
+        android:digits="0123456789,()#-*."
+        android:maxLength="24"
+        android:background="@drawable/phone_edittext_selector"
+        android:lineSpacingExtra="@dimen/margin_11sp"
+        android:textColor="@color/edit_text_dialog_color"
+        android:textSize="@dimen/add_num_view_et_cntry_code_txt_size"
+        android:textStyle="normal"
+        tools:ignore="RtlSymmetry" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_2_dp"
+        android:visibility="invisible"
+        android:background="@color/primary_color_500"
+        android:layout_below="@id/rl_phone_number"/>
+
+    <TextView
+        android:id="@+id/tv_include_cntry_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="@dimen/margin_7_dp"
+        android:layout_marginStart="@dimen/margin_12_dp"
+        android:text="@string/enter_phone_number_sub_title"
+        android:textColor="@color/sound_option_gray_color"
+        android:textSize="@dimen/add_num_view_cntry_code_txt_size"
+        android:textStyle="normal"
+        android:layout_below="@+id/viewBottomBar"/>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/min_heigt_width_view"
+        android:minWidth="@dimen/min_heigt_width_view"
+        android:layout_marginEnd="@dimen/margin_43_dp"
+        android:layout_marginTop="@dimen/margin_38_dp"
+        android:layout_below="@+id/tv_include_cntry_code"
+        android:layout_toStartOf="@+id/btn_add_number"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/cancel"
+        android:textColor="@color/primary_color_500"
+        android:textSize="@dimen/add_num_view_btn_txt_size"
+        android:background="@null" />
+
+    <Button
+        android:id="@+id/btn_add_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/min_heigt_width_view"
+        android:minWidth="@dimen/min_heigt_width_view"
+        android:enabled="false"
+        android:layout_alignBaseline="@+id/btn_cancel"
+        android:layout_alignBottom="@+id/btn_cancel"
+        android:layout_marginEnd="@dimen/margin_15_dp"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/add"
+        android:textColor="@color/grayMedium"
+        android:textSize="@dimen/add_num_view_btn_txt_size"
+        android:background="@null"/>
+
+</RelativeLayout>

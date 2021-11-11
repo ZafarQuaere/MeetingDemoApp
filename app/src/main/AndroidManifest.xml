@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.pgi.convergencemeetings">
+
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.USE_SIP" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+
+
+    <application
+        android:name=".base.ConvergenceApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/my_backup_rules"
+        android:icon="@mipmap/app_icon"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:resizeableActivity="false"
+        android:supportsPictureInPicture="false"
+        android:usesCleartextTraffic="true">
+
+        <meta-data
+            android:name="asset_statements"
+            android:resource="@string/asset_statements" tools:replace="android:resource"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".landingpage.ui.SplashScreenActivity"
+            android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".home.ui.AppBaseLayoutActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|uiMode|fontScale"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".tour.ui.OnBoardAuthActivity"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|screenSize|uiMode|fontScale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="com.google.codelabs.appauth.HANDLE_AUTHORIZATION_RESPONSE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".leftnav.about.ui.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".base.ui.BaseActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".leftnav.about.ui.AboutWebViewActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".search.ui.SearchActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|uiMode|fontScale"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".leftnav.NavDrawerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".leftnav.help.ui.HelpMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".meeting.gm4.ui.HostMeetingRoomActivity"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|screenSize|uiMode|fontScale"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".meeting.gm4.ui.GuestMeetingRoomActivity"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|screenSize|uiMode|fontScale"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".meeting.gm5.ui.WebMeetingActivity"
+            android:configChanges="orientation|screenSize|uiMode|fontScale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".leftnav.settings.ui.SettingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".meeting.gm4.ui.DefaultRoomActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".leftnav.settings.ui.UpdateNameActivity"
+            android:screenOrientation="portrait" />
+        <!--   Refresh Token BroadcastReceiver and Intent Service -->
+        <service
+            android:name="com.pgi.convergencemeetings.meeting.gm5.services.audio.softphone.PGiSoftPhoneService"
+            android:enabled="true" />
+
+        <activity android:name=".landingpage.ui.CustomURIHandleActivity"
+            android:launchMode="singleTask">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="launchRoom"
+                    android:scheme="gmmeet" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:host="@string/app_link_host" android:scheme="https" android:pathPattern="/boot.html*"/>
+                <data android:host="@string/app_link_host_na" android:scheme="https" android:pathPattern="/boot.html*"/>
+                <data android:host="@string/app_link_host_eu" android:scheme="https" android:pathPattern="/boot.html*"/>
+                <data android:host="@string/app_link_host_ap" android:scheme="https" android:pathPattern="/boot.html*"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.pgi.convergence.broadcastreceivers.ShareSheetBroadcastReceiverInOutMeeting" android:exported="true"></receiver>
+    </application>
+
+</manifest>

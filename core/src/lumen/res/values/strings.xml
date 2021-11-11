@@ -1,0 +1,22 @@
+<resources>
+     <string name="ctl_asset_statements" translatable="false">
+        [{
+         \"include\": \"https://yourlumenworkplace.com/.well-known/assetlinks.json\"
+        }]
+    </string>
+    <string name="software_credit_url">  </string>
+    <string name="welcome_slide_intro_welcome">Welcome to \nLumen Workplace</string>
+    <!-- Permissions -->
+    <string name="calendar_permission_desc">Enables Lumen Workplace to display upcoming meetings</string>
+    <string name="permission_starting_message">Thank you\nLumen Workplace is starting ..</string>
+    <string name="permission_intro">Lumen Workplace requires a few permissions before proceeding</string>
+    <!-- Share this app subject and content -->
+    <string name="share_this_app_subject">Check out Lumen Workplace</string>
+    <string name="share_this_app_content">I am using Lumen Workplace as my new meeting app and I think you\'d find it useful. Check it out - https://yourcenturylinkworkplace.com</string>
+    <string name="share_this_app_hash_tag_content">I am using #Lumen Workplace as my new meeting app and I think you\'d find it useful. Check it out - https://yourcenturylinkworkplace.com</string>
+    <!--Thank you Fragment -->
+    <string name="notification_title">Lumen Workplace</string>
+    <string name="welcome_to_imeet">Welcome to Lumen Workplace</string>
+    <string name="app_update_alert_message">This version of Lumen Workplace is below the minimum supported version and may cause issues. Please update your app for the best experience.</string>
+    <string name="help_app_subject">Lumen Workplace Feedback</string>
+</resources>

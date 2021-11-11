@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@drawable/audiomeeting_controlbar_bg"
+    android:gravity="center_horizontal">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_5_dp"
+        android:layout_marginStart="@dimen/margin_10_dp"
+        android:layout_gravity="center">
+
+        <ToggleButton
+            android:id="@+id/btn_mute_meeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:checked="false"
+            android:button="@drawable/mic_btn_selector"
+            android:contentDescription="@string/mute_meeting"
+            android:textOff="@null"
+            android:textOn="@null" />
+
+        <ProgressBar
+            android:id="@+id/progress_mic_disabled"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:elevation="7dp"
+            android:indeterminateDrawable="@drawable/progress_bar_meeting_controls" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/view_speaker_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/margin_12_dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgvw_mic_level_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            app:srcCompat="@drawable/line_2_copy_9" />
+
+        <ImageView
+            android:id="@+id/imgvw_mic_level_9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            app:srcCompat="@drawable/line_2_copy_9" />
+
+        <ImageView
+            android:id="@+id/imgvw_mic_level_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            app:srcCompat="@drawable/line_2_copy_9" />
+
+        <ImageView
+            android:id="@+id/imgvw_mic_level_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            app:srcCompat="@drawable/line_2_copy_9" />
+
+        <ImageView
+            android:id="@+id/imgvw_mic_level_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            app:srcCompat="@drawable/line_2_copy_9" />
+
+        <ImageView
+            android:id="@+id/imgvw_mic_level_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            app:srcCompat="@drawable/line_2_copy_9" />
+
+        <ImageView
+            android:id="@+id/imgvw_mic_level_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            app:srcCompat="@drawable/line_2_copy_9" />
+
+        <ImageView
+            android:id="@+id/imgvw_mic_level_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            app:srcCompat="@drawable/line_2_copy_9" />
+
+        <ImageView
+            android:id="@+id/imgvw_mic_level_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            app:srcCompat="@drawable/line_2_copy_9" />
+
+        <ImageView
+            android:id="@+id/imgvw_mic_level_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            app:srcCompat="@drawable/line_2_copy_9" />
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/btn_speaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="5dp"
+        android:background="@null"
+        android:button="@drawable/speaker_btn_selector"
+        android:checked="false"
+        android:textOff="@null"
+        android:textOn="@null" />
+
+    <ImageButton
+        android:id="@+id/btn_exit_meeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/exit_meeting_btn_selector" />
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:id="@+id/btn_overflow_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/audiomeeting_overflowmenu_btn" />
+
+        <ImageView
+            android:id="@+id/recordingIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="1dp"
+            android:paddingTop="@dimen/margin_8_dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/recording_icon_rec" />
+    </FrameLayout>
+
+</LinearLayout>

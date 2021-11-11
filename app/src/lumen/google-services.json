@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "437750151330",
+    "project_id": "lumenandroid-8145b",
+    "storage_bucket": "lumenandroid-8145b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:437750151330:android:fa4118d25005b305bdfffb",
+        "android_client_info": {
+          "package_name": "com.centurylink.ctlworkplace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "437750151330-tg7q5bph1aq9d95nq8cqc7fldhmn63o7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJkaZ-X4602iPW-GUx2nfWKT_1SBsPG7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "437750151330-tg7q5bph1aq9d95nq8cqc7fldhmn63o7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:437750151330:android:f957db0744a9ecbabdfffb",
+        "android_client_info": {
+          "package_name": "com.pgi.qab.ctlworkplace.meeting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "437750151330-tg7q5bph1aq9d95nq8cqc7fldhmn63o7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJkaZ-X4602iPW-GUx2nfWKT_1SBsPG7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "437750151330-tg7q5bph1aq9d95nq8cqc7fldhmn63o7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:437750151330:android:349100c52c51a4d4bdfffb",
+        "android_client_info": {
+          "package_name": "com.pgi.qac.ctlworkplace.meeting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "437750151330-tg7q5bph1aq9d95nq8cqc7fldhmn63o7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJkaZ-X4602iPW-GUx2nfWKT_1SBsPG7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "437750151330-tg7q5bph1aq9d95nq8cqc7fldhmn63o7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

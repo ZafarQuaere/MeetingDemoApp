@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_52_dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/home_card_spacing"
+        android:layout_gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_thumbnail"
+            android:layout_width="@dimen/home_card_thumbnail_size"
+            android:layout_height="@dimen/home_card_thumbnail_size"
+            android:layout_gravity="center_vertical"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/profile_initial"
+            android:layout_width="@dimen/home_card_thumbnail_size"
+            android:layout_height="@dimen/home_card_thumbnail_size"
+            android:background="@drawable/oval"
+            android:backgroundTint="@color/primary_color_500"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textSize="@dimen/text_22_sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:letterSpacing="-0.04"
+            android:text="@{cardProfile.initials}"
+            android:textColor="@android:color/white"
+            android:visibility="invisible" />
+
+
+        <View style="@style/dividerVertical"
+            android:visibility="@{cardProfile.showDivider ? View.VISIBLE : View.GONE}"
+            android:layout_margin="@dimen/home_card_profile_spacing"/>
+        <View
+            android:layout_height="52dp"
+            android:layout_width="3dp"
+            android:visibility="@{cardProfile.showDivider ? View.GONE : View.VISIBLE}"
+            android:layout_margin="@dimen/home_card_profile_spacing"/>
+
+        <LinearLayout
+            android:id="@+id/profile_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/home_card_spacing"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/profile_support_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/small_text"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:lineSpacingExtra="@dimen/xxsmall_text"
+                android:text="@{cardProfile.supportText}"
+                android:textColor="@color/card_text"
+                android:visibility="@{cardProfile.supportText != null ? View.VISIBLE : View.GONE}" />
+
+            <TextView
+                android:id="@+id/profile_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textSize="@dimen/medium_text"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:lineSpacingExtra="@dimen/xxsmall_text"
+                android:text="@{cardProfile.header}"
+                android:textColor="@color/card_profile_title"
+                android:visibility="@{cardProfile.header != null ? View.VISIBLE : View.GONE}"/>
+
+            <TextView
+                android:id="@+id/profile_subhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textSize="@dimen/small_text"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:lineSpacingExtra="@dimen/xxsmall_text"
+                android:text="@{cardProfile.subhead.text}"
+                android:textColor="@{cardProfile.subhead.isUrl ? @color/primary_color_500 : @color/card_text}"
+                android:visibility="@{cardProfile.subhead != null ? View.VISIBLE : View.GONE}" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="com.pgi.convergence.data.enums.home.HomeCardType" />
+
+        <variable
+            name="cardProfile"
+            type="com.pgi.convergence.data.model.home.CardProfile" />
+    </data>
+</layout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <solid android:color="@color/brand_color_300" />
+    <padding
+        android:left="@dimen/welcome_onboard_margin_bottom_1dp"
+        android:right="@dimen/welcome_onboard_margin_bottom_1dp"
+        android:top="@dimen/welcome_onboard_margin_bottom_1dp"
+        android:bottom="@dimen/welcome_onboard_margin_bottom_1dp"/>
+    <corners android:radius="@dimen/welcome_continue_radius" />
+</shape>
+

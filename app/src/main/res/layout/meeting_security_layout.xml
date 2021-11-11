@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/meeting_security_background_color">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/meetingSecurityAppBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/meeting_security_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/search_toolbar_bg"
+                    android:padding="@dimen/margin_8_dp"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/meeting_security_back_btn"
+                        android:layout_width="@dimen/toolbarIconsSize"
+                        android:layout_height="@dimen/toolbarIconsSize"
+                        android:background="@color/transparent"
+                        android:padding="@dimen/margin_10_dp"
+                        android:src="@drawable/ic_arrow_back" />
+
+                    <TextView
+                        android:id="@+id/tv_meeting_security_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:lineSpacingExtra="@dimen/margin_8sp"
+                        android:paddingStart="@dimen/dp_32"
+                        android:text="@string/meeting_security"
+                        android:textColor="@color/rightMessageTextGray"
+                        android:textSize="@dimen/margin_20sp"
+                        android:textStyle="normal"
+                        tools:ignore="RtlSymmetry"/>
+                </androidx.appcompat.widget.Toolbar>
+
+                <View
+                    android:id="@+id/gradient"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/gradient_height"
+                    android:alpha="0.4"
+                    android:background="@drawable/toolbar_gradient"
+                    android:elevation="@dimen/margin_5_dp" />
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_meeting_security"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/meetingSecurityAppBarLayout" />
+        </RelativeLayout>
+
+        <include layout="@layout/banner_no_internet_connection" />
+
+    </FrameLayout>
+</layout>
+

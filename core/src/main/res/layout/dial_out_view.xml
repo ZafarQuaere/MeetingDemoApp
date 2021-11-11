@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/bg_home">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/call_me_toolbar_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/baseToolbarHeight"
+        android:elevation="@dimen/margin_8_dp"
+        android:translationZ="@dimen/margin_5_dp"
+        android:background="@color/search_toolbar_bg"
+        android:padding="@dimen/margin_8_dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageView
+            android:id="@+id/iv_back_btn_dial_out"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/dp_16"
+            android:elevation="@dimen/margin_5_dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back_grey" />
+
+        <TextView
+            android:id="@+id/tv_dial_out_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:layout_toEndOf="@id/iv_back_btn_dial_out"
+            android:lineSpacingExtra="@dimen/margin_8sp"
+            android:layout_marginStart="@dimen/margin_22_dp"
+            android:text=""
+            android:layout_centerVertical="true"
+            android:textColor="@color/rightMessageTextGray"
+            android:textSize="@dimen/margin_20sp"
+            android:textStyle="normal"
+            tools:ignore="RtlSymmetry"/>
+    </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/llSelectedPhoneNumberView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/margin_200_dp"
+            android:orientation="vertical">
+
+            <TextView
+            android:id="@+id/tv_audio_cnfrm_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/margin_26_dp"
+            android:layout_marginStart="@dimen/margin_26_dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="@string/phone_number_selection_msg"
+            android:letterSpacing="-0.02"
+            android:textColor="@color/rightMessageTextGray"
+            android:textSize="@dimen/audio_selection_audio_cnfrm_msg_text_size"
+            android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/tv_selected_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_55_dp"
+                android:background="@drawable/rounded_selected_phone_number_bg"
+                android:layout_marginLeft="@dimen/margin_26_dp"
+                android:layout_marginRight="@dimen/margin_26_dp"
+                android:layout_marginTop="@dimen/margin_20_dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif"
+                android:letterSpacing="-0.02"
+                android:lineSpacingExtra="@dimen/line_spacing_negativee"
+                android:maxLines="1"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/dialer_digit_color"
+                android:textSize="@dimen/dialout_item_txt_size"
+                android:textStyle="normal"
+                android:paddingRight="@dimen/margin_15_dp"
+                android:paddingLeft="@dimen/margin_15_dp"
+                android:drawablePadding="@dimen/margin_5_dp"
+                android:drawableEnd="@drawable/ic_arrow_right"/>
+
+            <Button
+                android:id="@+id/btn_dial_out"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/audio_selection_btn_height"
+                android:layout_marginStart="@dimen/margin_26_dp"
+                android:layout_marginEnd="@dimen/margin_26_dp"
+                android:layout_marginTop="@dimen/margin_20_dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginBottom="@dimen/margin_5_dp"
+                android:elevation="@dimen/margin_5_dp"
+                android:background="@color/brand_color_500"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="-0.02"
+                android:text="@string/call_me"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/audio_selection_text_size"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_donot_connect"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/audio_selection_dnt_cnct_btn_btm_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/audio_selection_dnt_cnct_btn_btm_margin"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparent"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="-0.01"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:lineSpacingExtra="@dimen/audio_selection_dnt_cnct_btn_line_spcng"
+        android:text="@string/do_not_connect_audio"
+        android:textAllCaps="true"
+        android:textColor="@color/dont_connect_audio_text_color"
+        android:textSize="@dimen/audio_selection_text_size"
+        android:textStyle="normal"
+        android:visibility="visible" />
+
+</RelativeLayout>

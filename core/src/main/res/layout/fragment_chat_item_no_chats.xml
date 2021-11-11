@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/no_chat_msg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/chat_screen_text_margin"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="@dimen/space_4sp"
+        android:text="@string/no_chats_title"
+        android:gravity="center_horizontal"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:textColor="@color/rightMessageTextGray"
+        android:textSize="@dimen/margin_16sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/chat_screen_second_text_margin"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="@dimen/margin_6sp"
+        android:gravity="center_horizontal"
+        android:paddingEnd="17dp"
+        android:paddingStart="17dp"
+        android:text="@string/no_chats_description"
+        android:textColor="@color/additionalMessageDataGray"
+        android:textSize="@dimen/text_14_sp"
+        android:textStyle="normal" />
+
+</LinearLayout>

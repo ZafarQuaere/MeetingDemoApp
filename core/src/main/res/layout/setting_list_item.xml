@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/navigation_drawer_cell_selector"
+    android:padding="@dimen/about_list_item_view_padding">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/about_list_item_margin_start">
+
+        <TextView
+            android:id="@+id/tv_list_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/profile_pic_text_color"
+            android:textSize="@dimen/about_list_item_text_size"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/tv_list_sublabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/profile_pic_text_color"
+            android:textSize="@dimen/setting_sublabel_text_size"
+            android:textStyle="normal"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_about_carat_icon"
+        android:layout_width="@dimen/about_list_item_image_layout_height_width"
+        android:layout_height="@dimen/about_list_item_image_layout_height_width"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/close" />
+
+</RelativeLayout>

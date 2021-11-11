@@ -1,0 +1,7 @@
+{
+  "eventType": "AUDIO_PARTICIPANT_LEFT",
+  "timestamp": "2018-10-10T18:43:11.133Z",
+  "partId": "arg1",
+  "confId": "arg2",
+  "subConfId": "arg3"
+}

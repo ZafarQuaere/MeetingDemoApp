@@ -1,0 +1,27 @@
+{
+  "responseType": "ROOM_SESSION",
+  "timestamp": "2018-10-10T18:43:15.704Z",
+  "email": "test.user@example.com",
+  "loginType": "CLIENT",
+  "loginName": "test user",
+  "roomRole": "PRESENTER",
+  "authToken": "khshjsfsbfsfk232730213",
+  "userId": "22222",
+  "matterTracking": {
+    "clientMatterMaxLength": 12,
+    "clientMatterMinLength": 2,
+    "matterNumberMaxLength": 24,
+    "matterNumberMinLength": 0
+  },
+  "_links": {
+    "joinMeeting": {
+      "href": "https://uapi.globalmeet.com/uapi/v1/room/meeting/participants"
+    },
+    "meetingRoomInfo": {
+      "href": "https://uapi.globalmeet.com/uapi/v1/room"
+    },
+    "profileImage": {
+      "href": "https://profile-pgi.s3.amazonaws.com/1/MyProfileImage.png"
+    }
+  }
+}

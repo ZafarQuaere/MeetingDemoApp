@@ -1,0 +1,83 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="com.pgi.convergence.agenda.R" />
+
+        <import type="android.view.View" />
+
+        <variable
+            name="user"
+            type="com.pgi.convergence.agenda.ui.MeetingsAgendaViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_join_my_meeting"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:backgroundTint="@android:color/white"
+            android:drawableStart="@drawable/ic_meet"
+            android:drawablePadding="@dimen/dp_32"
+            android:gravity="start|center_vertical"
+            android:onClick="@{() -> user.startMeetingAndDismissDialog()}"
+            android:text="@string/overflow_join_my_meeting"
+            android:textColor="@color/overflow_menu_text_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_share_meeting_url"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:backgroundTint="@android:color/white"
+            android:drawableStart="@drawable/ic_share_meeting"
+            android:drawablePadding="@dimen/dp_32"
+            android:gravity="start|center_vertical"
+            android:onClick="@{() -> user.shareUrlAndDismissDialog()}"
+            android:text="@string/overflow_share_my_meeting_url"
+            android:textColor="@color/overflow_menu_text_color"
+            android:textSize="@dimen/margin_16sp" />
+
+        <TextView
+            android:id="@+id/tv_copy_meeting_url"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@android:color/white"
+            android:drawableStart="@drawable/ic_copy"
+            android:drawablePadding="32dp"
+            android:gravity="start|center_vertical"
+            android:onClick="@{() -> user.copyUrlAndDismissDialog()}"
+            android:text="@string/overflow_copy_meeting_url"
+            android:textColor="@color/overflow_menu_text_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_schedule_a_meeting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/overflow_menu_item_height"
+            android:layout_marginStart="@dimen/overflow_menu_item_margin"
+            android:layout_marginEnd="@dimen/overflow_menu_item_margin"
+            android:backgroundTint="@android:color/white"
+            android:drawableStart="@drawable/ic_schedule"
+            android:drawablePadding="@dimen/overflow_menu_item_drawable_padding"
+            android:gravity="start|center_vertical"
+            android:onClick="@{() -> user.launchCalendar()}"
+            android:text="@string/overflow_schedule_a_meeting"
+            android:textColor="@color/overflow_menu_text_color"
+            android:textSize="@dimen/overflow_menu_item_text_size" />
+
+    </LinearLayout>
+</layout>

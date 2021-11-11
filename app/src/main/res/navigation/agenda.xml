@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/agenda"
+    app:startDestination="@id/meetings_agenda">
+  <fragment
+      android:id="@+id/meetings_agenda"
+      android:name="com.pgi.convergence.agenda.ui.MeetingsFragment"
+      android:label="@string/meetingstab"
+      tools:layout="@layout/fragment_meetings" />
+  <dialog
+      android:id="@+id/overflowMenuDialogFragment"
+      android:name="com.pgi.convergence.agenda.ui.OverflowMenuDialogFragment"
+      android:label="OverflowMenuDialogFragment"
+      tools:layout="@layout/overflow_menu_bottom_sheet_agenda" />
+</navigation>

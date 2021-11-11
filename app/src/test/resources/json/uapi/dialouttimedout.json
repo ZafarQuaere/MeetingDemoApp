@@ -1,0 +1,6 @@
+{
+  "eventType": "PARTICIPANT_DIAL_OUT_TIMED_OUT",
+  "timestamp": "2018-10-10T18:43:13.470Z",
+  "dialoutId": "arg1",
+  "webParticipantId": "arg2"
+}

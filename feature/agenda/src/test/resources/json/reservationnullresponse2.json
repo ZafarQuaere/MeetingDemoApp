@@ -1,0 +1,13 @@
+{
+  "ReservationGetResult": {
+    "Errors": [],
+    "Reservation": {
+      "ClientId": "70066634",
+      "ConfId": "154326818",
+      "PassCodes": null,
+      "PhoneNumbers": null,
+      "ReservationDetail": null,
+      "SIPNumbers": null
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "responseType": "ADD_CONVERSATION",
+  "timestamp": "2018-10-10T18:43:06.194Z",
+  "conversationId": "xyz123",
+  "failStatus": null
+}

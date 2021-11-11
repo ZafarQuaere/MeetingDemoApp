@@ -1,0 +1,6 @@
+{
+  "eventType": "GUEST_DIALOUT_CANCELED",
+  "timestamp": "2018-10-10T18:43:11.458Z",
+  "dialoutId": "arg1",
+  "audioParticipantId": "arg2"
+}

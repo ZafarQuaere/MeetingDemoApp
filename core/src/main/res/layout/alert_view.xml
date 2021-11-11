@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@+id/tv_alert_title"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="@dimen/alert_title_margin_left"
+          android:paddingTop="@dimen/alert_title_margin_top"
+          android:text="@string/permission_rationale_alert_title"
+          android:textColor="@color/alert_title_color"
+          android:textSize="@dimen/alert_text_size"/>

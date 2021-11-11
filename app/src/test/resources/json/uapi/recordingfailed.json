@@ -1,0 +1,7 @@
+{
+  "eventType": "RECORDING_FAILED",
+  "timestamp": "2018-10-10T18:43:12.268Z",
+  "recordingId": "arg0",
+  "errorMessage": "arg1",
+  "reason": "UNKNOWN"
+}

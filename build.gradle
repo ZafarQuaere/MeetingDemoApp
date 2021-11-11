@@ -1,0 +1,164 @@
+import com.pgi.convergence.Versions
+
+buildscript {
+    repositories {
+        google()
+        maven { url "https://maven.google.com/" }
+        maven { url "https://plugins.gradle.org/m2/" }
+        maven { url "https://maven.fabric.io/public" }
+        mavenCentral()
+        jcenter()
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:${Versions.androidGradleVer}"
+        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:${Versions.sonarVer}"
+        classpath "org.greenrobot:greendao-gradle-plugin:${Versions.greenDaoVer}"
+        if (getGradle().getStartParameter().getTaskRequests().toString().contains("Release")) {
+            classpath "com.newrelic.agent.android:agent-gradle-plugin:${Versions.newrelicVer}"
+        }
+        classpath "io.realm:realm-gradle-plugin:${Versions.realmVer}"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
+        classpath "org.jetbrains.kotlin:kotlin-allopen:${Versions.kotlin}"
+        classpath "com.gradle:build-scan-plugin:${Versions.buildScanVer}"
+        classpath "org.jetbrains.kotlin:kotlin-serialization:${Versions.kotlin}"
+        classpath "org.jetbrains.kotlin:kotlin-android-extensions:${Versions.kotlin}"
+        classpath "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutine}"
+        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:${Versions.jfrogVer}"
+        classpath "com.google.gms:google-services:${Versions.googleServicesVer}"
+        classpath "com.google.firebase:firebase-crashlytics-gradle:${Versions.firebaseCrashlyticsGradleVer}"
+    }
+}
+
+//plugins {
+//    id 'com.palantir.git-version' version '0.12.2'
+//}
+
+apply plugin: "com.gradle.build-scan"
+apply plugin: "org.sonarqube"
+apply plugin: "com.jfrog.artifactory"
+apply from: "$rootProject.projectDir/tasks/appversiontasks.gradle"
+
+buildScan {
+    setTermsOfServiceUrl("https://gradle.com/terms-of-service")
+    setTermsOfServiceAgree("yes")
+    publishAlways()
+}
+
+def artifactory_contextUrl = ""
+def artifactory_user = ""
+def artifactory_password = ""
+def branchName = getBranchName()
+
+
+Properties prop = new Properties()
+prop.load(project.rootProject.file("artifactory.properties").newDataInputStream())
+artifactory_contextUrl = prop.getProperty("artifactory_contextUrl")
+
+if (project.rootProject.file("local.properties").exists()) {
+    Properties credsProp = new Properties()
+    credsProp.load(project.rootProject.file("local.properties").newDataInputStream())
+    artifactory_user = credsProp.getProperty("artifactory_user")
+    artifactory_password = credsProp.getProperty("artifactory_password")
+}
+
+normalization {
+    runtimeClasspath {
+        ignore "version.properties"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral { url "https://repo1.maven.org/maven2" }
+        maven { url "https://maven.google.com/" }
+        maven { url "https://plugins.gradle.org/m2/" }
+        maven { url "https://jitpack.io" }
+        maven {
+            url "${artifactory_contextUrl}/mobile-snapshot-local"
+            content {
+                includeGroup "com.pgi.convergence"
+            }
+            mavenContent {
+                snapshotsOnly()
+            }
+            credentials {
+                username = project.hasProperty("username") ? project.properties["username"] : "${artifactory_user}"
+                password = project.hasProperty("pwd") ? project.properties["pwd"] : "${artifactory_password}"
+            }
+        }
+        maven {
+            url "${artifactory_contextUrl}/mobile-release-local"
+            content {
+                includeGroup "com.pgi.convergence"
+            }
+            mavenContent {
+                releasesOnly()
+            }
+            credentials {
+                username = project.properties["username"] != null ? project.properties["username"] : "${artifactory_user}"
+                password = project.properties["pwd"] != null ? project.properties["pwd"] : "${artifactory_password}"
+            }
+        }
+        jcenter()
+    }
+
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+
+        kotlinOptions {
+            jvmTarget = "1.8"
+        }
+    }
+
+    tasks.withType(JavaCompile) {
+        options.fork = true
+        options.incremental = true
+    }
+
+    tasks.whenTaskAdded { task ->
+        if (task.name.equals("lint")) {
+            task.enabled = false
+        }
+        if(task.name.contains("AndroidTest"))
+        {
+            task.enabled = false
+        }
+    }
+}
+
+
+
+sonarqube {
+    properties {
+        property "sonar.host.url", "https://sonarqube.pgi-tools.com/"
+        property "sonar.sourceEncoding", "UTF-8"
+        property "sonar.projectKey", "GMAndroid"
+        property "sonar.projectName", "GMAndroid"
+        if(branchName.equals("develop")) {
+            property "sonar.projectVersion", "Develop - " + new Date().format("yyyyMMddHHmmss")
+        }
+        property "sonar.java.source", "${Versions.sourceCompat}"
+        property "sonar.java.target", "${Versions.targetCompat}"
+        property "sonar.issuesReport.html.enable", "true"
+        property "sonar.issuesReport.console.enable", "true"
+        property "sonar.test.inclusions", "*.java," + "*.kt"
+        property "sonar.login", "8d3746393d4df0cd4966cd299f8f093affaa3a60"
+    }
+}
+
+subprojects {
+    buildScan {
+        setTermsOfServiceUrl("https://gradle.com/terms-of-service")
+        setTermsOfServiceAgree("yes")
+        publishAlways()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+    delete fileTree(dir: '.', include: "**/*.exec")
+    delete fileTree(dir: "$rootDir/build-cache", include: "**/*")
+}

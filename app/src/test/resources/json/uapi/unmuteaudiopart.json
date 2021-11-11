@@ -1,0 +1,5 @@
+{
+    "eventType" : "UNMUTE_AUDIO_PARTICIPANT",
+    "timestamp" : "2018-10-10T18:43:13.749Z",
+    "audioParticipantId" : "arg1"
+  }

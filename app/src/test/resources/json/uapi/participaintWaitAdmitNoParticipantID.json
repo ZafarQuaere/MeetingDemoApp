@@ -1,0 +1,20 @@
+{
+  "responseType": "MEETING_EVENTS",
+  "timestamp": "2020-07-01T00:54:33.769Z",
+  "meetingId": "cn3ptztxjufio0r839iafvpp8",
+  "since": 1043034,
+  "lastSeqNum": 1043036,
+  "reset": true,
+  "events": [
+    {
+      "eventType": "PARTICIPANT_ADMITTED",
+      "timestamp": "2020-07-01T00:54:31.661Z",
+      "participantId": null
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://uapi.qac.globalmeet.net/uapi/v1/room/meeting/events?since=-1&timeout=50000&w=0"
+    }
+  }
+}

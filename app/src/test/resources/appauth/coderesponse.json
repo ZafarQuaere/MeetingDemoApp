@@ -1,0 +1,24 @@
+{
+  "request": {
+    "configuration": {
+      "authorizationEndpoint": "https://login.globalmeet.com/oauth2/auth",
+      "tokenEndpoint": "https://login.globalmeet.com/oauth2/token"
+    },
+    "clientId": "a332c6ad-cb8f-4bbf-8f3b-bcd75205cdbb",
+    "responseType": "code",
+    "redirectUri": "androididentity://com.globalmeet.app",
+    "scope": "openid profile email app.globalmeet:logging app.globalmeet:Pulsar app.globalmeet:uapi app.globalmeet:webservices app.globalmeet:screenshare app.globalmeet:gmsearch",
+    "state": "FAdtH6zTecuVm9fM0z9NZw",
+    "codeVerifier": "wiJl8m_MMjGfj5Ptnza4ahC0-Ln1R7Rd_gMX1r7S-5z4ckJsckHJZJ8o053qC2JtFT9bxsqZfQVBK5GQmbb1pg",
+    "codeVerifierChallenge": "Sh5TwUrvhHZ-IRxIw7tY2aEJIEDGs2Aw4TYfxVe4RxM",
+    "codeVerifierChallengeMethod": "S256",
+    "additionalParameters": {
+      "access_type": "offline",
+      "auth_by_client": "true",
+      "locale": "en"
+    }
+  },
+  "state": "FAdtH6zTecuVm9fM0z9NZw",
+  "code": "WRz4yc9HfKhhLzfEDwmjc5Lf4S3roQfh",
+  "additional_parameters": {}
+}

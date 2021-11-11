@@ -1,0 +1,513 @@
+<resources>
+    <string name="continue_txt">Doorgaan</string>
+    <string name="dialog_ok">OK</string>
+
+    <string name="greet_morning">Goedemorgen,</string>
+    <string name="greet_afternoon">Goedemiddag,</string>
+    <string name="greet_evening">Goedenavond,</string>
+
+    <string name="join_meeting">Deelnemen aan een \nvergadering</string>
+    <string name="start_meeting">Mijn vergadering \nstarten</string>
+    <string name="close">Sluiten</string>
+
+    <string name="welcome_slide_intro_welcome">Welkom bij \nGlobalMeet</string>
+    <string name="welcome_slide_intro_join">Snel en overal \ndeelnemen aan vergaderingen</string>
+    <string name="welcome_slide_audio_content">Bekijk eenvoudig wie er spreekt \nen beheer audio</string>
+    <string name="welcome_slide_files_content">Bekijk inhoud die door anderen wordt \ngedeeld</string>
+    <string name="welcome_slide_chat">Chat met iedereen \nin de vergadering.</string>
+    <string name="sign_in">Aanmelden</string>
+    <!-- Default vals -->
+    <string name="str_ok">OK</string>
+
+    <!-- ImageView Content description -->
+    <string name="cd_drawer_icon">Navigatielade</string>
+    <!-- Recent Meetings UI constants -->
+    <string name="btn_title_join">Doe mee</string>
+    <string name="title_recently_joined">Recent</string>
+    <string name="search_join_header">Neem deel aan deze vergader-URL</string>
+    <string name="no_recent_meetings">Zoek naar een vergader-URL om nu aan een vergadering deel te nemen. De resultaten verschijnen hier.</string>
+
+    <string name="no_results">Geen resultaten</string>
+    <string name="enter_invalid_url">Ongeldige URL</string>
+    <string name="enter_url_join_button">Doe mee</string>
+
+    <!--EnterUrl UI constants -->
+    <string name="enter_url_search_hint">Voer URL in</string>
+
+    <!--Navigation Drawer menu constants -->
+    <string name="open_drawer">Open lade</string>
+    <string name="close_drawer">Sluit lade</string>
+    <string name="sign_out">Afmelden</string>
+    <string name="settings">Instellingen</string>
+    <string name="about">Info</string>
+    <!--<string name="share">Deel</string> Not used currently -->
+    <string name="help">Help</string>
+
+    <!-- Permissions -->
+    <string name="permission_call_rationale">Gesprekspermissie is vereist om aan de vergadering deel te nemen</string>
+    <!-- Not used currently
+    <string name="calendar_permission_rationale">Het niet toestaan van agendatoegang kan bepaalde functies uitschakelen.</string>
+    <string name="type_calendar">Agenda</string>
+    <string name="calendar_permission_desc">Hiermee kan GlobalMeet aankomende vergaderingen weergeven</string>
+    -->
+    <string name="permission_rationale_alert_title">Weet u het zeker?</string>
+    <string name="rationale_alert_option_allow">Toestaan</string>
+    <string name="rationale_alert_option_deny">Weigeren</string>
+
+
+    <string name="invalid_access_token">Ongeldige toegangstoken, log opnieuw in om verder te gaan.</string>
+    <!-- Share this app subject and content -->
+    <string name="share_with">Delen met</string>
+    <string name="share_this_app_subject">Bekijk GlobalMeet</string>
+    <string name="share_this_app_content">Ik gebruik GlobalMeet als mijn nieuwe vergader-app en ik denk dat je hem wel handig zult vinden. Neem een kijkje - https://globalmeet.com</string>
+    <string name="share_this_app_hash_tag_content">Ik gebruik #GlobalMeet als mijn nieuwe vergader-app en ik denk dat je hem wel handig zult vinden. Neem een kijkje - https://globalmeet.com</string>
+    <string name="mute_meeting">dempknop</string>
+
+    <!-- meeting room -->
+    <string name="host_exit_leave_meeting_confirmation_msg">Wilt u de vergadering verlaten of voor iedereen beëindigen?</string>
+    <string name="host_exit_dialog_exit_btn">Vergadering beëindigen</string>
+    <string name="host_exit_dialog_leave_btn">Vergadering Verlaten</string>
+    <string name="host_exit_dialog_negative_btn">Annuleren</string>
+    <string name="guest_exit_leave_meeting_confirmation_msg">Weet u zeker dat u de vergadering wilt verlaten?</string>
+    <string name="guest_exit_dialog_positive_btn">Verlaten</string>
+    <string name="guest_exit_dialog_negative_btn">Annuleren</string>
+    <string name="loading">Bezig met laden</string>
+    <string name="connect_voip">Nu verbinden met VoIP</string>
+    <string name="dial_in_btn_txt">Inbellen</string>
+    <string name="dial_in">Inbellen met mijn telefoon</string>
+    <string name="call_phone">Bel mijn telefoon</string>
+    <string name="call_me_btn_txt">Bel me</string>
+    <string name="phone_number">Telefoonnummer</string>
+    <string name="activate_speaker">Activeer luidspreker</string>
+    <string name="use_speaker">Gebruik luidspreker</string>
+    <string name="mute_me">Mijn microfoon dempen na verbinding</string>
+    <string name="mute_all">ALLES</string>
+    <string name="do_not_connect_audio">Mijn audio niet verbinden</string>
+    <string name="audio_selection_msg"><![CDATA[Hoe wilt u<br/> spreken in de vergadering van<br/> %1$s?]]></string>
+    <string name="audio_selection_msg_own_room">Hoe wilt u spreken in uw vergadering?</string>
+    <string name="invite_participant">Deelnemer uitnodigen</string>
+    <string name="change_connection">Verbinding wijzigen</string>
+    <string name="disconnect_audio">Desconectar audio</string>
+    <string name="lock_meeting">Vergadering vergrendelen</string>
+    <string name="record_meeting">Opnemen</string>
+    <string name="turn_off_waiting">Wachtkamer uitschakelen</string>
+    <string name="people_are_waiting_message">Er wachten mensen om deel te nemen. Beheer de wachtruimte om mensen toe te laten of te weigeren.</string>
+    <string name="meeting_locked_error_msg">De vergadering waaraan u wilt deelnemen is vergrendeld. Neem contact op met de gastheer van de vergadering.</string>
+    <string name="is_talking">is aan het praten</string>
+    <string name="currently_talking">zijn op dit moment aan het praten</string>
+    <string name="was_taking">was de laatste die sprak</string>
+    <string name="were_taking">waren de laatsten die spraken</string>
+    <string name="no_one_taking">Er heeft nog niemand gesproken</string>
+    <string name="someone_is_presenting_a_file">Bestandspresentatie</string>
+    <string name="someone_presenting_screen_share"><![CDATA[<b>%s</b> is zijn scherm aan het delen]]></string>
+    <string name="someone_is_presenting">Iemand houdt een presentatie</string>
+    <string name="you_are_not_sharing_camera">U deelt uw camera niet meer</string>
+    <string name="you_are_sharing_camera">U deelt momenteel uw camera</string>
+    <string name="someone_sharing_camera">Iemand deelt zijn/haar camera</string>
+    <string name="someone_sharing_whiteboard">Iemand deelt het whiteboard</string>
+    <string name="presenting_whiteboard">Whiteboard</string>
+    <string name="someone_sharing_with_one_camera"><![CDATA[Schermdelen en %s webcam]]></string>
+    <string name="someone_sharing_with_cameras"><![CDATA[Schermdelen en %s webcams]]></string>
+    <string name="someone_presenting_with_cameras"><![CDATA[Bestandspresentatie en %s webcams]]></string>
+    <string name="someone_presenting_with_one_camera"><![CDATA[Bestandspresentatie en %s webcam]]></string>
+    <string name="someone_sharing_whiteboard_with_cameras"><![CDATA[Whiteboard en %s webcams]]></string>
+    <string name="someone_sharing_whiteboard_with_one_camera"><![CDATA[Whiteboard en %s webcam]]></string>
+    <string name="presenting_webcams_count"><![CDATA[%s webcams]]></string>
+    <string name="speakerTurnOn">Luidspreker: Aanzetten</string>
+    <string name="speakerTurnOff">Luidspreker: Uitzetten</string>
+    <string name="your_webcam_is_on">Uw webcam staat aan</string>
+    <string name="your_webcam_is_off">Uw webcam staat uit</string>
+    <!-- Not used, to be implemented:
+    <string name="unable_to_display_shared_file">Bestandspresentatie kan niet worden weergegeven</string>
+    -->
+    <string name="screenshare_with_webcam_pagination"><![CDATA[Scherm delen en %s]]></string>
+    <string name="file_with_webcam_pagination"><![CDATA[Bestandspresentatie en %s]]></string>
+    <string name="whiteboard_with_webcam_pagination"><![CDATA[Whiteboard en %s]]></string>
+    <string name="webcam_page_info"><![CDATA[%s webcams (%s-%s)]]></string>
+    <string name="low_bandwidth_mode_on">Modus voor lage bandbreedte: Aanzetten</string>
+    <string name="low_bandwidth_mode_off">Modus voor lage bandbreedte: Uitzetten</string>
+    <string name="low_bandwidth_mode">Modus voor lage bandbreedte</string>
+    <string name="low_bandwidth_mode_cam_hidden">Modus voor lage bandbreedte (webcams verborgen)</string>
+    <!-- Internet connectivity -->
+    <string name="internet_not_connected">Internet is niet beschikbaar</string>
+    <string name="voip_not_enabled">VoIP is uitgeschakeld voor deze gebruiker</string>
+    <string name="choose_dial_in_number">Kies een nummer om in de vergadering in te bellen</string>
+    <string name="no_dialin_numbers">Geen inbelnummers gevonden</string>
+    <string name="dial_in_not_enabled">DialIn is uitgeschakeld</string>
+    <string name="dial_out_not_enabled">DialOut is uitgeschakeld</string>
+    <string name="dial_in_number">Einwahlnummer</string>
+    <string name="search_string">Suchen</string>
+    <!-- About Page -->
+    <string name="software_credits">Software aftiteling</string>
+    <string name="contact_us">Neem contact met ons op</string>
+    <string name="call_me">Bel me</string>
+    <string name="add_number">Nummer toevoegen</string>
+    <string name="call_my_phone">Bel mijn telefoon</string>
+    <string name="add_number_title">Nummer toevoegen</string>
+    <string name="phone_number_selection_msg">Selecteer een nummer om in de vergadering te praten of voer een nieuwe in.</string>
+    <string name="enter_phone_number_sub_title">Voer een telefoonnummer in om tijdens de vergadering te praten.</string>
+    <string name="include_country_code">Vermeld de landcode</string>
+    <string name="phone_num_example">555 555 5555</string>
+    <string name="cntry_code_example">+1</string>
+    <string name="cancel">Annuleren</string>
+    <string name="add">Toevoegen</string>
+
+    <!-- support -->
+    <string name="support_msg_on_meeting_join">Controleer uw e-mail of agenda-uitnodiging voor een vergaderlink of neem contact op met de gastheer van uw vergadering.</string>
+    <string name="trouble_joining_title">Problemen met de deelname?</string>
+    <string name="action_contact_support">Neem contact op met ondersteuning</string>
+    <string name="primary_access_number">Primair toegangsnummer</string>
+
+    <!-- Setting -->
+    <string name="invalid_phone_number">Voer een correct telefoonnummer in</string>
+    <string name="first_name">Voornaam</string>
+    <string name="last_name">Achternaam</string>
+    <string name="update_name">Naam bijwerken</string>
+    <string name="forgot_password">Wachtwoord vergeten</string>
+    <string name="select_room">Selecteer ruimte</string>
+    <string name="default_meeting_url">Standaard vergader-URL</string>
+    <string name="display_name_in_meeting">Naam in vergaderingen weergeven</string>
+    <string name="reset_password">Opnieuw instellen / Wachtwoord vergeten</string>
+    <string name="client_Id">Klant-ID</string>
+    <string name="send_chat">Verzenden</string>
+    <string name="default_room_title">Standaard vergader-URL</string>
+    <string name="display_name_msg">Naam \nin vergaderingen weergeven</string>
+    <string name="btn_update_name">Updaten</string>
+    <string name="client_id">klant-id</string>
+
+    <!--Thank you Fragment -->
+    <string name="thankyou_quote">Dank u voor het deelnemen aan de vergadering</string>
+    <string name="thankyou_ok">OK</string>
+    <string name="thankyou_join_another_meeting">Deelnemen aan een andere vergadering</string>
+    <string name="notification_title">GlobalMeet</string>
+    <string name="notification_content">Uw vergadering is aan de gang</string>
+    <string name="welcome_to_imeet">Welkom bij GlobalMeet</string>
+    <string name="tap_a_meeting_link">Tik op een vergaderlink in uw e-mailuitnodiging of voer hieronder de vergader-URL in:</string>
+    <string name="app_update_alert_message">Deze versie van GlobalMeet is onder de versie met minimale ondersteuning en kan problemen veroorzaken. Werk uw app bij voor de beste ervaring.</string>
+    <string name="app_update_alert_button_later">Later</string>
+    <string name="app_update_alert_button_update">Updaten</string>
+
+    <!-- sign out text-->
+    <string name="host_signout_text">Weet u zeker dat u wilt uitloggen?</string>
+    <string name="guest_signout_text">Door u af te melden, verliest u uw gegevens, inclusief recent bijgewoonde vergaderingen.</string>
+    <string name="alert_option_signout">Afmelden</string>
+    <string name="alert_option_cancel">Annuleren</string>
+    <string name="error_on_signout">Problemen bij het uitloggen</string>
+    <string name="you">U</string>
+    <string name="parsing_erro_client_info">Kan klantgegevens niet analyseren</string>
+    <string name="empty_join_url_error">De URL voor de vergadering waaraan u probeert deel te nemen, bestaat niet. Controleer de URL en probeer het opnieuw</string>
+    <string name="please_provide_a_first_and_last_name">Geef een voor- en achternaam op</string>
+    <string name="please_provide_a_first_name">Geef een voornaam op</string>
+    <string name="please_provide_a_last_name">Geef een achternaam op</string>
+    <string name="display_name_update_sucess_msg">Uw naam die tijdens vergaderingen wordt weergegeven is bijgewerkt.</string>
+    <string name="no_one_has_spoken_yet">Er heeft nog\n niemand gesproken</string>
+    <string name="presenter_name"><![CDATA[%1$s scherm]]></string>
+    <string name="webcam_presenter_name"><![CDATA[%1$s webcam]]></string>
+    <string name="maximum_webcams_limit_reached">Uw webcam kan niet ingeschakeld worden. Maximaal aantal bereikt.</string>
+
+    <string name="menu_mute">Dempen</string>
+    <string name="menu_unmute">Dempen uit</string>
+    <string name="menu_promote">Aanbevelen</string>
+    <string name="menu_demote">Niveau verlagen</string>
+    <string name="menu_dismiss">Laten vertrekken</string>
+    <string name="menu_private_chat_with">Privéchat met</string>
+
+    <string-array name="menu_host_controls">
+        <item checked="false">@string/menu_mute</item>
+        <item checked="false">@string/menu_promote</item>
+        <item checked="false">@string/menu_dismiss</item>
+    </string-array>
+
+    <!-- Not used, but could be useful
+    <string name="coming_soon">Binnenkort beschikbaar</string>
+    <string name="meeting_chat_coming_soon">Vergader-chat binnenkort beschikbaar.</string> -->
+    <string name="no_chats_title">Geen berichten</string>
+    <string name="no_chats_description">Stuur of ontvang een chatbericht en dit zal hier verschijnen</string>
+    <string name="hint_chat_say_something">Zeg iets...</string>
+    <string name="chat_sub_content_bullet">&#8226;</string>
+
+    <string name="invalid_url_meeting_prompt_title">Vergadering niet gevonden</string>
+    <string name="invalid_url_meeting_prompt_message">De URL voor de vergadering waaraan u probeert deel te nemen, bestaat niet. Controleer de URL en probeer het opnieuw.</string>
+
+    <!-- Not used, but could be useful
+    <string name="airplane_mode_prompt_title">In airplane mode</string>
+    <string name="airplane_mode_prompt_message">This function is not available while in airplane mode.</string> -->
+    <string name="leave_current_meeting_prompt_title">Huidige vergadering verlaten?</string>
+    <string name="leave_current_meeting_prompt_message">Om deel te nemen aan een nieuwe vergadering moet u de huidige vergadering verlaten.</string>
+    <string name="dialog_wifi_to_mobile_data_switch_message">U bent op dit moment niet via WiFi verbonden. U bent verantwoordelijk voor alle datakosten die aan de leverancier verschuldigd zijn.</string>
+    <string name="dialog_dont_show_again">Niet opnieuw weergeven</string>
+    <string name="dialog_internet_connection_time_out">De verbinding met de vergaderserver kon niet tot stand worden gebracht. Controleer uw internetverbinding &amp; probeer opnieuw.</string>
+    <string name="reconnecting">OPNIEUW VERBINDEN</string>
+    <string name="dialog_dismiss">Laten vertrekken</string>
+    <string name="no_network">Geen netwerkverbinding beschikbaar</string>
+
+    <string name="dialog_wifi_to_mobile_data_switch_message_for_webcam">U gebruikt geen wifi. Er zijn mogelijk kosten van toepassing. Het gebruik van webcams vereist wifi.</string>
+
+    //Retry messages
+    <string name="failed_to_join_meeting">Deelname aan de vergadering is mislukt</string>
+    <string name="failed_to_start_meeting">Starten van de vergadering is mislukt</string>
+    <string name="failed_to_dial_out">Naar buiten bellen is mislukt</string>
+    <string name="failed_to_complete_search">Het voltooien van de zoekopdracht is mislukt</string>
+    <string name="failed_to_mute">Dempen inschakelen is mislukt</string>
+    <!-- <string name="failed_to_unmute">Dempen uitschakelen is mislukt</string> Not used -->
+    <string name="failed_to_dismiss">Laten vertrekken is mislukt</string>
+    <!-- <string name="failed_to_update_audio_connection">Bijwerken van audioverbinding is mislukt</string> Not used -->
+    <string name="failed_to_promote">Aanbevelen is mislukt</string>
+    <string name="failed_to_demote">Niveau verlagen is mislukt</string>
+    <string name="failed_to_mute_all">Alles dempen is mislukt</string>
+    <string name="failed_to_set_participant_option">is mislukt</string>
+    <string name="failed_to_get_meeting_events_head">Onverwachte fout</string>
+    <string name="failed_to_get_meeting_events_body">Er is iets verkeerd gegaan. Probeer opnieuw aan de vergadering deel te nemen</string>
+    <string name="failed_to_get_meeting_events_positive">Opnieuw aan de vergadering deelnemen</string>
+    <string name="failed_to_get_meeting_events_negative">Annuleren</string>
+    <string name="failed_to_leave_meeting">Verlaten van de vergadering is mislukt</string>
+    <string name="bad_network_conditions_message">Slechte netwerkverbinding gedetecteerd. Probeer uw audioverbinding te wijzigen.</string>
+    <string name="bad_network_conditions_title">Audio wijzigen</string>
+    <string name="bad_network_low_bandwidth_message">Slechte netwerkverbinding gedetecteerd. Probeer de modus voor lage bandbreedte te gebruiken.</string>
+    <string name="bad_network_low_bandwidth_title">Schakel de modus voor lage bandbreedte in</string>
+    <string name="metered_network_conditions_message">Slecht netwerk gedetecteerd. U kunt problemen ondervinden. Controleer je verbinding.</string>
+    <string name="failed_camera_start">Kan uw webcam niet inschakelen.</string>
+    <string name="failed_camera_stop">Kan uw webcam niet uitschakelen.</string>
+    <string name="failed_camera_btn_retry">Opnieuw proberen</string>
+    <!-- participant header -->
+    <string name="one_participant">1 deelnemer</string>
+    <string name="participants">deelnemers</string>
+    <string name="no_participants">geen deelnemer</string>
+    <string name="exit">Verlassen</string>
+    <string name="speaking">Spreken</string>
+    // generic error messages
+    <string name="unable_to_update_information">Kan de informatie niet bijwerken</string>
+    //RoomRoles
+    <string name="host">GASTHEER</string>
+    <string name="presenter">PRESENTATOR</string>
+    <string name="roleDelegateHost">MEDEGASTHEER</string>
+    <string name="host_lowercase">Gastheer</string>
+    <string name="presenter_lowercase">Presentator</string>
+    <string name="roleDelegateHost_lowercase">Medegastheer</string>
+
+    //About Meeting
+    <string name="device_model">Model apparaat</string>
+    <string name="os_version">OS-versie</string>
+    <string name="app_version">App-versie</string>
+    <string name="help_app_subject">GlobalMeet feedback</string>
+    <string name="meeting_locked_title">De vergadering is vergrendeld</string>
+    <string name="meeting_full_title">De vergadering is vol</string>
+    <string name="meeting_locked_message">Raadpleeg de gastheer \nvoor meer informatie.</string>
+    <string name="meeting_full_message">Deze vergadering heeft de maximale \ncapaciteit bereikt. Probeer het later opnieuw</string>
+    <string name="skip_enter_url">Overslaan</string>
+    <string name="start_recording">Opnemen starten</string>
+    <!-- help menu -->
+    <string name="call_support">Bel een supportmedewerker</string>
+    <string name="email_support">E-mail een supportmedewerker</string>
+    <string name="visit_support">Bezoek de ondersteuningswebsite</string>
+    <string name="turn_on_speaker">Luidspreker aan</string>
+    <string name="turn_off_speaker">Luidspreker uit</string>
+    <string name="required_service_failure">Vereiste service is niet operationeel. U moet de app misschien even opnieuw starten.</string>
+    <string name="mute_all_participants">Alle gasten dempen</string>
+    <string name="unmute_all_participants">Dempen alle gasten uitschakelen</string>
+    <string name="unlock_meeting">Vergadering ontgrendelen</string>
+    <string name="stop_recording">Opnemen stoppen</string>
+    <string name="preparingToRecordToast">Voorbereiden om op te nemen...</string>
+    <string name="recordingStopped">Opnemen beëindigd. Link wordt verstuurd eenmaal klaar</string>
+    <string name="recording_failed">Opnemen mislukt</string>
+    <string name="try_again">Probeer het opnieuw</string>
+
+    <string name="home_screen_tab">Home Screen Tab</string>
+    <string name="signing_out">Signing out</string>
+    <string name="activity_tab_toolbar_avatar">Activity Tab Toolbar Avatar</string>
+
+    <!--newucc strings-->
+    <string name="home_tab_home">Start</string>
+    <string name="home_tab_calls">Calls</string>
+    <string name="home_tab_chats">Chat</string>
+    <string name="home_tab_contacts">Contacts</string>
+    <string name="email">E-mailadres</string>
+    <!-- Call me flow -->
+    <string name="please_add_phone_number">Voeg een telefoonnummer toe.</string>
+    <string name="please_select_phone_number">Selecteer een telefoonnummer.</string>
+    <string name="please_enter_valid_country_code">Voer een geldige landcode in.</string>
+    <string name="please_valid_phone_number">Voer een geldig telefoonnummer in.</string>
+    <string name="number_already_exist_in_list">Nummer komt al voor op de lijst.</string>
+    <!-- Tab Content Text -->
+    <string name="tab_text_guest">Gäste</string>
+    <string name="tab_text_metting">Konferenz</string>
+    <string name="tab_text_chat">Chats</string>
+    <!-- Home Cards -->
+    <string name="home_card_time_ago_in_mins">%1$d minuten geleden</string>
+    <string name="home_card_time_ago_in_min">%1$d minuten geleden</string>
+    <string name="home_card_time_ago_in_hrs">%1$d uur geleden</string>
+    <string name="home_card_time_ago_in_hr">an hour ago</string>
+    <string name="home_card_time_in_hour">binnen %1$d uur</string>
+    <string name="home_card_time_in_min">binnen %1$d minuten</string>
+    <string name="home_card_time_meetings_left">%1$d vergaderingen over</string>
+
+    <string name="home_card_time_one_meeting_left">1 vergadering over</string>
+    <string name="home_card_time_late">%1$d minuten te laat</string>
+    <string name="home_card_time_now">Nu</string>
+    <string name="home_card_time_future">%1$d minuten te vroeg</string>
+    <string name="home_card_time_upcoming">binnenkort</string>
+    <string name="home_card_time_in_hours">binnen %1$d uur</string>
+    <string name="home_card_time_in_mins">binnen %1$d minuten</string>
+    <string name="home_late_badge">late</string>
+
+    <string name="home_card_current_header_title">Nu deelnemen</string>
+    <string name="home_card_upcoming_header_title">Uw volgende vergadering</string>
+    <string name="home_card_wait_header_title">Er wachten mensen op u</string>
+    <string name="home_card_finished_header_title">Net afgelopen</string>
+    <string name="home_card_missed_calls_header_title">Meer gemiste oproepen</string>
+    <string name="home_card_missed_chats_header_title">Meer gemiste chats</string>
+
+    <string name="home_card_connect_calendat_btn_text">Uw agenda koppelen</string>
+    <string name="home_card_schedule_btn_text">Plannen</string>
+    <string name="home_card_view_btn_text">Weergave</string>
+    <string name="home_card_view_all_btn_text">Alles weergeven</string>
+    <string name="home_card_view_details_btn_text">Details bekijken</string>
+    <string name="home_card_follow_up_btn_text">Opvolgen</string>
+    <string name="home_card_join_btn_text">Doe mee</string>
+    <string name="home_card_decline_btn_text">Afwijzen</string>
+    <string name="home_card_message_bth_text">Bericht</string>
+    <string name="home_card_call_back_btn_text">Terugbellen</string>
+    <string name="home_card_contact_host_btn_text">Contact opnemen met gastheer</string>
+    <string name="home_card_contact_organizer_btn_text">Contact opnemen met organisator</string>
+
+
+
+    <!-- Meetings Fragment -->
+    <string name="hometab">Start</string>
+    <string name="meetingstab">Vergaderingen</string>
+    <string name="great_job">Geweldig!</string>
+    <string name="no_cards_msg">Geen komende vergaderingen, gemiste gesprekken of chats.</string>
+    <string name="connect_calendar">Uw agenda koppelen</string>
+
+    <string name="card_dismiss">Laten vertrekken</string>
+    <string name="msal_welcome_text">Welkom</string>
+    <string name="msal_welcome_msg">Dit tabblad bevat een samenvatting van uw komende vergaderingen, gemiste gesprekken en voicemailberichten en gemiste chats. Koppel uw agenda om aan de slag te gaan.</string>
+    <!-- Meetings Fragment -->
+    <string name="home_tab_meetings">Vergaderingen</string>
+    <string name="connect_to_calendar_or_search">Koppel uw agenda</string>
+    <string name="search_meeting_now"> of zoek naar een vergadering-URL om nu deel te nemen.</string>
+    <string name="no_agenda">Geen agenda</string>
+    <string name="my_meeting_room">Mijn Vergaderruimte</string>
+    <string name="agenda">Agenda</string>
+    <string name="today">Vandaag</string>
+    <string name="all_clear">Alles duidelijk!</string>
+    <string name="no_upcoming_meetings">Geen aankomende vergaderingen vandaag.</string>
+    <!--<string name="host_meeting_name">%1$s %2$s</string> Not used-->
+    <string name="host_meeting_room_url">%1$s</string>
+    <string name="copy_message">Gekopieerd!</string>
+    <string name="copy_message_universal">Vergader-URL gekopieerd!</string>
+    <string name="overflow_join_my_meeting">Deelnemen in mijn vergaderzaal</string>
+    <string name="overflow_copy_meeting_url">Mijn vergader-URL kopiëren</string>
+
+    <string name="mobile">Mobiel</string>
+    <string name="overflow_schedule_a_meeting">Een vergadering plannen</string>
+    <string name="all_day_meeting">De hele dag</string>
+    <string name="no_title">(geen titel)</string>
+    <string name="schedule_meeting_named_header">Neem deel aan vergadering %1$s via de volgende URL</string>
+    <string name="or_dial_in_using_phone_label">Of bel in met uw telefoon:</string>
+    <string name="access">Toegangsnummer</string>
+    <string name="guest_passcode">Toegangscode gast</string>
+    <string name="other_access_numbers">Andere toegangsnummers</string>
+    <string name="join_using_sip_header">Neemt u deel vanaf een systeem voor videoruimtes? Gebruik de volgende informatie</string>
+    <string name="sip_uri">SIP URI</string>
+    <string name="toll_number">Betaald</string>
+    <string name="international_toll_free">Internationaal gratis</string>
+    <string name="local_number">Lokaal</string>
+    <string name="lo_call_number">Lo-call</string>
+    <string name="h323_address_details">H323-adres</string>
+    <string name="no_calendar_app_available">Op dit apparaat is geen compatibele agendatoepassing geïnstalleerd. Probeer een andere agenda-app te installeren.</string>
+    <string name="open_with">Openen met …</string>
+
+    <!--calls strings-->
+    <!-- Not used yet
+    <string name="recent_calls">RECENT</string>
+    <string name="missed_calls">GEMIST</string>
+    <string name="voicemails">VOICEMAILS</string> -->
+    <string name ="enter_url_or_name">Voer een vergader-URL of -naam in</string>
+    <string name="main_menu_profile_title">Mijn profiel</string>
+    <!-- Not used yet
+    <string name="make_or_recieve_call">Start of ontvang een nieuw gesprek \nen het zal hier verschijnen</string>
+    <string name="missed_calls_appear_here">Gemiste oproepen verschijnen hier</string>
+    <string name="no_recent_calls">Geen recente gesprekken</string>
+    <string name="no_missed_calls">Geen gemiste oproepen</string> -->
+    <string name="no_audio">Geen audioverbinding gedetecteerd.</string>
+    <string name="connect_audio_title">AUDIO VERBINDEN</string>
+    <string name="unknown">Onbekend</string>
+    <string name="meeting_search_fragment">Zoekfragment voor vergadering</string>
+    <!--WaitingRoom-->
+    <string name="waiting_room_fragment">Wachtkamer</string>
+    <string name="waiting_room_meeting_name">de vergadering van %1$s</string>
+    <string name="waiting_room_title">Welkom bij</string>
+    <string name="waiting_room_message">U neemt deel aan de vergadering \nzodra de gastheer u toelaat.</string>
+    <string name="waiting_for_host">Wachten op de gastheer…</string>
+    <string name="please_contact_host">Neem contact op met de gastheer van de vergadering</string>
+    <string name="host_denied_waiting_message">De gastheer van deze vergadering heeft uw verzoek om toelating niet goedgekeurd. U kunt rechtstreeks met de gastheer contact opnemen voor meer informatie.</string>
+    <string name="meeting_ended_wait_state">De vergadering van %1$s is afgelopen</string>
+    <string name="meeting_locked">De vergadering van %1$s is momenteel vergrendeld</string>
+    <string name="meeting_is_locked_message">Neem contact op met de gastheer om deel te nemen</string>
+    <string name="meeting_full">De vergadering van %1$s is vol</string>
+
+    <!-- Meeting Security -->
+    <string name="meeting">vergadering</string>
+    <string name="meeting_security">Beveiliging van vergadering</string>
+    <string name="lock_room">Ruimte vergrendelen</string>
+    <string name="lock_room_description">Voorkom dat er extra gasten aan de vergadering deelnemen.</string>
+    <string name="enable_waiting_room">Wachtruimte inschakelen</string>
+    <string name="waiting_room_description">Laat gasten buiten de ruimte wachten totdat ze door de gastheer of een bevoegde gast worden toegelaten.</string>
+    <string name="restrict_sharing">Beperk het delen</string>
+    <string name="restrict_sharing_description">Sta alleen de gastheer en bevoegde gasten toe om inhoud te delen.</string>
+    <string name="no_waiting_room_guest_msg">Geen gasten in de wachtruimte</string>
+    <string name="host_waiting_room_no_guest">Er is niemand in de wachtruimte</string>
+    <string name="host_waiting_room_guest_count_msg">%1$d mensen in de wachtruimte</string>
+    <string name="admit">TOELATEN</string>
+    <string name="deny">WEIGEREN</string>
+    <string name="meeting_is_locked">De vergadering is vergrendeld</string>
+    <string name="host_turn_off_waiting_room_message">Er wachten mensen om deel te nemen. Schakel de wachtkamer uit om ze toe te laten.</string>
+    <string name="manage_waiting_room">WACHTRUIMTE BEHEREN</string>
+    <string name="waiting_room_toggle_failed">Kan wachtruimte-optie niet wijzigen. Probeer het opnieuw.</string>
+    <string name="one_person_in_waiting_room">1 persoon in de wachtruimte</string>
+    <string name="admit_all">Allen toelaten</string>
+    <string name="foxden_error_msg">U kunt geen webcams of schermen bekijken en delen. Probeer opnieuw aan de vergadering deel te nemen.</string>
+    <string name="presenting_webcams_count_lowercase"><![CDATA[%s webcams]]></string>
+    <string name="no_one">Niemand</string>
+    <string name="speaking_string">Spreken</string>
+    <string name="unable_to_get_audio_permission">Kan geen microfoonpermissie verkrijgen</string>
+    <string name="unable_to_get_camera_permission">Kan geen cameratoestemming verkrijgen</string>
+    <string name="guests">Gasten</string>
+    <string name= "dismiss_user"><![CDATA[Laten vertrekken %s]]></string>
+    <string name= "private_chat_with"><![CDATA[Privéchat met %s]]></string>
+    <string name= "unmute_user"><![CDATA[Dempen uit %s]]></string>
+    <string name= "demote_user"><![CDATA[Niveau verlagen %s]]></string>
+    <string name= "promote_user"><![CDATA[Aanbevelen %s]]></string>
+    <string name= "mute_user"><![CDATA[Dempen %s]]></string>
+    <string name="everyone">Iedereen</string>
+    <string name="no_message">Geen berichten</string>
+
+    <string name="how_would_rate">Hoe zou u uw ervaring met de vergader-applicatie beoordelen?</string>
+    <string name="positive_feedback_label">Het was fantastisch!</string>
+    <string name="negative_feedback_label">Het had beter gekund.</string>
+
+    <string name="how_can_improve">Hoe kunnen we ons product verbeteren?</string>
+    <string name="optional">(Optioneel)</string>
+    <string name="feedback">Feedback</string>
+    <string name="send_feedback">FEEDBACK VERZENDEN</string>
+    <string name="thank_you_for_feedback">Dank u voor uw feedback.</string>
+    <string name="overflow_share_my_meeting_url">Deel de URL van mijn vergadering</string>
+    <string name="please_join_the_video_meeting_at">Neem deel aan de videovergadering via</string>
+    <string name="or_dial_in_with_this_number">Of bel in met dit nummer</string>
+    <string name="invitation_to"><![CDATA[Uitnodiging voor %s]]></string>
+    <string name="guest_passcode_share_sheet">Toegangscode gast</string>
+    <string name="text_new_chat">Nieuwe chat</string>
+    <string name="guest_lowercase">Gast</string>
+    <string name="private_chat">Privéchat</string>
+    <string name="enable_private_chat">Privéchat inschakelen</string>
+    <string name="save">Opslaan</string>
+    <string name="notification_host_disable_private_chat">De gastheer heeft privéchat uitgeschakeld</string>
+    <string name="notification_for_host_on_chat_disable">Privéchat is uitgeschakeld voor al uw vergaderingen.</string>
+    <string name="no_participant_available_to_chat">Geen deelnemers beschikbaar om te chatten.</string>
+    <string name="add_conversation_error_msg">Er is iets verkeerd gegaan. Wacht even en probeer het dan opnieuw.</string>
+    <string name="private_chat_failure">Verzending van het bericht mislukt. Tik om het opnieuw te proberen</string>
+    <string name="msg_private_chat_restriction">Deelnemers die v6.44 of ouder gebruiken, kunnen geen privéchatberichten verzenden of ontvangen.</string>
+    <string name="offline_error_msg">De gebruiker is offline.</string>
+    <string name="text_offline">Offline</string>
+</resources>

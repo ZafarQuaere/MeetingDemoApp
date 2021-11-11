@@ -1,0 +1,16 @@
+{
+  "MeetingRoomGetResult": {
+    "AudioDetail": {
+      "ParticipantPassCode": "",
+      "phoneInformation": null,
+      "PrimaryAccessNumber": ""
+    },
+    "MeetingRoomDetail": {
+      "EnableVrc": false
+    },
+    "MeetingRoomId": 3122397,
+    "MeetingRoomUrls": {
+      "VRCUrl": ""
+    }
+  }
+}

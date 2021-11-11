@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_width="match_parent">
+
+    <ImageView
+        android:id="@+id/about_back_btn"
+        android:layout_width="@dimen/about_web_view_width_height"
+        android:layout_height="@dimen/about_web_view_width_height"
+        android:layout_marginStart="@dimen/about_web_view_margin_start"
+        android:layout_marginTop="@dimen/about_web_margin_top"
+        android:layout_marginBottom="@dimen/about_web_margin_bottom"
+        app:srcCompat="@drawable/ic_about_back_btn" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.pgi.convergencemeetings.utils.ConvergenceWebView
+            android:id="@+id/about_webview_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/about_webview_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+</LinearLayout>

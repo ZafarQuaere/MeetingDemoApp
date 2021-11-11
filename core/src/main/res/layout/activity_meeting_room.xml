@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_meeting_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/ll_active_talker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/active_talker_view" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/ll_participants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_meeting_controls"
+            android:layout_below="@id/ll_active_talker"
+            android:background="@color/white">
+
+            <include layout="@layout/participants_list_view" />
+        </FrameLayout>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/floatingSnackBar"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/ll_meeting_controls"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|bottom">
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <LinearLayout
+            android:id="@+id/ll_meeting_controls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <include layout="@layout/gm4_meeting_controls_view" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/shimmer_view_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_bg_color"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/btn_close_shimmer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="@dimen/margin_16_dp"
+            android:elevation="@dimen/margin_10_dp"
+            android:src="@drawable/connect_xbtn" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_place_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

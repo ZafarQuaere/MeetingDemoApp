@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="scrollingLocked" format="boolean" />
+    <declare-styleable name="ToggleIconTextButton">
+        <attr name="tit_text" format="string"/>
+        <attr name="tit_text_checked_color" format="color"/>
+        <attr name="tit_text_unchecked_color" format="color"/>
+        <attr name="tit_icon_checked" format="reference"/>
+        <attr name="tit_icon_unchecked" format="reference"/>
+        <attr name="tit_is_checked" format="boolean"/>
+        <attr name="tit_has_padding" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="Snackbar">
+        <attr name="direction" format="enum">
+            <enum name="toLeft" value="0"/>
+            <enum name="toTop" value="1"/>
+            <enum name="toRight" value="2"/>
+            <enum name="toBottom" value="3"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="RightRadioButton">
+        <attr name="title" format="string"/>
+        <attr name="description" format="string"/>
+        <attr name="checked" format="boolean"/>
+        <attr name="resource" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="AudioPlayerView">
+        <attr name="isTimingVisible" format="boolean"/>
+        <attr name="seekBarColor" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="MeetingSecurityOptionView">
+        <attr name="security_option_title" format="string" />
+        <attr name="security_option_description" format="string" />
+    </declare-styleable>
+</resources>
+

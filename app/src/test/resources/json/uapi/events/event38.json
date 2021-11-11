@@ -1,0 +1,21 @@
+{
+  "responseType": "MEETING_EVENTS",
+  "timestamp": "2018-10-17T05:20:11.512Z",
+  "meetingId": "8h1ngpbyst5w13nsq2nvc2rvr",
+  "since": 2421355,
+  "lastSeqNum": 2421356,
+  "events": [
+    {
+      "eventType": "CHAT_ADDED",
+      "timestamp": "2018-10-17T05:20:11.487Z",
+      "conversationId": "default",
+      "participantId": "3b8d8ov4idgmlkzn31leb2aq4",
+      "chatMsg": "Hello"
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://uapi.iad1.globalmeet.com/uapi/v1/room/meeting/events?since=2421356&timeout=50000&talkers=2018-10-17T05:20:06.470Z"
+    }
+  }
+}

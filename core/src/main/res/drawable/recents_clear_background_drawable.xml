@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:innerRadius="0dp"
+    android:shape="ring"
+    android:thicknessRatio="0"
+    android:useLevel="false">
+    <stroke android:width="3dp" android:color="@color/white" />
+    <solid android:color="@color/profile_pic_fill_color" />
+    <size  android:width="@dimen/profile_pic_height"
+        android:height="@dimen/profile_pic_width"/>
+</shape>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dial_in_list_item_bottom_margin">
+
+    <RadioButton
+        android:id="@+id/rb_num_checked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:checked="false"
+        android:theme="@style/RadioButtonStyleDialOut"
+        android:padding="@dimen/dialout_item_radio_padding" />
+
+    <TextView
+        android:id="@+id/tv_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/rb_num_checked"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="-38sp"
+        android:maxLines="1"
+        android:textColor="@color/dialer_digit_color"
+        android:textSize="@dimen/dialout_item_txt_size"
+        android:textStyle="normal"
+        android:paddingEnd="@dimen/dialout_item_padding"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

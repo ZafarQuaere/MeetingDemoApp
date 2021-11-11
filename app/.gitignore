@@ -1,0 +1,13 @@
+build
+.settings
+.gradle
+/*.iml
+/local.properties
+/artifactory.properties
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild

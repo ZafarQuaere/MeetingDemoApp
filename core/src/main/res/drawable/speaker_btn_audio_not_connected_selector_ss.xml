@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="false" android:state_enabled="false" android:state_pressed="false">
+        <layer-list>
+            <item android:height="@dimen/dp_38" android:width="@dimen/dp_38" >
+                <shape android:shape="oval">
+                    <solid android:color="@color/color_red"/>
+                </shape>
+            </item>
+            <item android:width="@dimen/dp_26" android:height="@dimen/dp_26" android:gravity="center_vertical|center_horizontal" android:drawable="@drawable/ic_speaker_audio_not_connected">
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_checked="true" android:state_enabled="true" android:state_pressed="true">
+        <layer-list>
+            <item android:height="@dimen/dp_38" android:width="@dimen/dp_38" >
+                <shape android:shape="oval">
+                    <solid android:color="@color/warn_color_800"/>
+                </shape>
+            </item>
+            <item android:width="@dimen/dp_26" android:height="@dimen/dp_26" android:gravity="center_vertical|center_horizontal" android:drawable="@drawable/ic_speaker_no_audio">
+            </item>
+        </layer-list>
+    </item>
+</selector>

@@ -1,0 +1,18 @@
+{
+  "responseType": "MEETING_EVENTS",
+  "timestamp": "2018-10-17T05:17:40.314Z",
+  "meetingId": "8h1ngpbyst5w13nsq2nvc2rvr",
+  "since": 2421340,
+  "lastSeqNum": 2421341,
+  "events": [
+    {
+      "eventType": "AUDIO_MEETING_ENDED",
+      "timestamp": "2018-10-17T05:17:39.419Z"
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://uapi.iad1.globalmeet.com/uapi/v1/room/meeting/events?since=2421341&timeout=50000&talkers=2018-10-17T05:17:39.420Z"
+    }
+  }
+}

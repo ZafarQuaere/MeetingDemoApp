@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/meetingSecurityAppBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/meeting_security_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/search_toolbar_bg"
+                android:padding="@dimen/margin_8_dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_dial_in_back"
+                    android:layout_width="@dimen/toolbarIconsSize"
+                    android:layout_height="@dimen/toolbarIconsSize"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/margin_10_dp"
+                    android:src="@drawable/ic_arrow_back" />
+
+                <TextView
+                    android:id="@+id/tv_dial_in_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="@dimen/margin_28_dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:lineSpacingExtra="@dimen/margin_8sp"
+                    android:paddingStart="@dimen/margin_22_dp"
+                    android:text="@string/meeting"
+                    android:textColor="@color/rightMessageTextGray"
+                    android:textSize="@dimen/margin_20sp"
+                    android:textStyle="normal"
+                    tools:ignore="RtlSymmetry" />
+
+            </androidx.appcompat.widget.Toolbar>
+            <View
+                android:id="@+id/gradient"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gradient_height"
+                android:alpha="0.4"
+                android:background="@drawable/toolbar_gradient"
+                android:elevation="@dimen/margin_5_dp" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_25dp"
+        android:layout_marginRight="@dimen/margin_25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_choose_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/margin_5_dp"
+            android:text="@string/choose_dial_in_number"
+            android:textColor="@color/rightMessageTextGray"
+            android:textSize="@dimen/margin_25sp"
+            android:textStyle="normal"
+            tools:ignore="RtlSymmetry" />
+
+        <RelativeLayout
+            android:id="@+id/rl_dialin_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_72_dp"
+            android:layout_marginTop="@dimen/margin_20_dp"
+            android:background="@color/card_container_bootom_bar_bg">
+
+            <TextView
+                android:id="@+id/primary_access_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/roboto"
+                android:lineSpacingExtra="@dimen/margin_8sp"
+                android:paddingStart="@dimen/margin_16_dp"
+                android:text=""
+                android:textColor="@color/grayDark"
+                android:textSize="@dimen/margin_20sp"
+                android:textStyle="normal"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/dial_in_next_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="4dp"
+                android:background="@color/transparent"
+                android:padding="@dimen/margin_10_dp"
+                android:src="@drawable/chevron_right" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_dial_in"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/margin_20_dp"
+            android:background="@color/brand_color_500"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:text="@string/dial_in_btn_txt"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/margin_16sp">
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_donot_connect_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:layout_marginBottom="@dimen/height_52_dp"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif-medium"
+        android:lineSpacingExtra="@dimen/margin_8sp"
+        android:paddingStart="@dimen/margin_10_dp"
+        android:text="@string/do_not_connect_audio"
+        android:textColor="@color/color_red"
+        android:textSize="@dimen/margin_16sp"
+        android:textStyle="normal"
+        tools:ignore="RtlSymmetry" />
+</RelativeLayout>

@@ -1,0 +1,5 @@
+{
+  "eventType": "MEETING_INACTIVITY_WARNING",
+  "timestamp": "2018-10-10T18:43:11.677Z",
+  "minutesToAcknowledge": 15
+}

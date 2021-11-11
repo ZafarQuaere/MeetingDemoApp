@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.pgi.convergencemeetings.tour.ui.EnterUrlFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context="com.pgi.convergencemeetings.tour.ui.EnterUrlFragment">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/enter_url_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp">
+
+            <ImageView
+                android:id="@+id/img_gm_icon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:adjustViewBounds="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                app:srcCompat="@mipmap/app_icon" />
+
+            <TextView
+                android:id="@+id/tv_welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_gm_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/welcome_to_imeet"
+                android:textColor="@color/brand_color_300"
+                android:textSize="26sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tv_enter_url_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv_welcome"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:letterSpacing="-0.02"
+                android:lineSpacingExtra="4sp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:text="@string/tap_a_meeting_link"
+                android:textColor="@color/brand_color_300"
+                android:textSize="17sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/tv_enter_url"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/tv_enter_url_intro"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_corner_text_field"
+                android:fontFamily="sans-serif"
+                android:hint="@string/enter_url_search_hint"
+                android:imeOptions="actionSend"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/margin_20_dp"
+                android:paddingRight="@dimen/margin_20_dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/search_box_text_color"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/invalid_url_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_enter_url"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_8_dp"
+                android:layout_marginBottom="@dimen/margin_8_dp"
+                android:text="@string/enter_invalid_url"
+                android:textColor="@color/enter_invalid_url"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:visibility="invisible" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/invalid_url_text"
+                android:layout_centerHorizontal="true">
+
+                <Button
+                    android:id="@+id/btn_enter_url_join_meeting"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/rounded_corner_continue_btn"
+                    android:contentDescription="@string/enter_url_join_button"
+                    android:gravity="center"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:shadowColor="@color/transparent_bg_color"
+                    android:text="@string/enter_url_join_button"
+                    android:textAlignment="gravity"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <ProgressBar
+                    android:id="@+id/progress_enter_url"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center"
+                    android:elevation="7dp"
+                    android:indeterminateDrawable="@drawable/progress_bar"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/menu_help_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_horizontal"
+        app:srcCompat="@drawable/menu_help_icon" />
+    <Button
+        android:id="@+id/img_skip_btn"
+        android:layout_width="170dp"
+        android:layout_height="59dp"
+        android:text="@string/skip_enter_url"
+        android:textColor="@color/dark_grey"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="8dp"
+        android:textAllCaps="false"
+        style="?android:attr/borderlessButtonStyle"
+        android:drawableRight="@drawable/ic_login_skip_btn"
+        />
+</RelativeLayout>

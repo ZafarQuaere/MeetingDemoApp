@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 3.5.3" client="gradle" variant="prodDebug" version="3.5.3">
+
+    <issue
+        id="StaticFieldLeak"
+        message="Do not place Android context classes in static fields (static reference to `IdentityServiceManager` which has field `mContext` pointing to `Context`); this is a memory leak"
+        errorLine1="    private static IdentityServiceManager instanceManager = null;"
+        errorLine2="            ~~~~~~">
+        <location
+            file="src/main/java/com/pgi/network/IdentityServiceManager.java"
+            line="24"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="StaticFieldLeak"
+        message="Do not place Android context classes in static fields; this is a memory leak"
+        errorLine1="    private static Context mContext;"
+        errorLine2="            ~~~~~~">
+        <location
+            file="src/main/java/com/pgi/network/IdentityServiceManager.java"
+            line="26"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="StaticFieldLeak"
+        message="Do not place Android context classes in static fields (static reference to `LoggerServiceManager` which has field `mContext` pointing to `Context`); this is a memory leak"
+        errorLine1="    private static LoggerServiceManager instanceManager = null;"
+        errorLine2="            ~~~~~~">
+        <location
+            file="src/main/java/com/pgi/network/LoggerServiceManager.java"
+            line="23"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="StaticFieldLeak"
+        message="Do not place Android context classes in static fields; this is a memory leak"
+        errorLine1="    private static Context mContext;"
+        errorLine2="            ~~~~~~">
+        <location
+            file="src/main/java/com/pgi/network/LoggerServiceManager.java"
+            line="25"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="StaticFieldLeak"
+        message="Do not place Android context classes in static fields (static reference to `PgiWebServiceManager` which has field `mContext` pointing to `Context`); this is a memory leak"
+        errorLine1="    private static PgiWebServiceManager instanceManager = null;"
+        errorLine2="            ~~~~~~">
+        <location
+            file="src/main/java/com/pgi/network/PgiWebServiceManager.java"
+            line="24"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="StaticFieldLeak"
+        message="Do not place Android context classes in static fields; this is a memory leak"
+        errorLine1="    private static Context mContext;"
+        errorLine2="            ~~~~~~">
+        <location
+            file="src/main/java/com/pgi/network/PgiWebServiceManager.java"
+            line="26"
+            column="13"/>
+    </issue>
+
+</issues>

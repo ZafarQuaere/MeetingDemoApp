@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data>
+    <import type="android.view.View" />
+    <variable
+        name="profilePic"
+        type="String" />
+    <variable
+        name="initials"
+        type="String" />
+    <variable
+        name="fullName"
+        type="String" />
+    <variable
+        name="email"
+        type="String" />
+  </data>
+
+  <androidx.coordinatorlayout.widget.CoordinatorLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <androidx.appcompat.widget.LinearLayoutCompat
+          android:id="@+id/drawer_profile_avatar"
+          android:layout_width="match_parent"
+          android:layout_height="128dp"
+          android:background="@drawable/material_v_3_blue"
+          android:gravity="start"
+          android:orientation="vertical"
+          android:padding="@dimen/dp_16">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/back_arrow_btn"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:src="@drawable/ic_arrow_back_white"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_72"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp_16"
+            android:paddingBottom="@dimen/dp_16">
+
+          <de.hdodenhof.circleimageview.CircleImageView
+              android:id="@+id/drawer_avatar"
+              android:layout_width="@dimen/dp_40"
+              android:layout_height="@dimen/dp_40"
+              android:contentDescription="@string/activity_tab_toolbar_avatar"
+              android:src="@{profilePic}"
+              android:visibility="@{profilePic != null ? View.VISIBLE : View.GONE}"
+              app:civ_border_color="#FF000000"
+              app:civ_border_width="0dp" />
+
+          <androidx.appcompat.widget.AppCompatTextView
+              android:id="@+id/drawer_initials"
+              android:layout_width="@dimen/dp_40"
+              android:layout_height="@dimen/dp_40"
+              android:background="@drawable/oval"
+              android:backgroundTint="@color/placeholder_gradient_middle"
+              android:fontFamily="sans-serif-medium"
+              android:gravity="center"
+              android:letterSpacing="-0.1"
+              android:text="@{initials}"
+              android:textColor="#00aeef"
+              android:textSize="22sp"
+              android:textStyle="normal"
+              android:visibility="@{profilePic == null ? View.VISIBLE : View.GONE}" />
+
+          <androidx.appcompat.widget.LinearLayoutCompat
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_gravity="center_vertical"
+              android:paddingStart="@dimen/dp_16"
+              android:paddingEnd="@dimen/dp_16">
+
+            <TextView
+                android:id="@+id/drawer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="@dimen/space_4sp"
+                android:text="@{fullName}"
+                android:textColor="@color/white"
+                android:textSize="@dimen/margin_16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/drawer_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="6sp"
+                android:textColor="#b3ffffff"
+                android:textSize="@dimen/text_14_sp"
+                android:textStyle="normal"
+                android:visibility="gone"/>
+
+          </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+      </androidx.appcompat.widget.LinearLayoutCompat>
+
+      <androidx.appcompat.widget.LinearLayoutCompat
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp_72"
+          android:orientation="vertical"
+          android:padding="@dimen/margin_16_dp"
+          android:background="@color/bg_home">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="4sp"
+            android:text="@{email}"
+            android:textColor="#de000000"
+            android:textSize="@dimen/margin_16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="6sp"
+            android:text="@string/email"
+            android:textColor="#8a000000"
+            android:textSize="@dimen/text_14_sp"
+            android:textStyle="normal" />
+
+      </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+  </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/navigation_header_height"
+    android:orientation="horizontal"
+    android:layout_gravity="center_vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/menu_profile_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/margin_13_dp"
+        android:background="@drawable/recents_clear_background_drawable"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_name_initials"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/margin_13_dp"
+        android:textColor="@color/profile_pic_text_color"
+        android:background="@drawable/navigation_drawer_circle_drawable"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginStart="@dimen/margin_13_dp"
+        android:layout_marginEnd="@dimen/margin_13_dp">
+
+        <TextView
+            android:id="@+id/tv_full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="normal"
+            android:textColor="@color/profile_pic_text_color"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/tv_email_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="@color/profile_pic_text_color"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/tv_sign_out"
+            android:layout_width="@dimen/signout_button_width"
+            android:layout_height="@dimen/signout_button_height"
+            android:background="@drawable/rounded_corner"
+            android:fontFamily="sans-serif-medium"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:text="@string/sign_out"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin_5_dp"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:maxLines="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

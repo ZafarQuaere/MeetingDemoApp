@@ -1,0 +1,11 @@
+{
+  "responseType": "JOIN_MEETING",
+  "timestamp": "2018-10-10T18:43:02.333Z",
+  "joinStatus": "WAIT_TIMEOUT",
+  "waitStartTime": "2018-10-10T18:33:02.324Z",
+  "_links": {
+    "joinMeeting": {
+      "href": "https://uapi.globalmeet.com/uapi/v1/room/meeting/participants"
+    }
+  }
+}

@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 3.5.3" client="gradle" variant="prodDebug" version="3.5.3">
+
+    <issue
+        id="CheckResult"
+        message="The result of `subscribe` is not used"
+        errorLine1="                elasticSearchRepository.getMeetingRoomInfoFromFurl(searchData, false).subscribe(result -> {"
+        errorLine2="                ^">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/fragments/EnterUrlFragment.java"
+            line="319"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="                        if (phoneType != null &amp;&amp; !phoneType.toLowerCase().contains(AppConstants.VOIP_CONSTANT)) {"
+        errorLine2="                                                            ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/utils/ClientInfoDaoUtils.java"
+            line="168"
+            column="61"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="                            if (phoneType != null &amp;&amp; !phoneType.toLowerCase().contains(AppConstants.VOIP_CONSTANT)) {"
+        errorLine2="                                                                ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/utils/ClientInfoResultCache.java"
+            line="281"
+            column="65"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toUpperCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="                        StringBuilder japaneseInitials = new StringBuilder(user.getInitials().toUpperCase())"
+        errorLine2="                                                                                              ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/fragments/ContentPresentationFragment.java"
+            line="600"
+            column="95"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="                        if(values.toLowerCase().contains(&quot;domain&quot;)) {"
+        errorLine2="                                  ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/fragments/ContentPresentationFragment.java"
+            line="935"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toUpperCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="            holder.tvPhoneNumber.setText(phoneNumber.toUpperCase());"
+        errorLine2="                                                     ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/adapters/DialInNumberAdapter.java"
+            line="66"
+            column="54"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toUpperCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="            holder.tvPhoneNumber.setText(phoneNumber.toUpperCase());"
+        errorLine2="                                                     ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/adapters/DialOutNumberAdapter.java"
+            line="70"
+            column="54"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="        if (searchResult.firstName != null &amp;&amp; searchResult.firstName.toLowerCase().contains(searchParam.toLowerCase())"
+        errorLine2="                                                                     ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/search/ui/JoinFragmentViewModel.kt"
+            line="177"
+            column="70"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="        if (searchResult.firstName != null &amp;&amp; searchResult.firstName.toLowerCase().contains(searchParam.toLowerCase())"
+        errorLine2="                                                                                                        ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/search/ui/JoinFragmentViewModel.kt"
+            line="177"
+            column="105"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="            || searchResult.lastName != null &amp;&amp; searchResult.lastName.toLowerCase().contains(searchParam.toLowerCase())"
+        errorLine2="                                                                      ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/search/ui/JoinFragmentViewModel.kt"
+            line="178"
+            column="71"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="            || searchResult.lastName != null &amp;&amp; searchResult.lastName.toLowerCase().contains(searchParam.toLowerCase())"
+        errorLine2="                                                                                                         ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/search/ui/JoinFragmentViewModel.kt"
+            line="178"
+            column="106"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="            || searchResult.furl != null &amp;&amp; searchResult.furl.toLowerCase().contains(searchParam.toLowerCase())"
+        errorLine2="                                                              ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/search/ui/JoinFragmentViewModel.kt"
+            line="179"
+            column="63"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="            || searchResult.furl != null &amp;&amp; searchResult.furl.toLowerCase().contains(searchParam.toLowerCase())"
+        errorLine2="                                                                                                 ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/search/ui/JoinFragmentViewModel.kt"
+            line="179"
+            column="98"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="            || fullName != null &amp;&amp; fullName.toLowerCase().contains(searchParam.toLowerCase())) {"
+        errorLine2="                                            ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/search/ui/JoinFragmentViewModel.kt"
+            line="180"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="            || fullName != null &amp;&amp; fullName.toLowerCase().contains(searchParam.toLowerCase())) {"
+        errorLine2="                                                                               ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/search/ui/JoinFragmentViewModel.kt"
+            line="180"
+            column="80"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toUpperCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="                profileInitialsView.setText(nameInitials.toUpperCase());"
+        errorLine2="                                                         ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/adapters/JoinMeetingsAdapter.java"
+            line="82"
+            column="58"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toUpperCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="                profileInitialsView.setText(nameInitials.toUpperCase());"
+        errorLine2="                                                         ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/search/ui/JoinMeetingsAdapter.java"
+            line="89"
+            column="58"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="      if (user != null &amp;&amp; content.dynamicMetaData.action?.toLowerCase() == AppConstants.ACTION_START.toLowerCase()) {"
+        errorLine2="                                                          ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/viewmodels/MeetingEventViewModel.kt"
+            line="473"
+            column="59"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="      if (user != null &amp;&amp; content.dynamicMetaData.action?.toLowerCase() == AppConstants.ACTION_START.toLowerCase()) {"
+        errorLine2="                                                                                                     ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/viewmodels/MeetingEventViewModel.kt"
+            line="473"
+            column="102"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="      if (user != null &amp;&amp; content.dynamicMetaData.action?.toLowerCase() == AppConstants.ACTION_STOP.toLowerCase()) {"
+        errorLine2="                                                          ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/viewmodels/MeetingEventViewModel.kt"
+            line="477"
+            column="59"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="      if (user != null &amp;&amp; content.dynamicMetaData.action?.toLowerCase() == AppConstants.ACTION_STOP.toLowerCase()) {"
+        errorLine2="                                                                                                    ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/viewmodels/MeetingEventViewModel.kt"
+            line="477"
+            column="101"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="    return when (user.roomRole?.toLowerCase()) {"
+        errorLine2="                                ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/viewmodels/MeetingEventViewModel.kt"
+            line="548"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="      AppConstants.HOST, AppConstants.HOST.toLowerCase() -> {"
+        errorLine2="                                           ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/viewmodels/MeetingEventViewModel.kt"
+            line="549"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="      AppConstants.PRESENTER, AppConstants.PRESENTER.toLowerCase() -> {"
+        errorLine2="                                                     ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/viewmodels/MeetingEventViewModel.kt"
+            line="556"
+            column="54"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toUpperCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="                    holder.mNameInitials.setText(CommonUtils.formatJapaneseInitials(nameInitials.toUpperCase()));"
+        errorLine2="                                                                                                 ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/adapters/MeetingParticipantsAdapter.java"
+            line="70"
+            column="98"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toUpperCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="                    holder.mNameInitials.setText(nameInitials.toUpperCase());"
+        errorLine2="                                                              ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/adapters/MeetingParticipantsAdapter.java"
+            line="73"
+            column="63"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="                    emailIdView.setText(emailId.toLowerCase());"
+        errorLine2="                                                ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/adapters/NavigationDrawerAdapter.java"
+            line="98"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toUpperCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="        PIAWebSocketEventType eventType = PIAWebSocketEventType.valueOf(PIAWebSocketEventType.class, event.toUpperCase());"
+        errorLine2="                                                                                                           ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/piawebsocket/PIAWebSocketWrapper.java"
+            line="72"
+            column="108"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toUpperCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="                nameInitialsView.setText(nameInitials.toUpperCase());"
+        errorLine2="                                                      ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/adapters/ParticipantItemAdapter.java"
+            line="73"
+            column="55"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="                mMeetingUserViewModel.getAuthResponse().getRoomRole().toLowerCase().equals(AppConstants.HOST.toLowerCase())"
+        errorLine2="                                                                      ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/activities/WebMeetingActivity.java"
+            line="635"
+            column="71"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="                mMeetingUserViewModel.getAuthResponse().getRoomRole().toLowerCase().equals(AppConstants.HOST.toLowerCase())"
+        errorLine2="                                                                                                             ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/activities/WebMeetingActivity.java"
+            line="635"
+            column="110"/>
+    </issue>
+
+    <issue
+        id="ShowToast"
+        message="Toast created but not shown: did you forget to call `show()` ?"
+        errorLine1="        mContentPresentationNotificationToast = Toast.makeText(context, spanned, Toast.LENGTH_SHORT);"
+        errorLine2="                                                ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/fragments/ContentPresentationFragment.java"
+            line="1202"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="ShowToast"
+        message="Toast created but not shown: did you forget to call `show()` ?"
+        errorLine1="    mContentPresentationNotificationToast = Toast.makeText(this, spanned, Toast.LENGTH_LONG);"
+        errorLine2="                                            ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/activities/WebMeetingActivity.java"
+            line="1973"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `resizeableActivity` is only used in API level 24 and higher (current min is 23)"
+        errorLine1="        android:resizeableActivity=&quot;false&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="31"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `supportsPictureInPicture` is only used in API level 24 and higher (current min is 23)"
+        errorLine1="        android:supportsPictureInPicture=&quot;false&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="32"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="SetJavaScriptEnabled"
+        message="Using `setJavaScriptEnabled` can introduce XSS vulnerabilities into your application, review carefully."
+        errorLine1="        webSettings.setJavaScriptEnabled(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/activities/AboutWebViewActivity.java"
+            line="53"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="StaticFieldLeak"
+        message="Do not place Android context classes in static fields (static reference to `ApplicationDao` which has field `context` pointing to `Context`); this is a memory leak"
+        errorLine1="    @Nullable private static ApplicationDao instance;"
+        errorLine2="                      ~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/greendao/ApplicationDao.java"
+            line="321"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="StaticFieldLeak"
+        message="Do not place Android context classes in static fields (static reference to `MeetingRoomPresenter` which has field `mContext` pointing to `Context`); this is a memory leak"
+        errorLine1="    private static MeetingRoomPresenter mMeetingRoomHook;"
+        errorLine2="            ~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/utils/ConferenceManager.java"
+            line="14"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="StaticFieldLeak"
+        message="This `AsyncTask` class should be static or leaks might occur (com.pgi.convergencemeetings.meeting.gm5.ui.WebMeetingActivity.UpdateRecentsTask)"
+        errorLine1="  private class UpdateRecentsTask extends AsyncTask&lt;String, Void, String> {"
+        errorLine2="                ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/activities/WebMeetingActivity.java"
+            line="2298"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="StaticFieldLeak"
+        message="This `AsyncTask` class should be static or leaks might occur (com.pgi.convergencemeetings.meeting.gm5.ui.WebMeetingActivity.UpdateDialOutPhoneTask)"
+        errorLine1="  private class UpdateDialOutPhoneTask extends AsyncTask&lt;String, Void, String> {"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/activities/WebMeetingActivity.java"
+            line="2307"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (975 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector."
+        errorLine1="      android:pathData=&quot;M18.506,12c0,-0.306 -0.027,-0.594 -0.063,-0.882l1.9,-1.485a0.454,0.454 0,0 0,0.107 -0.576l-1.8,-3.114a0.452,0.452 0,0 0,-0.549 -0.198l-2.24,0.9a6.575,6.575 0,0 0,-1.522 -0.882l-0.342,-2.385a0.439,0.439 0,0 0,-0.44 -0.378h-3.6a0.439,0.439 0,0 0,-0.442 0.378l-0.342,2.385a6.915,6.915 0,0 0,-1.52 0.882l-2.242,-0.9a0.439,0.439 0,0 0,-0.549 0.198l-1.8,3.114a0.444,0.444 0,0 0,0.108 0.576l1.9,1.485a7.138,7.138 0,0 0,-0.064 0.882c0,0.297 0.027,0.594 0.063,0.882L3.17,14.367a0.454,0.454 0,0 0,-0.108 0.576l1.8,3.114c0.108,0.198 0.351,0.27 0.55,0.198l2.24,-0.9c0.468,0.36 0.972,0.657 1.521,0.882l0.342,2.385a0.439,0.439 0,0 0,0.441 0.378h3.6a0.439,0.439 0,0 0,0.441 -0.378l0.342,-2.385a6.915,6.915 0,0 0,1.521 -0.882l2.241,0.9c0.207,0.081 0.441,0 0.55,-0.198l1.8,-3.114a0.454,0.454 0,0 0,-0.109 -0.576l-1.899,-1.485c0.036,-0.288 0.063,-0.576 0.063,-0.882zM11.756,15.15A3.153,3.153 0,0 1,8.606 12a3.153,3.153 0,0 1,3.15 -3.15,3.153 3.153,0 0,1 3.15,3.15 3.153,3.153 0,0 1,-3.15 3.15z&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable/ic_settings.xml"
+            line="7"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="ViewHolder"
+        message="Unconditional layout inflation from view adapter: Should use View Holder pattern (use recycled view passed into this method as the second parameter) for smoother scrolling"
+        errorLine1="    View root = LayoutInflater.from(mContext).inflate(mLayoutResource, null, false);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/adapters/HostMenuControlsAdapter.java"
+            line="61"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.navigation.agenda` appears to be unused"
+        errorLine1="&lt;navigation xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/navigation/agenda.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.menu.bottom_nav` appears to be unused"
+        errorLine1="&lt;menu xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="src/main/res/menu/bottom_nav.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.bottom_navigation_colors` appears to be unused"
+        errorLine1="&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/bottom_navigation_colors.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.baseToolbarHeight` appears to be unused"
+        errorLine1="  &lt;dimen name=&quot;baseToolbarHeight&quot;>56dp&lt;/dimen>"
+        errorLine2="         ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="3"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.toolbarHeaderSize` appears to be unused"
+        errorLine1="  &lt;dimen name=&quot;toolbarHeaderSize&quot;>20sp&lt;/dimen>"
+        errorLine2="         ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="4"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.defaultAvatarSize` appears to be unused"
+        errorLine1="  &lt;dimen name=&quot;defaultAvatarSize&quot;>24dp&lt;/dimen>"
+        errorLine2="         ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="6"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.defaultAvatarInitialSize` appears to be unused"
+        errorLine1="  &lt;dimen name=&quot;defaultAvatarInitialSize&quot;>24sp&lt;/dimen>"
+        errorLine2="         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="7"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.fragment_recentmeetings` appears to be unused"
+        errorLine1="&lt;layout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/layout/fragment_recentmeetings.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.navigation.home` appears to be unused"
+        errorLine1="&lt;navigation xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/navigation/home.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_account_circle` appears to be unused"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/ic_account_circle.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_calendar` appears to be unused"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/ic_calendar.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_copy` appears to be unused"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/ic_copy.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_feedback` appears to be unused"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/ic_feedback.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_home_tab` appears to be unused"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/ic_home_tab.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_info` appears to be unused"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/ic_info.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_meet` appears to be unused"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/ic_meet.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_menu` appears to be unused"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/ic_menu.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_menu_white` appears to be unused"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/ic_menu_white.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_search` appears to be unused"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/ic_search.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_search_white` appears to be unused"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/ic_search_white.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_settings` appears to be unused"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/ic_settings.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_share` appears to be unused"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/ic_share.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.menu.nav_drawer` appears to be unused"
+        errorLine1="&lt;menu xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="src/main/res/menu/nav_drawer.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.nav_header_background` appears to be unused">
+        <location
+            file="src/main/res/drawable/nav_header_background.webp"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.navigation_activity_tab` appears to be unused"
+        errorLine1="&lt;layout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/layout/navigation_activity_tab.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.rounded_edge` appears to be unused"
+        errorLine1="&lt;shape xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/rounded_edge.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.toolbarWithBackArrow` appears to be unused"
+        errorLine1="  &lt;style name=&quot;toolbarWithBackArrow&quot;>"
+        errorLine2="         ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/styles.xml"
+            line="3"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/nav_header_background.webp` in densityless folder">
+        <location
+            file="src/main/res/drawable/nav_header_background.webp"/>
+    </issue>
+
+    <issue
+        id="AppLinkUrlError"
+        message="Host matching is case sensitive and should only use lower-case characters"
+        errorLine1="                    android:host=&quot;launchRoom&quot;"
+        errorLine2="                                  ~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="142"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="Custom view ``EditText`` has `setOnTouchListener` called on it but does not override `performClick`"
+        errorLine1="        edEnterUrlText.setOnTouchListener(new View.OnTouchListener() {"
+        errorLine2="        ^">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/fragments/EnterUrlFragment.java"
+            line="380"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="`onTouch` should call `View#performClick` when a click is detected"
+        errorLine1="            public boolean onTouch(View v, MotionEvent event) {"
+        errorLine2="                           ~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/fragments/EnterUrlFragment.java"
+            line="382"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="Custom view ``RecyclerView`` has `setOnTouchListener` called on it but does not override `performClick`"
+        errorLine1="      mRecentMeetingsRecyclerView.setOnTouchListener({ view, motionEvent ->"
+        errorLine2="      ^">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/search/ui/JoinMeetingFragment.kt"
+            line="186"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="        tvAppVersion.setText(getResources().getString(R.string.app_version) + AppConstants.BLANK_SPACE + CommonUtils.getAppVersion(new WeakReference&lt;Context>(this)));"
+        errorLine2="                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/activities/AboutActivity.java"
+            line="48"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="            tvClientId.setText(clientIdMsg + AppConstants.BLANK_SPACE + mClientId);"
+        errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/pgi/convergencemeetings/activities/SettingActivity.java"
+            line="73"
+            column="32"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingStart` you should probably also define `paddingEnd` for right-to-left symmetry"
+        errorLine1="      android:paddingStart=&quot;@dimen/margin_16_dp&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/drawer_header_layout.xml"
+            line="24"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingEnd` you should probably also define `paddingStart` for right-to-left symmetry"
+        errorLine1="                android:paddingEnd=&quot;@dimen/margin_7_dp&quot;/>"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/search_activity.xml"
+            line="66"
+            column="17"/>
+    </issue>
+
+</issues>

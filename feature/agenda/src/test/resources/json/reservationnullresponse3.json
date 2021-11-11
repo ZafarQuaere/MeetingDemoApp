@@ -1,0 +1,52 @@
+{
+  "ReservationGetResult": {
+    "Errors": [],
+    "Reservation": {
+      "ClientId": "70066634",
+      "ConfId": "154326818",
+      "PassCodes": {
+        "ListenOnlyPassCode": "2705386360",
+        "ParticipantPassCode": null
+      },
+      "PhoneNumbers": [
+        {
+          "CustomLocation": "USA",
+          "Location": "USA, Colorado, Colorado Springs",
+          "LocationCode": "USACOS",
+          "Number": "1-605-475-5604",
+          "PhoneType": "Toll"
+        },
+        {
+          "CustomLocation": "USA",
+          "Location": "USA, Colorado, Colorado Springs",
+          "LocationCode": "USACOS",
+          "Number": "1-719-457-6209",
+          "PhoneType": "International toll free"
+        },
+        {
+          "CustomLocation": "USA",
+          "Location": "USA, Colorado, Colorado Springs",
+          "LocationCode": "USACOS",
+          "Number": "1-719-457-6210",
+          "PhoneType": "Local"
+        },
+        {
+          "CustomLocation": "USA",
+          "Location": "USA, Colorado, Colorado Springs",
+          "LocationCode": "USACOS",
+          "Number": "1-719-457-6209",
+          "PhoneType": "Lo-call"
+        },
+        {
+          "CustomLocation": "USA",
+          "Location": "USA, Colorado, Colorado Springs",
+          "LocationCode": "USACOS",
+          "Number": "1-719-457-6210",
+          "PhoneType": "Other"
+        }
+      ],
+      "ReservationDetail": null,
+      "SIPNumbers": null
+    }
+  }
+}

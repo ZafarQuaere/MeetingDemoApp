@@ -1,0 +1,10 @@
+{
+  "responseType": "JOIN_MEETING",
+  "timestamp": "2018-10-10T18:43:00.841Z",
+  "joinStatus": "CAPACITY",
+  "_links": {
+    "joinMeeting": {
+      "href": "https://uapi.globalmeet.com/uapi/v1/room/meeting/participants"
+    }
+  }
+}

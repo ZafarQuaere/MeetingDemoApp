@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_52_dp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="@dimen/margin_6_dp"
+    android:layout_marginTop="@dimen/margin_6_dp"
+    android:gravity="center">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image_part_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/recents_clear_background_drawable"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/tv_name_initials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/recent_meetings_circle_drawable"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:textColor="@color/profile_pic_text_color"
+        android:textSize="@dimen/text_size_participant_circle"
+        android:textStyle="bold"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tv_participant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/margin_36_dp"
+        android:layout_marginStart="@dimen/margin_12_dp"
+        android:layout_toEndOf="@+id/tv_name_initials"
+        android:drawableEnd="@drawable/hostindicator_connecting"
+        android:drawablePadding="@dimen/margin_16_dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/grey"
+        android:textSize="22sp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/iv_mute_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/margin_8_dp"
+        android:src="@drawable/audiomeeting_muted" />
+
+</RelativeLayout>

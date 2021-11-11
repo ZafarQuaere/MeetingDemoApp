@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#33000000</color>
+    <color name="profile_pic_fill_color">#26ced4e2</color>
+    <color name="profile_pressed_fill_color">#EBEEF3</color>
+
+    <color name="shimmer_gradient_1">#00FFFFFF</color>
+    <color name="shimmer_gradient_2">#E2FFFFFF</color>
+    <color name="shimmer_gradient_3">#00FFFFFF</color>
+
+    <color name="profile_initial_bg_tint">#41dde2e3</color>
+    <color name="profile_pic_text_color">#93abbd</color>
+    <color name="call_me_dial_in_btn_text_color">#00AEEF</color>
+    <color name="dont_connect_audio_text_color">#FD4B62</color>
+    <color name="tour_page_text">#7F94A3</color>
+    <color name="profile_pic_border_color">#ced4e2</color>
+    <color name="search_box_text_color">#ccd4d9</color>
+    <color name="primary_color_500">#00aeef</color>
+    <color name="tab_host_bg">#41dee2e4</color>
+    <color name="tab_host_bg_color">#F1F2F4</color>
+    <color name="no_data_text_color">#dbe3e8</color>
+    <color name="enter_invalid_url">#d0011b</color>
+
+    <color name="white">#ffffff</color>
+    <color name="grey">#28282a</color>
+    <color name="color_red">#fd4b62</color>
+    <color name="disabled_gray">#ccd3d9</color>
+    <color name="meeting_room_active_speaker_bg">#f5f6f9</color>
+    <color name="transparent_bg_color">#F3FFFFFF</color>
+    <color name="dialog_text_meeting_room">#4d4d4d</color>
+    <color name="line_saperator_dialog">#979797</color>
+    <color name="dialog_btn_text_color">#4a4a4a</color>
+    <color name="cancel_btn_text_color">#666666</color>
+    <color name="dark_grey">#92abbd</color>
+    <color name="dark_grey_ss">#383838</color>
+    <color name="off_white">#E6ffffff</color>
+    <color name="active_talker_bg">#f5f6f9</color>
+    <color name="brand_color_300">#ff9f3b</color>
+    <color name="alert_title_color">#03988a</color>
+    <color name="text_field_grey_background">#f5f6f9</color>
+    <color name="support_dialog_positive_action">#00b9e6</color>
+    <color name="edit_text_dialog_color">#515151</color>
+    <color name="default_circle_indicator_stroke_color">#d8d8d8</color>
+
+    <color name="chat_screen_bg_color">#ebeff2</color>
+    <color name="chat_input_field_bg_color">#f5f5f5</color>
+    <color name="chat_content_text_color">#212121</color>
+    <color name="chat_sub_content_text_color">#9fa2a4</color>
+    <color name="chat_error_color">#fd4b62</color>
+    <color name="chat_count_tab_notification_color">#fc5457</color>
+    <color name="meeting_locked_message_color">#ccd3d9</color>
+    <color name="meeting_full_message_color">#ccd3d9</color>
+    <color name="overflow_menu_text_color">#de000000</color>
+    <color name="help_menu_line_seperator">#1e000000</color>
+
+    <!--Colors-->
+    <color name="transparent">#00000000</color>
+    <color name="webcam_landscape_top_controls_bg">#8a000000</color>
+    <color name="black">#000</color>
+    <color name="black_light">#202020</color>
+
+    <!--Basic colors-->
+    <color name="colorAccentDark">#0092c9</color>
+    <color name="iconTint">#000000</color>
+    <color name="bg_home">#fafafa</color>
+    <!--
+      Colour for tab indicator and text
+        -->
+    <color name="tab_text_color">#7a7a7a</color>
+    <color name="tab_selected_color">#000000</color>
+
+    <!--Gray shades-->
+    <color name="chatBackgroundGray">#ebeff2</color>
+    <color name="chatListBackgroundGray">#fafafa</color>
+    <color name="chatListEmptyCircle">#d7d7d7</color>
+    <color name="inputFieldBackgroundGray">#f5f5f5</color>
+    <color name="toolbarTitleTextGray">#de000000</color>
+    <color name="inputFieldThemeGray">#61000000</color>
+    <color name="activeCallStatus">#b3ffffff</color>
+    <color name="inputFieldsButtonGray">#4A000000</color>
+    <color name="sendMessageButtonInactiveGray">#8A000000</color>
+    <color name="grayLight">#e4e4e4</color>
+    <color name="grayMedium">#8c8c8c</color>
+    <color name="grayDark">#535353</color>
+    <color name="additionalMessageDataGray">#8a000000</color>
+    <color name="rightMessageTextGray">#de000000</color>
+    <color name="dividerColorGray">#1e000000</color>
+    <color name="buttonsGrayDark">#444749</color>
+    <color name="buttonsGray">#616468</color>
+    <color name="callRippleGray">#29FFFFFF</color>
+    <color name="loginTextColor">#a1b6c5</color>
+    <color name="placeholder_gradient_start">#ecebf0</color>
+    <color name="placeholder_gradient_middle">#e1e2e6</color>
+    <color name="placeholder_gradient_end">#e9e8ed</color>
+    <color name="placeholder_avatar_stroke">#14000000</color>
+    <color name="sound_option_gray_color">#757575</color>
+    <color name="radio_unchecked_gray_color">#727272</color>
+    <color name="back_button_gray_color">#707070</color>
+
+    <!--Specific colors-->
+    <color name="failedDeliveryMessageColor">#fd4b62</color>
+    <color name="changeIpButtonColor">#ff7615</color>
+    <color name="loginPassButtonColor">#cd5000</color>
+    <color name="loginEditTextColor">#f5f6f9</color>
+    <color name="bg_unread_count">#fd4b62</color>
+
+    <!--User states-->
+    <color name="onlineGreen">#00c26b</color>
+    <color name="offlineRed">#fd4b62</color>
+    <color name="unknownGrey">#93abbd</color>
+
+    <!--Chat-->
+    <color name="copied_message">@color/brand_color_500</color>
+    <color name="addChatRippleColor">#00719b</color>
+    <color name="othersChatBgColor">@color/primary_color_500</color>
+    <color name="chatScreenBgColor">@color/chat_screen_bg_color</color>
+    <color name="chatInputFieldBgColor">@color/chat_input_field_bg_color</color>
+    <color name="chat_sub_content_text_error_color">@color/chat_error_color</color>
+    <color name="text_name_initials_color">@color/white</color>
+
+    <!--dialer-->
+    <color name="dialer_green">#1ab210</color>
+    <color name="dialer_green_inactive">#587656</color>
+    <color name="dialer_digit_color">#de000000</color>
+    <color name="dialer_character_color">#8a000000</color>
+    <color name="dialer_character_light_color">#b3ffffff</color>
+    <color name="dialer_separator_transparent_black">#1e000000</color>
+    <color name="paricipant_color">#7a7a7a</color>
+    <!--call-->
+    <color name="active_call_background">#303030</color>
+    <color name="call_option_inactive_color">#29FFFFFF</color>
+    <color name="active_call_status_bar_color">#252525</color>
+    <color name="profile_statusbar_color">#57a3c0</color>
+    <color name="no_avatar_image_background_green">#1ab210</color>
+    <color name="no_avatar_image_background_orange">@color/brand_color_500</color>
+    <color name="hold_call_text_color">#656565</color>
+    <color name="recent_calls_list_background_light_grey">#fafafa</color>
+
+    <!--Tab activity-->
+    <color name="contact_panel_options_color">#747474</color>
+    <color name="statusBarBackground">#1e000000</color>
+    <color name="toolbarBackground">#f5f5f5</color>
+    <color name="chatRemovingToolbarBackground">#212121</color>
+    <color name="toolbarText">#de000000</color>
+    <color name="toolbarIconInactiveColor">#b6b6b6</color>
+    <color name="edit_text_dialog_background">#17000000</color>
+    <color name="logout_dialog_background">#212121</color>
+    <color name="logout_shadow_color">#61000000</color>
+
+    <!--Nav drawer-->
+    <color name="nav_drawer_header_half_trans_black">#80000000</color>
+    <color name="nav_drawer_header_black">#ff000000</color>
+
+    <!--detailed contact activity-->
+    <color name="contact_activity_toolbar_light_text_color">#b3ffffff</color>
+    <color name="contact_activity_item_text_color_red">#defd4b62</color>
+    <color name="contact_activity_item_description_text_color">#8a000000</color>
+    <color name="contact_activity_background_gray">#fffafafa</color>
+    <color name="conference_call_background_color">#212121</color>
+    <color name="conference_call_toolbar_color">#303030</color>
+    <color name="additional_data_gray">#b3ffffff</color>
+    <color name="add_call_recents_color">#b3ffffff</color>
+    <color name="add_call_toolbar_background_color">#212121</color>
+    <color name="add_call_background_color">#303030</color>
+    <color name="dialpad_panel">#394249</color>
+    <color name="global_meet_description_text_color">#61000000</color>
+    <color name="login_password_button_color">#1294bf</color>
+
+    <color name="black_transparent_38_percent">#38000000</color>
+    <color name="swipe_background_color">#4a4f55</color>
+    <color name="duration_text_color">#8a000000</color>
+    <color name="call_divider">#1e000000</color>
+
+    <color name="list_item_swipe_button_background_dark_grey">#494f54</color>
+    <color name="dialog_delete_chat_title_text_color">#de000000</color>
+    <color name="dialog_delete_chat_description_text_color">#8a000000</color>
+
+    <color name="dialog_delete_call_title_text_color">#de000000</color>
+    <color name="dialog_delete_call_description_text_color">#8a000000</color>
+
+    <color name="dialog_delete_voicemail_title_text_color">#de000000</color>
+    <color name="dialog_delete_voicemail_description_text_color">#8a000000</color>
+    <color name="dialog_background">#fff</color>
+
+    <color name="voice_mail_blue">#00adf2</color>
+    <color name="voice_mail_grey">#656565</color>
+
+    <color name="radio_button_off">#ff000000</color>
+
+    <color name="voicemail_record_seek_bar_recording_color">#fffd4b62</color>
+
+    <color name="email_support_text_colorinactive">#40000000</color>
+    <color name="email_support_text_coloractive">#8a000000</color>
+    <color name="to_divider_color_inactive">#19000000</color>
+    <color name="from_divider_color_active">#8a000000</color>
+    <color name="intro_title_color">#61000000</color>
+    <color name="bottom_panel_welcome_background">#f5f5f5</color>
+
+    <color name="ic_launcher_background">#FF7D35</color>
+    <color name="lb_grey">#4A000000</color>
+    <color name="no_upcoming_meetings">#8a000000</color>
+    <color name="primary_50">#C1F2FF</color>
+    <color name="bottom_nav_disable_color">#8a000000</color>
+    <color name="search_prompt_color">#61000000</color>
+    <color name="search_toolbar_bg">#f5f5f5</color>
+    <color name="search_icon_black">#8A000000</color>
+    <color name="toolbar_gradient_endcolor">#1e000000</color>
+    <color name="toolbar_gradient_startcolor">#3d000000</color>
+    <color name="btn_bg_card">#ff882f</color>
+    <color name="red_delete">#fd4b62</color>
+    <color name="card_container_afternoon_top_bar_bg">#4997f3</color>
+    <color name="card_container_evening_top_bar_bg">#625883</color>
+    <color name="card_shimmer_color">#e1e2e6</color>
+
+    <color name="card_container_bootom_bar_bg">#e0e0e0</color>
+    <color name="card_container_bg">#fbfcfd</color>
+    <color name="card_profile_title">#de000000</color>
+    <color name="card_text">#8a000000</color>
+    <color name="card_greetings_color">#b3ffffff</color>
+    <color name="card_profile_divider">#1e000000</color>
+    <color name="agenda_shimmer_color">#e1e2e6</color>
+    <color name="accent_color_400">#1BC510</color>
+    <color name="accent_color_700">#169C0E</color>
+    <color name="warn_color_800">#D00D34</color>
+    <color name="warn_color_600">#fe2450</color>
+    <color name="primary_color_700">#007bb2</color>
+    <color name="brand_color_500">#ff6b00</color>
+    <color name="mic_btn_color_light_gray">#E0E0E0</color>
+
+
+    <!-- Meeting Security -->
+    <color name="meeting_security_option_title_text_color">#de000000</color>
+    <color name="meeting_security_option_desc_text_color">#8a000000</color>
+    <color name="meeting_guest_list_header_background_color">#ebeff2</color>
+    <color name="meeting_security_background_color">#ebeff2</color>
+    <color name="meeting_security_guest_list_item_background_color">#f5f5f5</color>
+    <color name="bottom_control_bg_transparent">#8a161616</color>
+    <color name="bg_meeting">#303030</color>
+    <color name="meeting_speaking_text_color">#8e8e93</color>
+
+    <!-- Meeting Participant List -->
+    <color name="participant_name_color">#212121</color>
+    <color name="participant_type_color">#7a7a7a</color>
+    <color name="participant_host_section_disable">#dadada</color>
+
+
+    <color name="feedback_screen_bg">#fafafa</color>
+    <color name="feedback_button_bg">#ffffff</color>
+    <color name="skip_text_color">#fd4b62</color>
+    <color name="feedback_header_text_color">#de000000</color>
+
+    <color name="enable_chat_dialog_title_color">@color/toolbarTitleTextGray</color>
+    <color name="disable_conversation_color">#40000000</color>
+    <color name="feedback_comment_text_box_bg">#17000000</color>
+    <color name="feedback_comment_improve_text_color">#de000000</color>
+    <color name="feedback_comment_optional_text_color">#61000000</color>
+    <color name="snackbar_background">#212121</color>
+</resources>

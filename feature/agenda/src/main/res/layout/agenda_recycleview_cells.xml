@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@+id/fr_meetings_agenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl_meetings_agenda"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/margin_13_dp"
+            android:layout_height="wrap_content"
+            android:onClick="@{(view) -> agendaViewModel.joinMeeting(agenda.type, agenda.profile.subhead.text, agenda.profile)}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="@{agendaViewModel.isLoading ? View.GONE : View.VISIBLE}">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_avatar_agenda"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/activity_tab_toolbar_avatar"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_name_initials"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:textColor="@color/white"
+                android:background="@drawable/oval"
+                android:backgroundTint="@color/primary_color_500"
+                android:contentDescription="@string/activity_tab_toolbar_avatar"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:textSize="@dimen/_22sp"
+                android:letterSpacing="-0.04"
+                android:textStyle="normal"
+                android:layout_centerVertical="true"
+                android:text="@{agenda.profile.initials}"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_meeting_time_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/iv_avatar_agenda"
+                android:layout_marginTop="@dimen/dp_16"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="@dimen/margin_6sp"
+                android:layout_gravity="center_vertical"
+                android:text="@{agenda.profile.supportText}"
+                android:textColor="@color/no_upcoming_meetings"
+                android:textSize="@dimen/margin_top_14sp"
+                android:textStyle="normal" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_meeting_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="@integer/default_weight"
+                android:layout_below="@+id/tv_meeting_time_duration"
+                android:layout_toEndOf="@+id/iv_avatar_agenda"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="@dimen/space_4sp"
+                android:layout_gravity="center_vertical"
+                android:text="@{agenda.profile.header}"
+                android:textColor="@color/toolbarText"
+                android:textSize="@dimen/margin_16sp"
+                android:textStyle="normal" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_meeting_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_meeting_name"
+                android:layout_toEndOf="@+id/iv_avatar_agenda"
+                android:ellipsize="end"
+                android:onClick="@{(view) -> agendaViewModel.joinMeeting(agenda.type, agenda.profile.subhead.text, agenda.profile)}"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="@dimen/margin_6sp"
+                android:layout_gravity="center_vertical"
+                android:lines="@integer/default_weight"
+                android:text="@{agenda.profile.subhead.text}"
+                android:textColor="@{agenda.profile.subhead.isUrl ? @color/primary_color_500 : @color/card_text}"
+                android:visibility="@{agenda.profile.subhead != null ? View.VISIBLE : View.GONE}"
+                android:textSize="@dimen/margin_top_14sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:shimmer_auto_start="true"
+            app:shimmer_colored="true"
+            app:shimmer_base_color="@color/agenda_shimmer_color"
+            android:visibility="@{agendaViewModel.isLoading ? View.VISIBLE : View.GONE}">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/agenda_shimmer"/>
+                <include layout="@layout/agenda_shimmer"/>
+                <include layout="@layout/agenda_shimmer"/>
+                <include layout="@layout/agenda_shimmer"/>
+                <include layout="@layout/agenda_shimmer"/>
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </FrameLayout>
+    <data>
+        <import type="com.pgi.convergence.agenda.R"/>
+        <import type="android.view.View" />
+        <variable
+            name="agendaViewModel"
+            type="com.pgi.convergence.agenda.ui.MeetingsAgendaViewModel" />
+        <variable
+            name="agenda"
+            type="com.pgi.convergence.data.model.home.HomeCardData" />
+
+        <import type="com.pgi.convergence.data.enums.home.HomeCardType" />
+
+    </data>
+</layout>

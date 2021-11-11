@@ -1,0 +1,75 @@
+{
+  "version": 4,
+  "configurl": "https://mobiledev.globalmeet.net/config/qab/android/",
+  "app": {
+    "homeEnabled": true,
+    "agendaEnabled": true,
+    "callsEnabled": false,
+    "chatsEnabled": false,
+    "voiceMailEnabled": false,
+    "joinMeetingAttemptMaxDuration": 15000,
+    "encryptVoip": false,
+    "caveEnabled": false,
+    "ropeEnabled": false,
+    "webcamsEnabled": true,
+    "webcamsOnWiFiOnlyEnabled": true,
+    "webcamsOnCellularEnabled": true,
+    "bandwidth": {
+      "meeting": {
+        "testEnabled": true,
+        "timerInterval": 20000
+      },
+      "home": {
+        "testEnabled": false,
+        "timerInterval": 20000
+      }
+    },
+    "ucaas": {
+      "baseUrl": "https://crossbar.uc.globalmeet.com/",
+      "calls": {
+        "timerInterval": 900000
+      },
+      "voicemail": {
+        "timerInterval": 900000
+      }
+    }
+  },
+  "company": [
+    {
+      "pgi.com": {
+        "callsEnabled": true,
+        "voiceMailEnabled": true,
+        "encryptVoip": false,
+        "caveEnabled": false,
+        "ropeEnabled": false,
+        "webcamsEnabled": true
+      }
+    }
+  ],
+  "alpha": {
+    "app": {
+      "callsEnabled": true,
+      "voiceMailEnabled": true,
+      "encryptVoip": false,
+      "webcamsEnabled": true,
+      "caveEnabled": false,
+      "ropeEnabled": false
+    },
+    "users": [
+      "sudheer.chilumula@pgi.com"
+    ]
+  },
+  "beta": {
+    "app": {
+      "callsEnabled": true,
+      "voiceMailEnabled": true,
+      "encryptVoip": false,
+      "webcamsEnabled": true,
+      "caveEnabled": false,
+      "ropeEnabled": false
+    },
+    "users": [
+      "prashanth.nandala@pgi.com"
+    ]
+  }
+}

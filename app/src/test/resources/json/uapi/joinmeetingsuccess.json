@@ -1,0 +1,35 @@
+{
+  "responseType": "JOIN_MEETING",
+  "timestamp": "2018-10-10T18:43:01.775Z",
+  "joinStatus": "JOIN",
+  "participantId": "hostParticipantId",
+  "sipIdentifier": "GM.hostParticipantId",
+  "dialoutNumbers": [
+    {
+      "countryCode": "1",
+      "phone": "1234567890",
+      "phoneExt": "34",
+      "lastUsed": false
+    },
+    {
+      "countryCode": "91",
+      "phone": "8523467834",
+      "phoneExt": "",
+      "lastUsed": true
+    }
+  ],
+  "_links": {
+    "getEvents": {
+      "href": "https://uapi.globalmeet.com/uapi/v1/room/meeting/events?since=-1&timeout=50000"
+    },
+    "updateMeeting": {
+      "href": "https://uapi.globalmeet.com/uapi/v1/room/meeting"
+    },
+    "defaultPublicChat": {
+      "href": "https://uapi.globalmeet.com/uapi/v1/room/meeting/conversations/default/chats"
+    },
+    "recording": {
+      "href": "https://uapi.globalmeet.com/uapi/v1/room/meeting/recording"
+    }
+  }
+}

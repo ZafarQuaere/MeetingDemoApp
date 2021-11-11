@@ -1,0 +1,63 @@
+{
+  "responseType": "MEETING_EVENTS",
+  "timestamp": "2018-10-17T05:20:32.82Z",
+  "meetingId": "8h1ngpbyst5w13nsq2nvc2rvr",
+  "since": 2421361,
+  "lastSeqNum": 2421362,
+  "events": [
+    {
+      "eventType": "MEETING_STARTED",
+      "timestamp": "2018-10-17T05:14:28.295Z",
+      "roomId": "2988345",
+      "meetingCapacity": 125,
+      "audioConferenceId": "147305988",
+      "contentLimit": 20
+    },
+    {
+    "eventType": "CONTENT_CREATED",
+    "timestamp": "2018-10-17T05:14:28.296Z",
+    "contentId": "8524dgv4aqfijlx1wrgl9d173",
+    "type": "FILE_PRESENTAION",
+    "version": "1",
+    "visible": true,
+    "stageId": "",
+    "staticMetadata": "{\"fileId\":\"\",\"documentUrl\":\"https://recording-files-na.qac.globalmeet.net/981999/2129102/5153ad23-e82e-4f3c-a5b7-7ed101023068?response-content-disposition=attachment%3B+filename%3D%22IETF_ICE_intro_92.pdf%22%3B+filename*%3DUTF-8%27%27IETF_ICE_intro_92.pdf&Expires=1546546915&Signature=UkEoAXBGxrvr-q0r3fLcQVxVFcmhFSFXGtt4jXQ4vBprCWNSgfP4bKqEAZLKO2QShyhyR92KoVNnvb1VFML9ao-4bjNhg~rZvA1dbYqImJ2c4rVKd7sZwmBTfMglQVfel0YI1Sfq4azmgo3ddWmQ5EgNtXkVwWQdkl1Dl8r4-KpyVGbksCmCFTll4xAMaOQWFt-lAjLrZUYIaizosyqjeOMdHYZOnL0O4Eulh-Tz5MV-cEaFx1BGRpGCbDJfO4lbxLi6p0wCA-PXz5ObtY6QrC-siUg9X8oFisSx8FuILh3KDnUOMk1AuUv6N2DNWNrivDWqVUSWSP6HCT1z4OfqMMbGe3egTaJPyyl6fpHzRtUC2GKnk2KMIRXLmky3bvJQL4o8j9ZOmGvk07SFH~mMImNVqCEmJn64HexBLCa7Zvi9Iy4chZxpRymsyjEn2Ix9tfrH~Pz7v1U-40znNok8NEOWdZnzgRbv3kGzYECEWqQ~06L62DPLIJBV0akOVYNO34ioapnOqZf4S~pcKBrv253hjJQr3UxmEuu6O5BC8Cm5fDT-z3R-jjuCLQuAG4yFTo9z5VuXARapl8fYzn~6c2SyBCN~Rpv0jesrYwZR8NKn7gmqUAcEjpOOcbNU5KIWK24X4kp97O3bbKRx9Ld6FZTwoHOI3zzVtnNbc~T6sxc_&Key-Pair-Id=APKAJG6OHOMHXFRTSLXA\",\"title\":\"IETF_ICE_intro_92.pdf\"}",
+    "dynamicMetadata": "{}",
+    "allowGuestUpdate": false
+    },
+    {
+      "eventType": "CONTENT_UPDATED",
+      "timestamp": "2018-10-17T05:19:32.304Z",
+      "contentId": "8524dgv4aqfijlx1wrgl9d173",
+      "dynamicMetadata": "{\"newPage\":2}"
+    },
+    {
+      "eventType": "CONTENT_DELETED",
+      "timestamp": "2018-10-17T05:19:49.430Z",
+      "contentId": "8524dgv4aqfijlx1wrgl9d173"
+    },
+    {
+      "eventType": "CONTENT_UPDATED",
+      "timestamp": "2018-10-17T05:19:32.304Z",
+      "contentId": "dmyrspr3u58wptf3rz5wy2ubw",
+      "dynamicMetadata": "{\"screenPresenter\":{\"partId\":\"40zc8tmysajaxyhcvqjfghqlb\",\"name\":\"sinsd mmw\",\"phoneNumber\":null,\"email\":\"weww@KKK.COM\"},\"type\":\"SCREENSHARE\",\"action\":\"START\"}"
+    },
+    {
+      "eventType": "CONTENT_UPDATED",
+      "timestamp": "2018-10-17T05:19:49.430Z",
+      "contentId": "dmyrspr3u58wptf3rz5wy2ubw",
+      "dynamicMetadata": "{\"action\":\"STOP\",\"screenPresenter\":{\"email\":\"weww@KKK.COM\",\"name\":\"sinsd mmw\",\"partId\":\"40zc8tmysajaxyhcvqjfghqlb\"},\"type\":\"SCREENSHARE\"}"
+    },
+    {
+      "eventType": "RECORDING_STARTED",
+      "timestamp": "2018-10-10T18:43:13.681Z",
+      "recordingId": "arg0",
+      "recordingName": "arg1"
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://uapi.iad1.globalmeet.com/uapi/v1/room/meeting/events?since=2421362&timeout=50000&talkers=2018-10-17T05:20:19.045Z"
+    }
+  }
+}

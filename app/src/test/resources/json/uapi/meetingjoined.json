@@ -1,0 +1,18 @@
+{
+  "eventType": "MEETING_JOINED",
+  "timestamp": "2018-10-10T18:43:11.267Z",
+  "participantId": "arg0",
+  "familyName": "arg2",
+  "givenName": "arg1",
+  "name": "arg3",
+  "phone": "arg4",
+  "phoneExt": "arg5",
+  "email": "arg6",
+  "roomRole": "HOST",
+  "delegateRole": false,
+  "_links": {
+    "profileImage": {
+      "href": "arg9"
+    }
+  }
+}

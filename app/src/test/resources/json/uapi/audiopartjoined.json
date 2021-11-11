@@ -1,0 +1,21 @@
+{
+  "eventType": "AUDIO_PARTICIPANT_JOINED",
+  "timestamp": "2018-10-10T18:43:12.615Z",
+  "partId": "arg1",
+  "confId": "arg2",
+  "subConfId": "arg3",
+  "firstName": "arg4",
+  "lastName": "arg5",
+  "company": "arg6",
+  "email": "arg7",
+  "phone": "arg8",
+  "partType": "NORMAL",
+  "ani": "arg10",
+  "dnis": "arg11",
+  "codec": "arg20",
+  "hold": false,
+  "mute": false,
+  "listenOnly": false,
+  "listenLevel": 1,
+  "voiceLevel": 1
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/margin_20_dp"
+    android:paddingRight="@dimen/margin_20_dp"
+    android:background="@color/white"
+    android:layout_marginBottom="@dimen/margin_10_dp"
+    android:layout_gravity="bottom"
+    android:visibility="gone"
+    android:id="@+id/audio_meeting_host_menu">
+
+    <Button
+        android:id="@+id/invite_person"
+        android:background="@drawable/audiomeeting_hostmenu_btnselector"
+        android:drawableStart="@drawable/audiomeeting_hostmenu_addperson_icon"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="23sp"
+        android:textColor="@color/white"
+        android:text="@string/invite_participant"
+        android:paddingLeft="@dimen/margin_15_dp"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:drawablePadding="@dimen/margin_10_dp"
+        android:layout_marginBottom="@dimen/margin_5_dp"/>
+
+    <Button
+        android:id="@+id/change_connection"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/audiomeeting_hostmenu_btnselector"
+        android:drawableStart="@drawable/audiomeeting_hostmenu_changeconnection_icon"
+        android:textSize="23sp"
+        android:textColor="@color/white"
+        android:text="@string/change_connection"
+        android:paddingLeft="@dimen/margin_15_dp"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:drawablePadding="@dimen/margin_10_dp"
+        android:layout_marginBottom="@dimen/margin_5_dp"/>
+
+    <Button
+        android:id="@+id/lock_meeting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/audiomeeting_hostmenu_btnselector"
+        android:drawableStart="@drawable/audiomeeting_hostmenu_lock_icon"
+        android:textSize="23sp"
+        android:textColor="@color/white"
+        android:text="@string/lock_meeting"
+        android:paddingLeft="@dimen/margin_15_dp"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:drawablePadding="@dimen/margin_10_dp"
+        android:layout_marginBottom="@dimen/margin_5_dp"/>
+
+    <Button
+        android:id="@+id/record_meeting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/audiomeeting_hostmenu_btnselector"
+        android:drawableStart="@drawable/audiomeeting_hostmenu_record_icon"
+        android:textSize="23sp"
+        android:textColor="@color/white"
+        android:text="@string/record_meeting"
+        android:paddingLeft="@dimen/margin_15_dp"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:drawablePadding="@dimen/margin_10_dp"/>
+
+</LinearLayout>

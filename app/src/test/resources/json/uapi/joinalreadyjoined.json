@@ -1,0 +1,10 @@
+{
+  "responseType": "JOIN_MEETING",
+  "timestamp": "2018-10-10T18:43:01.915Z",
+  "joinStatus": "SESSION_USED",
+  "_links": {
+    "authorize": {
+      "href": "https://uapi.globalmeet.com/uapi/v1/session"
+    }
+  }
+}

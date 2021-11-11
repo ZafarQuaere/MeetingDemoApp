@@ -1,0 +1,158 @@
+import com.pgi.convergence.Deps
+apply plugin: "com.android.application"
+apply from: "$rootProject.projectDir/tasks/common.gradle"
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+dependencies {
+    implementation project(path: ":feature:home")
+    implementation project(path: ":feature:agenda")
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation files("src/main/java/libs/SPJavaSwig.jar")
+
+    // This butterknife is an issue as we cannot apply to modules. To apply to modules we need change how we add dependency
+    implementation Deps.butterknife
+    implementation platform(Deps.firebaseBom)
+    implementation Deps.firebaseCrashlytics
+    kapt Deps.annotationlibs.get("butterknife")
+}
+
+android {
+    defaultConfig {
+        multiDexEnabled = true
+    }
+
+    packagingOptions {
+        exclude "META-INF/*.kotlin_module"
+        exclude "META-INF/DEPENDENCIES.txt"
+        exclude "META-INF/LICENSE.txt"
+        exclude "META-INF/NOTICE.txt"
+        exclude "META-INF/NOTICE"
+        exclude "META-INF/LICENSE"
+        exclude "META-INF/DEPENDENCIES"
+        exclude "META-INF/notice.txt"
+        exclude "META-INF/license.txt"
+        exclude "META-INF/dependencies.txt"
+        exclude "META-INF/LGPL2.1"
+        exclude "lib/arm64-v8a" // TODO:: Need to update this. Its pointing to wrong location
+    }
+    sourceSets {
+        lumenqab {
+            res.srcDirs = ["${project.rootDir}/core/src/lumen/res"]
+            manifest.srcFile "${project.rootDir}/app/src/lumen/AndroidManifest.xml"
+        }
+        lumenqac{
+            res.srcDirs = ["${project.rootDir}/core/src/lumen/res"]
+            manifest.srcFile "${project.rootDir}/app/src/lumen/AndroidManifest.xml"
+        }
+        lumendev{
+            res.srcDirs = ["${project.rootDir}/core/src/lumen/res"]
+            manifest.srcFile "${project.rootDir}/app/src/lumen/AndroidManifest.xml"
+        }
+    }
+
+    flavorDimensions "default"
+    productFlavors {
+        prod {
+            applicationId "com.pgi.gmmeet"
+            resValue "string", "app_name", "GlobalMeet"
+            buildConfigField "String", "CONFIG_TYPE", "\"prod\""
+            buildConfigField "String", "NEW_RELIC_KEY", "\"AA3fce33e6f88023d1bd6abf1da68e39cdcc1bf314\""
+            resValue "string", "app_link_host", "web.globalmeet.com"
+            resValue "string", "app_link_host_na", "web-na.globalmeet.com"
+            resValue "string", "app_link_host_eu", "web-eu.globalmeet.com"
+            resValue "string", "app_link_host_ap", "web-ap.globalmeet.com"
+            dimension "default"
+        }
+        stage {
+            applicationId "com.pgi.qa.gm.meeting"
+            resValue "string", "app_name", "GlobalMeet EP"
+            buildConfigField "String", "CONFIG_TYPE", "\"stage\""
+            buildConfigField "String", "NEW_RELIC_KEY", "\"AAe2b6510e0bb6bd82723a0b6f583e2e1d0e17ccd1\""
+            resValue "string", "app_link_host", "web.stage3.globalmeet.net"
+            resValue "string", "app_link_host_na", "web-na.stage3.globalmeet.net"
+            resValue "string", "app_link_host_eu", "web-eu.stage3.globalmeet.net"
+            resValue "string", "app_link_host_ap", "web-ap.stage3.globalmeet.net"
+            dimension "default"
+        }
+        qab {
+            applicationId "com.pgi.qa.gm.meeting"
+            resValue "string", "app_name", "GlobalMeet QAB"
+            buildConfigField "String", "CONFIG_TYPE", "\"qab\""
+            buildConfigField "String", "NEW_RELIC_KEY", "\"AAe2b6510e0bb6bd82723a0b6f583e2e1d0e17ccd1\""
+            resValue "string", "app_link_host", "web.qab.globalmeet.net"
+            resValue "string", "app_link_host_na", "web-na.qab.globalmeet.net"
+            resValue "string", "app_link_host_eu", "web-eu.qab.globalmeet.net"
+            resValue "string", "app_link_host_ap", "web-ap.qab.globalmeet.net"
+            dimension "default"
+        }
+        qac {
+            applicationId "com.pgi.qa.gm.meeting"
+            resValue "string", "app_name", "GlobalMeet QAC"
+            buildConfigField "String", "CONFIG_TYPE", "\"qac\""
+            buildConfigField "String", "NEW_RELIC_KEY", "\"AAe2b6510e0bb6bd82723a0b6f583e2e1d0e17ccd1\""
+            resValue "string", "app_link_host", "web.qac.globalmeet.net"
+            resValue "string", "app_link_host_na", "web-na.qac.globalmeet.net"
+            resValue "string", "app_link_host_eu", "web-eu.qac.globalmeet.net"
+            resValue "string", "app_link_host_ap", "web-ap.qac.globalmeet.net"
+            dimension "default"
+        }
+        dev {
+            applicationId "com.pgi.dev.gm.meeting"
+            resValue "string", "app_name", "GlobalMeet Dev"
+            buildConfigField "String", "CONFIG_TYPE", "\"dev\""
+            buildConfigField "String", "NEW_RELIC_KEY", "\"AAe2b6510e0bb6bd82723a0b6f583e2e1d0e17ccd1\""
+            resValue "string", "app_link_host", "web.dev.globalmeet.net"
+            resValue "string", "app_link_host_na", "web-na.dev.globalmeet.net"
+            resValue "string", "app_link_host_eu", "web-eu.dev.globalmeet.net"
+            resValue "string", "app_link_host_ap", "web-ap.dev.globalmeet.net"
+            dimension "default"
+        }
+        lumen {
+            applicationId "com.centurylink.ctlworkplace"
+            resValue "string", "app_name", "Lumen Workplace"
+            buildConfigField "String", "CONFIG_TYPE", "\"lumen\""
+            buildConfigField "String", "NEW_RELIC_KEY", "\"AAb4117c8fedf3ef48bc86bd2db9f44e3dc1621c68\""
+            resValue "string", "app_link_host", "web.yourlumenworkplace.com"
+            resValue "string", "app_link_host_na", "web-na.yourlumenworkplace.com"
+            resValue "string", "app_link_host_eu", "web-eu.yourlumenworkplace.com"
+            resValue "string", "app_link_host_ap", "web-ap.yourlumenworkplace.com"
+            dimension "default"
+        }
+
+        lumenqab {
+            applicationId "com.pgi.qab.ctlworkplace.meeting"
+            resValue "string", "app_name", "Lumen Workplace QAB"
+            buildConfigField "String", "CONFIG_TYPE", "\"lumenqab\""
+            buildConfigField "String", "NEW_RELIC_KEY", "\"AAe2b6510e0bb6bd82723a0b6f583e2e1d0e17ccd1\""
+            resValue "string", "app_link_host", "web.qab.centuryLinkccc.net"
+            resValue "string", "app_link_host_na", "web-na.qab.centuryLinkccc.net"
+            resValue "string", "app_link_host_eu", "web-eu.qab.centuryLinkccc.net"
+            resValue "string", "app_link_host_ap", "web-ap.qab.centuryLinkccc.net"
+            dimension "default"
+        }
+        lumenqac {
+            applicationId "com.pgi.qac.ctlworkplace.meeting"
+            resValue "string", "app_name", "Lumen Workplace QAC"
+            buildConfigField "String", "CONFIG_TYPE", "\"lumenqac\""
+            buildConfigField "String", "NEW_RELIC_KEY", "\"AAe2b6510e0bb6bd82723a0b6f583e2e1d0e17ccd1\""
+            resValue "string", "app_link_host", "web.qac.centuryLinkccc.net"
+            resValue "string", "app_link_host_na", "web-na.qac.centurylinkccc.net"
+            resValue "string", "app_link_host_eu", "web-eu.qac.centurylinkccc.net"
+            resValue "string", "app_link_host_ap", "web-ap.qac.centurylinkccc.net"
+            dimension "default"
+        }
+
+        lumendev {
+            applicationId "com.pgi.dev.ctlworkplace.meeting"
+            resValue "string", "app_name", "Lumen Workplace Dev"
+            buildConfigField "String", "CONFIG_TYPE", "\"lumendev\""
+            buildConfigField "String", "NEW_RELIC_KEY", "\"AAe2b6510e0bb6bd82723a0b6f583e2e1d0e17ccd1\""
+            resValue "string", "app_link_host", "web.dev.globalmeet.net"
+            resValue "string", "app_link_host_na", "web-na.dev.yourlumenworkplace.com"
+            resValue "string", "app_link_host_eu", "web-eu.dev.yourlumenworkplace.com"
+            resValue "string", "app_link_host_ap", "web-ap.dev.yourlumenworkplace.com"
+            dimension "default"
+        }
+    }
+}

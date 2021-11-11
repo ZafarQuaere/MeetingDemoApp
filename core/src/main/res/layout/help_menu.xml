@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/iv_help_close"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_56"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:paddingTop="@dimen/margin_8_dp"
+        android:contentDescription="@string/close"
+        app:srcCompat="@drawable/close_help"
+        />
+
+    <TextView
+        android:id="@+id/tv_help_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_56"
+        android:layout_marginStart="@dimen/margin_20_dp"
+        android:layout_toEndOf="@+id/iv_help_close"
+        android:paddingTop="@dimen/margin_20_dp"
+        android:text="@string/help"
+        android:textColor="@color/overflow_menu_text_color"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+    <View
+        android:id="@+id/v_separator_top"
+        android:layout_below="@+id/iv_help_close"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_7.5_dp"
+        android:layout_marginEnd="@dimen/margin_2_dp"
+        android:layout_marginStart="@dimen/margin_2_dp"
+        android:layout_marginTop="@dimen/margin_14_dp"
+        android:background="@drawable/help_menu_gradient"
+        />
+
+    <TextView
+        android:id="@+id/tv_call"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/v_separator_top"
+        android:layout_marginStart="@dimen/margin_10_dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:lineSpacingExtra="4sp"
+        android:paddingTop="@dimen/margin_8_dp"
+        android:text="@string/call_support"
+        android:textColor="@color/overflow_menu_text_color"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+    <View
+        android:id="@+id/v_separator_1"
+        android:layout_below="@+id/tv_call"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1_dp"
+        android:layout_marginEnd="@dimen/margin_2_dp"
+        android:layout_marginStart="@dimen/margin_2_dp"
+        android:layout_marginTop="@dimen/margin_14_dp"
+        android:background="@color/help_menu_line_seperator"
+        />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/v_separator_1"
+        android:layout_marginStart="@dimen/margin_10_dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:lineSpacingExtra="4sp"
+        android:paddingTop="@dimen/margin_8_dp"
+        android:text="@string/email_support"
+        android:textColor="@color/overflow_menu_text_color"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+    <View
+        android:id="@+id/v_separator_2"
+        android:layout_below="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1_dp"
+        android:layout_marginEnd="@dimen/margin_2_dp"
+        android:layout_marginStart="@dimen/margin_2_dp"
+        android:layout_marginTop="@dimen/margin_14_dp"
+        android:background="@color/help_menu_line_seperator"
+        />
+
+    <TextView
+        android:id="@+id/tv_visit"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/v_separator_2"
+        android:layout_marginStart="@dimen/margin_10_dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:lineSpacingExtra="4sp"
+        android:paddingTop="@dimen/margin_8_dp"
+        android:text="@string/visit_support"
+        android:textColor="@color/overflow_menu_text_color"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+    <View
+        android:id="@+id/v_separator_3"
+        android:layout_below="@+id/tv_visit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1_dp"
+        android:layout_marginEnd="@dimen/margin_2_dp"
+        android:layout_marginStart="@dimen/margin_2_dp"
+        android:layout_marginTop="@dimen/margin_14_dp"
+        android:background="@color/help_menu_line_seperator"
+        />
+
+</RelativeLayout>

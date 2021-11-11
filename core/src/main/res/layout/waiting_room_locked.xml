@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/transparent_bg_color">
+
+    <RelativeLayout
+        android:background="@color/search_toolbar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_waiting_room_title_locked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_36_5_dp"
+            android:layout_marginEnd="@dimen/margin_36_5_dp"
+            android:layout_marginBottom="@dimen/margin_15_dp"
+            android:layout_marginTop="@dimen/waiting_welcome_top_y"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="@dimen/margin_6sp"
+            android:textColor="@color/copied_message"
+            android:textSize="@dimen/global_meet_text_size"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tv_waiting_room_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_waiting_room_title_locked"
+            android:fontFamily="sans-serif"
+            android:layout_marginStart="@dimen/margin_43_dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginTop="@dimen/margin_26_dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:lineSpacingExtra="@dimen/space_4sp"
+            android:text="@string/meeting_is_locked_message"
+            android:textColor="@color/duration_text_color"
+            android:textSize="@dimen/margin_16sp"
+            android:textStyle="normal"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+

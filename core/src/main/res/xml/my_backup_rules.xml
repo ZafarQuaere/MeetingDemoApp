@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-firstName>
+    <include domain="files" path="."/>
+    <include domain="database" path="."/>
+    <include domain="external" path="."/>
+    <include domain="database" path="."/>
+</full-backup-firstName>

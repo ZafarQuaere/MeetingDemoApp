@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="@dimen/dialout_edittext_bg_negative_margin"
+        android:left="@dimen/dialout_edittext_bg_negative_margin"
+        android:right="@dimen/dialout_edittext_bg_negative_margin">
+        <shape>
+            <solid android:color="@color/transparent"/>
+            <stroke android:color="@color/transparent" android:width="@dimen/dialout_edittext_bg_stroke_width"/>
+        </shape>
+    </item>
+</layer-list>

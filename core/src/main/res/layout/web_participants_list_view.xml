@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginStart="14dp"
+    android:layout_marginEnd="14dp">
+
+    <include layout="@layout/web_participants_host_header_view" />
+
+    <include layout="@layout/web_participant_host_items"/>
+
+    <include layout="@layout/web_participants_meeting_header_view" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_web_participants_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

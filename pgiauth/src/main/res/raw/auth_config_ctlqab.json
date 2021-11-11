@@ -1,0 +1,15 @@
+{
+  "client_id": "13859af7-564e-441d-b16b-1705d5623ef1",
+  "redirect_uri": "androididentity://com.yourlumenworkplace.app",
+  "authorization_scope": "openid profile email app.globalmeet:logging app.globalmeet:Pulsar app.globalmeet:uapi app.globalmeet:webservices app.globalmeet:screenshare app.globalmeet:gmsearch app.globalmeet:gmservices.core",
+  "discovery_uri": "",
+  "authorization_endpoint_uri": "https://identity.qab.centurylinkccc.net/oauth2/auth",
+  "token_endpoint_uri": "https://identity.qab.centurylinkccc.net/oauth2/token",
+  "registration_endpoint_uri": "",
+  "user_info_endpoint_uri": "https://identity.qab.centurylinkccc.net/oauth2/userinfo",
+  "logout_endpoint_uri": "https://identity.qab.centurylinkccc.net/users/logout",
+  "revoke_endpoint_uri": "https://identity.qab.centurylinkccc.net/oauth2/revoke?token=",
+  "https_required": true,
+  "brand_id": "14493",
+  "label": "lmn"
+}

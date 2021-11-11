@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dark_grey_ss"
+    android:animateLayoutChanges="true">
+
+    <FrameLayout
+        android:id="@+id/web_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <WebView
+            android:id="@+id/screen_share_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/recording_indicator_ss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_horizontal"
+            android:layout_marginRight="@dimen/margin_10_dp"
+            android:layout_marginTop="@dimen/margin_10_dp"
+            android:src="@drawable/recording_icon"
+            android:background="@null"
+            android:visibility="invisible">
+        </ImageButton>
+
+        <ProgressBar
+            android:id="@+id/progress_screen_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="@dimen/margin_8_dp"
+            android:indeterminateTint="@android:color/darker_gray"
+            android:visibility="gone"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cc_presenter_name_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="@dimen/margin_15_dp"
+            android:paddingBottom="@dimen/margin_15_dp"
+            android:paddingStart="@dimen/margin_5_dp"
+            android:paddingEnd="@dimen/margin_5_dp"
+            android:visibility="gone"
+            android:background="@color/black"
+            >
+            <TextView
+                android:id="@+id/tv_presenter_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:textColor="@color/white"
+                android:textSize="@dimen/presenter_name_txt_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_paginate_left_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btn_paginate_right_arrow"
+                android:layout_marginEnd="@dimen/margin_15_dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/paginate_previous_selector" />
+
+            <ImageButton
+                android:id="@+id/btn_paginate_right_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btn_full_screen"
+                android:layout_marginEnd="@dimen/margin_15_dp"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/paginate_next_selector" />
+
+            <ImageButton
+                android:id="@+id/btn_windowed_webview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/margin_10_dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@drawable/fullscreen" />
+
+            <ImageButton
+                android:id="@+id/btn_full_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/margin_10_dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@drawable/fullscreen_exit" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include
+            layout="@layout/landscape_full_controls"
+            android:visibility="visible">
+        </include>
+
+    </FrameLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/floatingSnackBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|bottom">
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <include layout="@layout/web_active_talker_view"
+        android:id="@+id/web_active_talker_container"
+        android:visibility="gone"/>
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/feedback_screen_bg"
+    android:clickable="true"
+    android:focusable="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/feedback_comment_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/search_toolbar_bg"
+            android:padding="@dimen/margin_8_dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/feedback_comment_back_btn"
+                android:layout_width="@dimen/toolbarIconsSize"
+                android:layout_height="@dimen/toolbarIconsSize"
+                android:background="@color/transparent"
+                android:padding="@dimen/margin_10_dp"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:lineSpacingExtra="@dimen/margin_8sp"
+                android:paddingStart="@dimen/dp_32"
+                android:text="@string/feedback"
+                android:textColor="@color/rightMessageTextGray"
+                android:textSize="@dimen/margin_20sp"
+                android:textStyle="normal"
+                tools:ignore="RtlSymmetry" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:id="@+id/gradient"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gradient_height"
+            android:alpha="0.4"
+            android:background="@drawable/toolbar_gradient"
+            android:elevation="@dimen/margin_5_dp" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textImproveProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feedback_comment_header"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_8"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="@dimen/text_6_sp"
+        android:text="@string/how_can_improve"
+        android:textColor="@color/feedback_comment_improve_text_color"
+        android:textSize="@dimen/text_14_sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feedback_comment_header"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_16"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="@dimen/xxsmall_text"
+        android:text="@string/optional"
+        android:textColor="@color/feedback_comment_optional_text_color"
+        android:textSize="@dimen/small_text"
+        android:textStyle="normal" />
+
+    <RelativeLayout
+        android:id="@+id/rl_text_box_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/feedback_comment_box_height"
+        android:layout_below="@id/textImproveProduct"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/dp_16"
+        android:background="@color/feedback_comment_text_box_bg">
+
+        <EditText
+            android:id="@+id/feedbackCommentEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:cursorVisible="true"
+            android:fontFamily="font/roboto_medium"
+            android:gravity="top|left"
+            android:inputType="text|textMultiLine"
+            android:minHeight="@dimen/feedback_comment_box_height"
+            android:paddingVertical="@dimen/margin_10_dp"
+            android:paddingLeft="@dimen/margin_15_dp"
+            android:paddingRight="@dimen/margin_15_dp"
+            android:textCursorDrawable="@drawable/chat_cursor_drawable"></EditText>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_send_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textCancel"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginBottom="@dimen/feedback_button_padding"
+        android:background="@color/feedback_button_bg"
+        android:elevation="@dimen/feedback_button_elevation"
+        android:fontFamily="sans-serif-medium"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:letterSpacing="@dimen/feedback_text_letter_spacing"
+        android:minHeight="@dimen/feedback_btn_min_height"
+        android:text="@string/send_feedback"
+        android:textAllCaps="true"
+        android:textColor="@color/primary_color_500"
+        android:textSize="@dimen/text_14_sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/textCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/margin_25dp"
+        android:clickable="true"
+        android:fontFamily="sans-serif-medium"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:letterSpacing="@dimen/feedback_text_letter_spacing"
+        android:text="@string/cancel"
+        android:textAllCaps="true"
+        android:textColor="@color/skip_text_color"
+        android:textSize="@dimen/text_14_sp"
+        android:textStyle="normal"/>
+</RelativeLayout>

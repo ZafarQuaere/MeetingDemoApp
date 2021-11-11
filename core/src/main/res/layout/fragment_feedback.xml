@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/feedback_screen_bg"
+    android:clickable="true"
+    android:focusable="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/meeting_security_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/search_toolbar_bg"
+            android:padding="@dimen/margin_8_dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:lineSpacingExtra="@dimen/margin_8sp"
+                android:paddingStart="@dimen/dp_32"
+                android:text="@string/feedback"
+                android:textColor="@color/rightMessageTextGray"
+                android:textSize="@dimen/margin_20sp"
+                android:textStyle="normal"
+                tools:ignore="RtlSymmetry" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:id="@+id/gradient"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gradient_height"
+            android:alpha="0.4"
+            android:background="@drawable/toolbar_gradient"
+            android:elevation="@dimen/margin_5_dp" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/text_feedback_header_margin_top"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:letterSpacing="@dimen/feedback_text_letter_spacing"
+        android:lineSpacingExtra="@dimen/margin_8sp"
+        android:paddingHorizontal="@dimen/feedback_header_text_padding"
+        android:text="@string/how_would_rate"
+        android:textColor="@color/feedback_header_text_color"
+        android:textSize="@dimen/text_feedback_header_size"
+        android:textStyle="normal" />
+
+
+    <Button
+        android:id="@+id/btn_positive_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_negative_feedback"
+        android:layout_marginHorizontal="@dimen/feedback_buttons_horizontal_padding"
+        android:layout_marginBottom="@dimen/feedback_button_padding"
+        android:background="@color/feedback_button_bg"
+        android:elevation="@dimen/feedback_button_elevation"
+        android:fontFamily="sans-serif-medium"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:letterSpacing="@dimen/feedback_text_letter_spacing"
+        android:minHeight="@dimen/feedback_btn_min_height"
+        android:text="@string/positive_feedback_label"
+        android:textAllCaps="true"
+        android:textColor="@color/primary_color_500"
+        android:textSize="@dimen/text_feedback_positive_label"
+        android:textStyle="normal" />
+
+
+    <Button
+        android:id="@+id/btn_negative_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textSkip"
+        android:layout_marginHorizontal="@dimen/dp_30"
+        android:layout_marginBottom="@dimen/feedback_button_padding"
+        android:background="@color/feedback_button_bg"
+        android:elevation="@dimen/feedback_button_elevation"
+        android:fontFamily="sans-serif-medium"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:letterSpacing="@dimen/feedback_text_letter_spacing"
+        android:minHeight="@dimen/feedback_btn_min_height"
+        android:text="@string/negative_feedback_label"
+        android:textAllCaps="true"
+        android:textColor="@color/primary_color_500"
+        android:textSize="@dimen/text_feedback_positive_label"
+        android:textStyle="normal" />
+
+
+    <TextView
+        android:id="@+id/textSkip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_25dp"
+        android:fontFamily="sans-serif-medium"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:gravity="center_horizontal"
+        android:letterSpacing="@dimen/feedback_text_letter_spacing"
+        android:text="@string/skip_enter_url"
+        android:textAllCaps="true"
+        android:textColor="@color/skip_text_color"
+        android:textSize="@dimen/text_skip"
+        android:textStyle="normal" />
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PGiLogging</string>
+    <string name="mixpanel_app_id">CTLANDROID</string>
+</resources>

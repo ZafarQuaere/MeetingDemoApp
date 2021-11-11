@@ -1,0 +1,29 @@
+{
+  "MeetingRoomGetResult": {
+    "AudioDetail": {
+      "ParticipantPassCode": "",
+      "phoneInformation": [
+        {
+          "Location": "Vietnam, Ho Chi Minh",
+          "PhoneNumber": "+84 28 5678 4438",
+          "PhoneType": "Local",
+          "CustomLocation": null
+        },
+        {
+          "Location": "Vietnam",
+          "PhoneNumber": "1800 400 370",
+          "PhoneType": "International toll free",
+          "CustomLocation": "Vietnam (toll free)"
+        }
+      ],
+      "PrimaryAccessNumber": ""
+    },
+    "MeetingRoomDetail": {
+      "EnableVrc": false
+    },
+    "MeetingRoomId": 3122397,
+    "MeetingRoomUrls": {
+      "VRCUrl": ""
+    }
+  }
+}

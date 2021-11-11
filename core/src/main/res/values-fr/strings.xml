@@ -1,0 +1,511 @@
+<resources>
+    <string name="continue_txt">Continuer</string>
+    <string name="dialog_ok">OK</string>
+
+    <string name="greet_morning">Bonjour,</string>
+    <string name="greet_afternoon">Bon après-midi,</string>
+    <string name="greet_evening">Bonsoir,</string>
+
+    <string name="join_meeting">Rejoindre une \nréunion</string>
+    <string name="start_meeting">Démarrer ma \nréunion</string>
+    <string name="close">Fermer</string>
+
+    <string name="welcome_slide_intro_welcome">Bienvenue sur \nGlobalMeet</string>
+    <string name="welcome_slide_intro_join">Rejoignez des réunions \nrapidement depuis n\'importe où</string>
+    <string name="welcome_slide_audio_content">Voyez facilement qui parle et \ngérez l\'audio</string>
+    <string name="welcome_slide_files_content">Voyez le contenu partagé \npar d\'autres</string>
+    <string name="welcome_slide_chat">Discutez avec tous les participants \nà la réunion.</string>
+    <string name="sign_in">Se connecter</string>
+    <!-- Default vals -->
+    <string name="str_ok">OK</string>
+
+    <!-- ImageView Content description -->
+    <string name="cd_drawer_icon">Tiroir de navigation</string>
+    <!-- Recent Meetings UI constants -->
+    <string name="btn_title_join">Joindre</string>
+    <string name="title_recently_joined">Récents</string>
+    <string name="search_join_header">Rejoindre cette URL</string>
+    <string name="no_recent_meetings">Recherchez l’URL d’une réunion pour rejoindre une réunion maintenant. Les résultats s’afficheront ici.</string>
+
+    <string name="no_results">Aucun résultat</string>
+    <string name="enter_invalid_url">URL non valide</string>
+    <string name="enter_url_join_button">Joindre</string>
+
+    <!--EnterUrl UI constants -->
+    <string name="enter_url_search_hint">Saisir l\'URL</string>
+
+    <!--Navigation Drawer menu constants -->
+    <string name="open_drawer">Ouvrir le tiroir</string>
+    <string name="close_drawer">Fermer le tiroir</string>
+    <string name="sign_out">Fin de session</string>
+    <string name="settings">Paramètres</string>
+    <string name="about">À propos</string>
+    <!--<string name="share">Partager</string> Not used currently -->
+    <string name="help">Aide</string>
+
+    <!-- Permissions -->
+    <string name="permission_call_rationale">Une autorisation d\'appel est requise pour rejoindre la réunion</string>
+    <!-- Not used currently
+    <string name="calendar_permission_rationale">Interdire l\'accès au calendrier peut désactiver certaines fonctionnalités.</string>
+    <string name="type_calendar">Calendrier</string>
+    <string name="calendar_permission_desc">Permet à GlobalMeet d\'afficher les prochaines réunions</string>
+    -->
+    <string name="permission_rationale_alert_title">Êtes-vous sûr(e) ?</string>
+    <string name="rationale_alert_option_allow">Autoriser</string>
+    <string name="rationale_alert_option_deny">Refuser</string>
+
+
+    <string name="invalid_access_token">Jeton d\'accès non valide, veuillez vous connecter à nouveau pour continuer.</string>
+    <!-- Share this app subject and content -->
+    <string name="share_with">Partager avec</string>
+    <string name="share_this_app_subject">Découvrez GlobalMeet</string>
+    <string name="share_this_app_content">J\'utilise GlobalMeet comme ma nouvelle application de réunion, et je pense que vous la trouverez utile. Découvrez https://globalmeet.com</string>
+    <string name="share_this_app_hash_tag_content">J\'utilise #GlobalMeet comme ma nouvelle application de réunion, et je pense que vous la trouverez utile. Découvrez https://globalmeet.com</string>
+    <string name="mute_meeting">bouton sourdine</string>
+
+    <!-- meeting room -->
+    <string name="host_exit_leave_meeting_confirmation_msg">Souhaitez-vous quitter, ou clôturer la réunion pour tous ?</string>
+    <string name="host_exit_dialog_exit_btn">Clôturer la réunion</string>
+    <string name="host_exit_dialog_leave_btn">Quitter la réunion</string>
+    <string name="host_exit_dialog_negative_btn">Annuler</string>
+    <string name="guest_exit_leave_meeting_confirmation_msg">Êtes-vous sûr de vouloir quitter la réunion ?</string>
+    <string name="guest_exit_dialog_positive_btn">Quitter</string>
+    <string name="guest_exit_dialog_negative_btn">Annuler</string>
+    <string name="loading">Chargement</string>
+    <string name="connect_voip">Se connecter maintenant avec la VoIP</string>
+    <string name="dial_in_btn_txt">Composer un numéro</string>
+    <string name="dial_in">Composer avec mon téléphone</string>
+    <string name="call_phone">Appeler mon téléphone</string>
+    <string name="phone_number">Numéro de téléphone</string>
+    <string name="call_me_btn_txt">Appelez-moi</string>
+    <string name="activate_speaker">Haut-parleur actif</string>
+    <string name="use_speaker">Utiliser le haut-parleur</string>
+    <string name="mute_me">Mettre en sourdine mon microphone après la connexion</string>
+    <string name="mute_all">TOUS</string>
+    <string name="do_not_connect_audio">Ne pas connecter mon audio</string>
+    <string name="audio_selection_msg"><![CDATA[Comment voulez-vous<br/> communiquer au cours<br/> de la réunion de %1$s ?]]></string>
+    <string name="audio_selection_msg_own_room">Comment souhaitez-vous communiquer pendant votre réunion ?</string>
+    <string name="invite_participant">Inviter le participant</string>
+    <string name="change_connection">Changer de connexion</string>
+    <string name="disconnect_audio">Déconnecter l\’audio</string>
+    <string name="lock_meeting">Verrouiller la réunion</string>
+    <string name="record_meeting">Enregistrer</string>
+    <string name="turn_off_waiting">Désactiver la salle d’attente</string>
+    <string name="people_are_waiting_message">Des personnes attendent pour rejoindre la réunion. Gérez la salle d’attente pour les admettre ou les refuser.</string>
+    <string name="meeting_locked_error_msg">La réunion que vous souhaitez rejoindre est verrouillée, veuillez contacter l\'hôte de la réunion</string>
+    <string name="is_talking">parle</string>
+    <string name="currently_talking">parlent actuellement</string>
+    <string name="was_taking">a été le/la dernier/-ère à parler</string>
+    <string name="were_taking">ont été les derniers à parler</string>
+    <string name="no_one_taking">Personne n\'a encore parlé</string>
+    <string name="someone_is_presenting_a_file">Partage d’écran</string>
+    <string name="someone_presenting_screen_share"><![CDATA[<b>%s</b> partage son écran]]></string>
+    <string name="someone_is_presenting">Quelqu’un est en train de présenter</string>
+    <string name="you_are_not_sharing_camera">Vous ne partagez plus votre caméra</string>
+    <string name="you_are_sharing_camera">Vous êtes en train de partager votre caméra</string>
+    <string name="someone_sharing_camera">Quelqu’un est en train de partager sa caméra</string>
+    <string name="someone_sharing_whiteboard">Quelqu’un est en train de partager son tableau blanc</string>
+    <string name="presenting_whiteboard">Tableau blanc</string>
+    <string name="someone_sharing_with_one_camera"><![CDATA[Partage d’écran et %s webcam]]></string>
+    <string name="someone_sharing_with_cameras"><![CDATA[Partage d’écran et %s webcams]]></string>
+    <string name="someone_presenting_with_cameras"><![CDATA[Présentation de fichier et %s webcams]]></string>
+    <string name="someone_presenting_with_one_camera"><![CDATA[Présentation de fichier et %s webcams]]></string>
+    <string name="someone_sharing_whiteboard_with_cameras"><![CDATA[Tableau blanc et %s webcams]]></string>
+    <string name="someone_sharing_whiteboard_with_one_camera"><![CDATA[Tableau blanc et %s webcams]]></string>
+    <string name="presenting_webcams_count"><![CDATA[%s webcams]]></string>
+    <string name="webcam_presenter_name"><![CDATA[%1$s webcam]]></string>
+    <string name="speakerTurnOn">Haut-parleur : Activer</string>
+    <string name="speakerTurnOff">Haut-parleur : Désactiver</string>
+    <string name="maximum_webcams_limit_reached">Impossible d’allumer votre webcam. Nombre maximal atteint.</string>
+    <string name="your_webcam_is_on">Votre webcam est allumée</string>
+    <string name="your_webcam_is_off">Votre webcam est éteinte</string>
+    <!-- Not used, to be implemented:
+    <string name="unable_to_display_shared_file">Impossible d’afficher la présentation de fichier</string>
+    -->
+    <string name="screenshare_with_webcam_pagination"><![CDATA[Partage d’écran et %s]]></string>
+    <string name="file_with_webcam_pagination"><![CDATA[Présentation du fichier et %s]]></string>
+    <string name="whiteboard_with_webcam_pagination"><![CDATA[Tableau blanc et %s]]></string>
+    <string name="webcam_page_info"><![CDATA[%s webcams (%s-%s)]]></string>
+    <string name="low_bandwidth_mode_on">Mode Bande passante faible : Activer</string>
+    <string name="low_bandwidth_mode_off">Mode Bande passante faible : Désactiver</string>
+    <string name="low_bandwidth_mode">Mode bande passante faible</string>
+    <string name="low_bandwidth_mode_cam_hidden">Mode bande passante faible (webcams désactivées)</string>
+    <!-- Internet connectivity -->
+    <string name="internet_not_connected">Internet non disponible</string>
+    <string name="voip_not_enabled">VoIP non activée pour cet utilisateur</string>
+    <string name="choose_dial_in_number">Sélectionnez un numéro à composer pour accéder à la réunion.</string>
+    <string name="no_dialin_numbers">Aucun numéro à composer trouvé</string>
+    <string name="dial_in_not_enabled">Appel entrant non activé</string>
+    <string name="dial_out_not_enabled">Appel sortant non activé</string>
+    <string name="dial_in_number">Numéro d’appel</string>
+    <string name="search_string">Rechercher</string>
+    <!-- About Page -->
+    <string name="software_credits">Crédits logiciels</string>
+    <string name="contact_us">Nous contacter</string>F
+    <string name="call_me">Appelez-moi</string>
+    <string name="add_number">Ajouter un numéro</string>
+    <string name="call_my_phone">Appeler mon téléphone</string>
+    <string name="add_number_title">Ajouter un numéro</string>
+    <string name="phone_number_selection_msg">Sélectionnez un numéro à appeler lors de la réunion ou entrez un nouveau.</string>
+    <string name="enter_phone_number_sub_title">Saisissez un numéro de téléphone pour parler pendant la réunion.</string>
+    <string name="include_country_code">Inclure l\'indicatif du pays</string>
+    <string name="phone_num_example">555 555 5555</string>
+    <string name="cntry_code_example">+1</string>
+    <string name="cancel">Annuler</string>
+    <string name="add">Ajouter</string>
+    <!-- Call me flow -->
+    <string name="please_add_phone_number">Veuillez ajouter un numéro de téléphone.</string>
+    <string name="please_select_phone_number">Veuillez sélectionner un numéro de téléphone.</string>
+    <string name="please_enter_valid_country_code">Veuillez saisir un indicatif du pays valide.</string>
+    <string name="please_valid_phone_number">Veuillez saisir un numéro de téléphone valide.</string>
+    <string name="number_already_exist_in_list">Ce numéro existe déjà dans la liste</string>
+    <!-- Tab Content Text -->
+    <string name="tab_text_guest">Invités</string>
+    <string name="tab_text_metting">réunion</string>
+    <string name="tab_text_chat">Discussions en ligne</string>
+    <!-- support -->
+    <string name="support_msg_on_meeting_join">Recherchez dans votre e-mail ou sur l\'invitation du calendrier le lien de la réunion, ou contactez l\'hôte de votre réunion.</string>
+    <string name="trouble_joining_title">Des problèmes pour rejoindre la réunion ?</string>
+    <string name="action_contact_support">Contacter le service d\'assistance</string>
+    <string name="primary_access_number">Numéro d\'accès principal</string>
+
+    <!-- Setting -->
+    <string name="invalid_phone_number">Veuillez saisir un numéro de téléphone approprié</string>
+    <string name="first_name">Prénom</string>
+    <string name="last_name">Nom de famille</string>
+    <string name="update_name">Mettre à jour le nom</string>
+    <string name="forgot_password">Mot de passe oublié</string>
+    <string name="select_room">Sélectionner la salle</string>
+    <string name="default_meeting_url">URL de la réunion par défaut</string>
+    <string name="display_name_in_meeting">Nom affiché pendant les réunions</string>
+    <string name="reset_password">Réinitialiser / Mot de passe oublié</string>
+    <string name="client_Id">ID client</string>
+    <string name="send_chat">Envoyer</string>
+    <string name="default_room_title">URL de la réunion par défaut</string>
+    <string name="display_name_msg">Nom affiché \npendant les réunions</string>
+    <string name="btn_update_name">Mettre à jour</string>
+    <string name="client_id">ID client</string>
+
+    <!--Thank you Fragment -->
+    <string name="thankyou_quote">Merci d\'avoir participé à cette réunion.</string>
+    <string name="thankyou_ok">OK</string>
+    <string name="thankyou_join_another_meeting">Rejoindre une autre réunion</string>
+    <string name="notification_title">GlobalMeet</string>
+    <string name="notification_content">Votre réunion est en cours</string>
+    <string name="welcome_to_imeet">Bienvenue dans GlobalMeet</string>
+    <string name="tap_a_meeting_link">Appuyez sur un lien de réunion dans votre invitation e-mail, ou saisissez l\'URL de la réunion ci-dessous :</string>
+    <string name="app_update_alert_message">Cette version de GlobalMeet est obsolète et peut causer des problèmes. Veuillez mettre à jour votre application pour une meilleure expérience d\'utilisation.</string>
+    <string name="app_update_alert_button_later">Ultérieurement</string>
+    <string name="app_update_alert_button_update">Mettre à jour</string>
+
+    <!-- sign out text-->
+    <string name="host_signout_text">Êtes-vous sûr de vouloir vous déconnecter ?</string>
+    <string name="guest_signout_text">En vous déconnectant, vous perdrez vos données, y compris les réunions récemment rejointes.</string>
+    <string name="alert_option_signout">Fin de session</string>
+    <string name="alert_option_cancel">Annuler</string>
+    <string name="error_on_signout">Problème lors de la déconnexion</string>
+    <string name="you">Vous</string>
+    <string name="parsing_erro_client_info">Impossible d\'analyser les informations client</string>
+    <string name="empty_join_url_error">L\'URL de la réunion que vous essayez de rejoindre n\'existe pas. Veuillez vérifier l\'URL et réessayer</string>
+    <string name="please_provide_a_first_and_last_name">Veuillez indiquer un prénom et un nom</string>
+    <string name="please_provide_a_first_name">Veuillez indiquer un prénom</string>
+    <string name="please_provide_a_last_name">Veuillez indiquer un nom</string>
+    <string name="display_name_update_sucess_msg">Votre nom affiché pendant les réunions a été mis à jour.</string>
+    <string name="no_one_has_spoken_yet">Personne n\'a\n encore parlé</string>
+    <string name="presenter_name"><![CDATA[Écran %1$s]]></string>
+
+    <string name="menu_mute">Sourdine</string>
+    <string name="menu_unmute">Désactiver la sourdine</string>
+    <string name="menu_promote">Promouvoir</string>
+    <string name="menu_demote">Rétrograder</string>
+    <string name="menu_dismiss">Exclure</string>
+    <string name="menu_private_chat_with">Discussion en ligne privée avec</string>
+
+    <string-array name="menu_host_controls">
+        <item checked="false">@string/menu_mute</item>
+        <item checked="false">@string/menu_promote</item>
+        <item checked="false">@string/menu_dismiss</item>
+    </string-array>
+
+    <!-- Not used, but could be useful
+    <string name="coming_soon">À venir</string>
+    <string name="meeting_chat_coming_soon">Discussion en ligne (chat) de réunion bientôt disponible.</string> -->
+    <string name="no_chats_title">Aucun message</string>
+    <string name="no_chats_description">Envoyez ou recevez un message de discussion en ligne et il s’affichera ici</string>
+    <string name="hint_chat_say_something">Dites quelque chose...</string>
+    <string name="chat_sub_content_bullet">&#8226;</string>
+
+    <!-- Not used, but could be useful
+    <string name="airplane_mode_prompt_title">In airplane mode</string>
+    <string name="airplane_mode_prompt_message">This function is not available while in airplane mode.</string> -->
+    <string name="invalid_url_meeting_prompt_title">Réunion introuvable</string>
+    <string name="invalid_url_meeting_prompt_message">L\'URL de la réunion que vous essayez de rejoindre n\'existe pas. Veuillez vérifier l\'URL et réessayer.</string>
+    <string name="leave_current_meeting_prompt_title">Quitter la réunion actuelle ?</string>
+    <string name="leave_current_meeting_prompt_message">Pour rejoindre une nouvelle réunion, vous devrez quitter votre réunion actuelle.</string>
+    <string name="dialog_wifi_to_mobile_data_switch_message">Vous n\'êtes pas connecté au Wi-Fi actuellement. Tous les frais de données dus à l\'opérateur seront à votre charge.</string>
+    <string name="dialog_dont_show_again">Ne plus afficher</string>
+    <string name="dialog_internet_connection_time_out">La connexion au serveur de la réunion n\'a pas pu être établie. Veuillez vérifier votre connexion Internet et réessayer.</string>
+    <string name="reconnecting">RECONNEXION</string>
+    <string name="dialog_dismiss">Exclure</string>
+    <string name="no_network">Aucune connexion réseau disponible</string>
+    <string name="dialog_wifi_to_mobile_data_switch_message_for_webcam">Vous n’êtes pas en train d’utiliser le Wi-Fi. Des frais peuvent s’appliquer. L’utilisation des webcams requiert une connexion Wi-Fi.</string>
+
+    <!-- participant header -->
+    <string name="one_participant">1 participant</string>
+    <string name="participants">participants</string>
+    <string name="no_participants">aucun participant</string>
+    <string name="exit">Quitter</string>
+    <string name="speaking">Voix</string>
+    //Retry messages
+    <string name="failed_to_join_meeting">Échec de la connexion à la réunion</string>
+    <string name="failed_to_start_meeting">Échec du démarrage de la réunion</string>
+    <string name="failed_to_dial_out">Échec de l\'appel sortant</string>
+    <string name="failed_to_complete_search">Échec de la recherche</string>
+    <string name="failed_to_mute">Échec de la mise en sourdine</string>
+    <!--<string name="failed_to_unmute">Échec de la désactivation de la sourdine</string> Not used -->
+    <string name="failed_to_dismiss">Échec de l\'exclusion</string>
+    <!--<string name="failed_to_update_audio_connection">Échec de la mise à jour de la connexion audio</string> Not used -->
+    <string name="failed_to_promote">Échec de la promotion</string>
+    <string name="failed_to_demote">Échec de la rétrogradation</string>
+    <string name="failed_to_mute_all">Échec de la mise en sourdine de tous</string>
+    <string name="failed_to_set_participant_option">Échec de</string>
+    <string name="failed_to_get_meeting_events_head">Erreur inattendue</string>
+    <string name="failed_to_get_meeting_events_body">Un problème est survenu. Veuillez essayer de rejoindre à nouveau la réunion</string>
+    <string name="failed_to_get_meeting_events_positive">Rejoindre à nouveau la réunion</string>
+    <string name="failed_to_get_meeting_events_negative">Annuler</string>
+    <string name="failed_to_leave_meeting">Échec du départ de la réunion</string>
+    <string name="bad_network_conditions_message">Réseau de mauvaise qualité détecté. Essayez de modifier votre connexion audio.</string>
+    <string name="bad_network_conditions_title">Changer l’audio</string>
+    <string name="bad_network_low_bandwidth_message">Réseau de mauvaise qualité détecté. Essayez d\'utiliser le mode bande passante faible.</string>
+    <string name="bad_network_low_bandwidth_title">Activez le mode bande passante faible</string>
+    <string name="metered_network_conditions_message">Réseau médiocre détecté. Vous pouvez rencontrer des problèmes. S\'il vous plaît vérifier votre connexion.</string>
+    <string name="failed_camera_start">Impossible d’allumer votre webcam.</string>
+    <string name="failed_camera_stop">Impossible d’éteindre votre webcam.</string>
+    <string name="failed_camera_btn_retry">Réessayer</string>
+
+    // generic error messages
+    <string name="unable_to_update_information">Impossible de mettre à jour les informations</string>
+    //RoomRoles
+    <string name="host">HÔTE</string>
+    <string name="presenter">PRÉSENTATEUR</string>
+    <string name="roleDelegateHost">CO-HÔTE</string>
+    <string name="host_lowercase">Hôte</string>
+    <string name="presenter_lowercase">Présentateur</string>
+    <string name="roleDelegateHost_lowercase">Co-Hôte</string>
+    //About Meeting
+    <string name="device_model">Modèle de l\'appareil</string>
+    <string name="os_version">Version de système d\'exploitation</string>
+    <string name="app_version">Version d\'application</string>
+    <string name="help_app_subject">Feedback GlobalMeet</string>
+    <string name="meeting_locked_title">La réunion est verrouillée</string>
+    <string name="meeting_full_title">La réunion est complète</string>
+    <string name="meeting_locked_message">Veuillez contacter l\'hôte de la réunion pour \nobtenir plus d\'informations.</string>
+    <string name="meeting_full_message">Cette réunion a atteint sa capacité \nmaximale. Veuillez réessayer plus tard</string>
+    <string name="skip_enter_url">Omettre</string>
+    <string name="start_recording">Démarrer l’enregistrement</string>
+    <!-- help menu -->
+    <string name="call_support">Appeler un agent du service clientèle</string>
+    <string name="email_support">Envoyer un e-mail à un agent du service clientèle</string>
+    <string name="visit_support">Visiter le site d’assistance</string>
+    <string name="turn_on_speaker">Haut-parleur activé</string>
+    <string name="turn_off_speaker">Haut-parleur désactivé</string>
+    <string name="required_service_failure">Le service requis ne fonctionne pas. Veuillez redÃ©marrer lâ€™application.</string>
+    <string name="mute_all_participants">Mettre en sourdine tous les participants</string>
+    <string name="unmute_all_participants">Arrêter de mettre en sourdine tous les participants</string>
+    <string name="unlock_meeting">Déverrouiller la réunion</string>
+    <string name="stop_recording">Arrêter l’enregistrement</string>
+    <string name="preparingToRecordToast">Enregistrement en cours de préparation...</string>
+    <string name="recordingStopped">L’enregistrement a pris fin. Le lien sera e-mailé lorsque prêt</string>
+    <string name="recording_failed">Échec de l’enregistrement</string>
+    <string name="try_again">Réessayer</string>
+
+    <string name="home_screen_tab">Home Screen Tab</string>
+    <string name="signing_out">Signing out</string>
+    <string name="activity_tab_toolbar_avatar">Activity Tab Toolbar Avatar</string>
+
+    <!--newucc strings-->
+    <string name="home_tab_home">Accueil</string>
+    <!-- Not used yet
+    <string name="home_tab_calls">Calls</string>
+    <string name="home_tab_chats">Chat</string>
+    <string name="home_tab_contacts">Contacts</string> -->
+    <string name="email">E-mail</string>
+
+
+    <!-- Home Cards -->
+    <string name="home_card_time_ago_in_mins">%1$d minuten geleden</string>
+    <string name="home_card_time_ago_in_min">%1$d minuten geleden</string>
+    <string name="home_card_time_ago_in_hrs">il y a %1$d heures</string>
+    <string name="home_card_time_ago_in_hr">an hour ago</string>
+    <string name="home_card_time_in_hour">dans %1$d heure</string>
+    <string name="home_card_time_in_min">dans %1$d minutes</string>
+    <string name="home_card_time_one_meeting_left">encore 1 réunion</string>
+    <string name="home_card_time_meetings_left">encore %1$d réunions</string>
+
+    <string name="home_card_time_late">%1$d min en retard</string>
+    <string name="home_card_time_now">Maintenant</string>
+    <string name="home_card_time_future">%1$d min trop tôt</string>
+    <string name="home_card_time_upcoming">à venir</string>
+    <string name="home_card_time_in_hours">dans %1$d heures</string>
+    <string name="home_card_time_in_mins">dans %1$d minutes</string>
+    <string name="home_late_badge">late</string>
+
+    <string name="home_card_current_header_title">Rejoindre la réunion maintenant</string>
+    <string name="home_card_upcoming_header_title">Votre prochaine réunion</string>
+    <string name="home_card_wait_header_title">Des personnes attendent la réunion</string>
+    <string name="home_card_finished_header_title">Vient de se terminer</string>
+    <string name="home_card_missed_calls_header_title">Plus d’appels manqués</string>
+    <string name="home_card_missed_chats_header_title">Plus de conversations manquées</string>
+
+    <string name="home_card_connect_calendat_btn_text">Connecter le calendrier</string>
+    <string name="home_card_schedule_btn_text">Programmer </string>
+    <string name="home_card_view_btn_text">Afficher</string>
+    <string name="home_card_view_all_btn_text">Afficher tout</string>
+    <string name="home_card_view_details_btn_text">Afficher les détails</string>
+    <string name="home_card_follow_up_btn_text">Suivi</string>
+    <string name="home_card_join_btn_text">Joindre</string>
+    <string name="home_card_decline_btn_text">Refuser</string>
+    <string name="home_card_message_bth_text">Message</string>
+    <string name="home_card_call_back_btn_text">Rappeler</string>
+    <string name="home_card_contact_host_btn_text">Contacter l’hôte</string>
+    <string name="home_card_contact_organizer_btn_text">Contacter l’organisateur</string>
+
+
+    <!-- Meetings Fragment -->
+    <string name="hometab">Accueil</string>
+    <string name="meetingstab">Réunions</string>
+    <string name="great_job">Formidable !</string>
+    <string name="no_cards_msg">Pas de réunion à venir, pas d’appels ou de discussions en ligne manqués.</string>
+    <string name="connect_calendar">Connecter le calendrier</string>
+
+    <string name="card_dismiss">Exclure</string>
+    <string name="msal_welcome_text">Bienvenue</string>
+    <string name="msal_welcome_msg">Cet onglet affiche un résumé de vos réunions à venir, de vos appels manqués et messages vocaux, et de vos discussions en ligne manquées, le tout dans un emplacement unique. Pour démarrer, connectez-vous à votre calendrier.</string>
+    <!-- Meetings Fragment -->
+    <string name="home_tab_meetings">Réunions</string>
+    <string name="connect_to_calendar_or_search">Connectez votre calendrier</string>
+    <string name="search_meeting_now">ou recherchez l’URL d’une réunion à rejoindre maintenant.</string>
+    <string name="no_agenda">No agenda</string>
+    <string name="my_meeting_room">Ma salle de rÉunion</string>
+    <string name="agenda">Programme</string>
+    <string name="today">Aujourd’hui</string>
+    <string name="all_clear">Rien à signaler!</string>
+    <string name="no_upcoming_meetings">Aucune réunion à venir aujourd’hui.</string>
+<!--    <string name="host_meeting_name">%1$s %2$s</string>-->
+    <string name="host_meeting_room_url">%1$s</string>
+    <string name="copy_message">Copié !</string>
+    <string name="copy_message_universal">L’URL de la réunion a été copiée.</string>
+    <string name="overflow_join_my_meeting">Rejoindre ma salle de réunion</string>
+    <string name="overflow_copy_meeting_url">Copier l’URL de ma réunion</string>
+
+    <string name="mobile">Téléphone portable</string>
+    <string name="overflow_schedule_a_meeting">Programmer une réunion</string>
+    <string name="all_day_meeting">Toute la journée</string>
+    <string name="no_title">(aucun titre)</string>
+    <string name="schedule_meeting_named_header">Rejoignez %1$s la réunion via l’URL suivante</string>
+    <string name="or_dial_in_using_phone_label">Ou composez sur votre téléphone:</string>
+    <string name="access">Accès</string>
+    <string name="guest_passcode">Mot de passe de l’invité</string>
+    <string name="other_access_numbers">Autres numéros d’accès</string>
+    <string name="join_using_sip_header">Vous rejoignez la réunion à partir d’un système de salle vidéo ? Utilisez les informations suivantes</string>
+    <string name="sip_uri">SIP-URI</string>
+    <string name="toll_number">Appel</string>
+    <string name="international_toll_free">Appel gratuit international</string>
+    <string name="local_number">Local</string>
+    <string name="lo_call_number">Appel à tarif réduit</string>
+    <string name="h323_address_details">Adresse H.323</string>
+    <string name="no_calendar_app_available">Ce dispositif n’est pas équipé d’une application de calendrier compatible. Veuillez essayer d’installer une autre appli de calendrier.</string>
+    <string name="open_with">Ouvrir avec…</string>
+
+    <!--calls strings-->
+    <!-- Not used yet
+    <string name="recent_calls">RÉCENTS</string>
+    <string name="missed_calls">MANQUÉS</string>
+    <string name="voicemails">MESSAGES VOCAUX</string> -->
+    <string name ="enter_url_or_name">Saisissez l’URL de la réunion ou un nom</string>
+    <string name="main_menu_profile_title">Mon profil</string>
+    <string name="make_or_recieve_call">Démarrez ou recevez un nouvel appel \net il s’affichera ici</string>
+    <string name="missed_calls_appear_here">Les appels manqués apparaîtront ici</string>
+    <string name="no_recent_calls">Aucun appel récent</string>
+    <string name="no_missed_calls">Aucun appel manqué</string>
+    <string name="no_audio">Aucune connexion audio détectée.</string>
+    <string name="connect_audio_title">CONNECTER L\'AUDIO</string>
+    <string name="unknown">Inconnu</string>
+    <string name="meeting_search_fragment">Fragment de recherche de réunion</string>
+    <!--WaitingRoom-->
+    <string name="waiting_room_fragment">Salle d’attente</string>
+    <string name="waiting_room_meeting_name">la réunion de %1$s</string>
+    <string name="waiting_room_title">Bienvenue à</string>
+    <string name="waiting_room_message">Vous allez rejoindre la réunion dès que l’hôte \nvous y admettra.</string>
+    <string name="waiting_for_host">Dans l’attente de l’hôte…</string>
+    <string name="please_contact_host">Veuillez contacter l’hôte de la réunion</string>
+    <string name="host_denied_waiting_message">L’hôte de cette réunion n’a pas approuvé votre demande d’entrée.<br/> Vous pouvez contacter l’hôte de la réunion directement pour obtenir plus d’informations.</string>
+    <string name="meeting_ended_wait_state">La réunion %1$s est terminée</string>
+    <string name="meeting_locked">La réunion de %1$s est actuellement verrouillée</string>
+    <string name="meeting_is_locked_message">Veuillez contacter de l’hôte</string>
+    <string name="meeting_full">La réunion de %1$s est complète</string>
+
+    <!-- Meeting Security -->
+    <string name="meeting">réunion</string>
+    <string name="meeting_security">Sécurité de la réunion</string>
+    <string name="lock_room">Verrouiller la salle</string>
+    <string name="lock_room_description">Empêchez des invités supplémentaires de rejoindre la réunion.</string>
+    <string name="enable_waiting_room">Activer la salle d’attente</string>
+    <string name="waiting_room_description">Demandez aux invités d’attendre à l’extérieur de la salle jusqu’à ce qu’ils soient admis par l’hôte ou un invité promu.</string>
+    <string name="restrict_sharing">Limiter le partage</string>
+    <string name="restrict_sharing_description">Autorisez uniquement l’hôte et les invités promus à partager le contenu.</string>
+    <string name="no_waiting_room_guest_msg">Aucun invité dans la salle d’attente</string>
+    <string name="host_waiting_room_no_guest">Il n’y a personne dans la salle d’attente</string>
+    <string name="host_waiting_room_guest_count_msg">Il y a %1$d personnes dans la salle d’attente</string>
+    <string name="admit">ADMETTRE</string>
+    <string name="deny">REFUSER</string>
+    <string name="meeting_is_locked">La réunion est verrouillée</string>
+    <string name="host_turn_off_waiting_room_message">Des personnes attendent pour rejoindre la réunion. Désactivez la salle d’attente pour les admettre à la réunion.</string>
+    <string name="manage_waiting_room">GÉRER LA SALLE D’ATTENTE</string>
+    <string name="waiting_room_toggle_failed">Échec de modification de l’option Salle d’attente. Veuillez réessayer.</string>
+    <string name="one_person_in_waiting_room">1 personne dans la salle d’attente</string>
+    <string name="admit_all">Admettre tout</string>
+    <string name="foxden_error_msg">Vous ne parvenez pas à afficher ou à partager des webcams et des écrans. Veuillez essayer de vous joindre à nouveau à la réunion.</string>
+    <string name="presenting_webcams_count_lowercase"><![CDATA[%s webcams]]></string>
+    <string name="no_one">Personne</string>
+    <string name="speaking_string">Voix</string>
+    <string name="unable_to_get_audio_permission">Impossible d’obtenir l’autorisation pour le microphone</string>
+    <string name="unable_to_get_camera_permission">Impossible d’obtenir l’autorisation pour la caméra</string>
+    <string name="guests">Invités</string>
+    <string name= "dismiss_user"><![CDATA[Exclure %s]]></string>
+    <string name= "private_chat_with"><![CDATA[Discussion en ligne privée avec %s]]></string>
+    <string name= "unmute_user"><![CDATA[Désactiver la sourdine %s]]></string>
+    <string name= "demote_user"><![CDATA[Rétrograder %s]]></string>
+    <string name= "promote_user"><![CDATA[Promouvoir %s]]></string>
+    <string name= "mute_user"><![CDATA[Activer la sourdine %s]]></string>
+    <string name="everyone">Tout le monde</string>
+    <string name="no_message">Aucun message</string>
+
+    <string name="how_would_rate">Comment qualifieriez-vous votre expérience de l’application de réunion ?</string>
+    <string name="positive_feedback_label">C’était très bien !</string>
+    <string name="negative_feedback_label">Cela aurait pu être mieux.</string>
+
+    <string name="how_can_improve">Comment pouvons-nous améliorer notre produit?</string>
+    <string name="optional">(En option)</string>
+    <string name="feedback">Commentaires</string>
+    <string name="send_feedback">ENVOYER DES COMMENTAIRES</string>
+    <string name="thank_you_for_feedback">Nous vous remercions pour vos commentaires.</string>
+    <string name="overflow_share_my_meeting_url">Partager l’URL de ma réunion</string>
+    <string name="please_join_the_video_meeting_at">Veuillez rejoindre la réunion vidéo à l’adresse suivante</string>
+    <string name="or_dial_in_with_this_number">Ou en appelant ce numéro</string>
+    <string name="invitation_to"><![CDATA[Invitation à %s]]></string>
+    <string name="guest_passcode_share_sheet">Mot de passe de l’invité</string>
+    <string name="text_new_chat">Nouvelle discussion en ligne</string>
+    <string name="guest_lowercase">Invité</string>
+    <string name="private_chat">Discussion en ligne privée</string>
+    <string name="enable_private_chat">Activer la discussion en ligne</string>
+    <string name="save">Enregistrer</string>
+    <string name="notification_host_disable_private_chat">L’hôte a désactivé la discussion en ligne privée</string>
+    <string name="notification_for_host_on_chat_disable">La discussion en ligne privée a été désactivée pour toutes vos réunions.</string>
+    <string name="no_participant_available_to_chat">Aucun participant n’est disponible pour discuter en ligne.</string>
+    <string name="add_conversation_error_msg">Un problème est survenu. Veuillez patienter un instant, puis réessayer.</string>
+    <string name="private_chat_failure">Échec de l’envoi du message. Appuyez pour réessayer</string>
+    <string name="msg_private_chat_restriction">Les participants utilisant la version 6.44 ou antérieure ne peuvent pas envoyer / recevoir de messages de discussion en ligne privés.</string>
+    <string name="offline_error_msg">L’utilisateur est hors ligne.</string>
+    <string name="text_offline">Hors ligne</string>
+</resources>

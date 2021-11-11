@@ -1,0 +1,12 @@
+{
+  "eventType": "CONTENT_CREATED",
+  "timestamp": "2018-10-10T18:43:13.143Z",
+  "contentId": "arg0",
+  "type": "arg1",
+  "version": "arg2",
+  "visible": false,
+  "stageId": "arg4",
+  "staticMetadata": "arg5",
+  "dynamicMetadata": "arg6",
+  "allowGuestUpdate": false
+}

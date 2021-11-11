@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "94021086008",
+    "project_id": "gmandroid-7790f",
+    "storage_bucket": "gmandroid-7790f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94021086008:android:f938f28ffc98235dbaafcd",
+        "android_client_info": {
+          "package_name": "com.pgi.gmmeet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "94021086008-o27d22drd5t9h9pf43pab59lubg259tm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0AU2Nw7ySvuUeyOfK3HHtQ3CBqLVyA_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "94021086008-o27d22drd5t9h9pf43pab59lubg259tm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94021086008:android:c2db71f59ffd367cbaafcd",
+        "android_client_info": {
+          "package_name": "com.pgi.qa.gm.meeting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "94021086008-o27d22drd5t9h9pf43pab59lubg259tm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0AU2Nw7ySvuUeyOfK3HHtQ3CBqLVyA_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "94021086008-o27d22drd5t9h9pf43pab59lubg259tm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/meeting_guest_list_header_background_color">
+
+    <LinearLayout
+        android:id="@+id/ll_meeting_icons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/margin_10_dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/btn_share_sheet_menu"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_15_dp"
+            android:layout_toLeftOf="@+id/btn_security_menu">
+
+            <ImageView
+                android:id="@+id/img_share_sheet_icon"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_share_meeting"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_security_menu"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_15_dp">
+
+            <ImageView
+                android:id="@+id/img_security_icon"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:scaleType="fitCenter"
+                android:src="@drawable/security_icon_blue"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_15_dp"
+        android:orientation="vertical"
+        android:layout_toStartOf="@id/ll_meeting_icons"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/margin_10_dp"
+        android:layout_marginBottom="@dimen/margin_10_dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/meeting"
+            android:textSize="@dimen/xxmedium_text"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="normal"
+            android:lineSpacingExtra="@dimen/xsmall_text"
+            android:textColor="@color/participant_name_color"/>
+        <TextView
+            android:id="@+id/tv_security_header_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_14_sp"
+            android:textStyle="normal"
+            android:lineSpacingExtra="@dimen/text_6_sp"
+            android:textColor="@color/meeting_security_option_desc_text_color"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</RelativeLayout>

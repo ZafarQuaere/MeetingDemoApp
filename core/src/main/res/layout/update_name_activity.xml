@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="@dimen/audio_selection_close_btn_width"
+        android:layout_height="@dimen/audio_selection_close_btn_height"
+        android:layout_marginStart="@dimen/about_web_view_margin_start"
+        android:layout_marginTop="@dimen/about_web_margin_top"
+        android:layout_marginBottom="@dimen/about_web_margin_bottom"
+        android:background="@drawable/connect_back_btn" />
+
+    <TextView
+        android:id="@+id/tv_update_name_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_close"
+        android:layout_marginTop="@dimen/margin_32_dp"
+        android:layout_toEndOf="@+id/btn_close"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="-0.04"
+        android:text="@string/display_name_msg"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/update_name_screen_title_txt_size"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/et_first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_update_name_title"
+        android:paddingStart="@dimen/margin_32_dp"
+        android:paddingEnd="@dimen/margin_15_dp"
+        android:paddingTop="@dimen/margin_5_dp"
+        android:paddingBottom="@dimen/margin_5_dp"
+        android:layout_marginTop="@dimen/rt_first_name_mrgn_top"
+        android:ems="10"
+        android:textSize="@dimen/update_name_et_txt_size"
+        android:inputType="textPersonName"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        android:textColor="@color/grey"
+        android:maxLength="20"
+        android:background="@drawable/update_name_et_bg"/>
+
+    <EditText
+        android:id="@+id/et_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_first_name"
+        android:layout_below="@+id/et_first_name"
+        android:paddingStart="@dimen/margin_32_dp"
+        android:paddingEnd="@dimen/margin_15_dp"
+        android:paddingTop="@dimen/margin_5_dp"
+        android:paddingBottom="@dimen/margin_5_dp"
+        android:layout_marginTop="@dimen/top_mrgn_last_name_et"
+        android:ems="10"
+        android:maxLength="20"
+        android:textSize="@dimen/update_name_et_txt_size"
+        android:inputType="textPersonName"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        android:textColor="@color/grey"
+        android:background="@drawable/update_name_et_bg"/>
+
+    <TextView
+        android:id="@+id/tv_err"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_last_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_20_dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:letterSpacing="-0.01"
+        android:lineSpacingExtra="0sp"
+        android:text="@string/please_provide_a_first_and_last_name"
+        android:textColor="@color/color_red"
+        android:textSize="@dimen/update_name_et_txt_size"
+        android:textStyle="normal"
+        android:visibility="invisible"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_err"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/update_name_frm_top_margin">
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="@dimen/update_name_btn_width"
+            android:layout_height="@dimen/update_name_btn_height"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:background="@drawable/connect_voip_btn"
+            android:fontFamily="sans-serif-medium"
+            android:layout_gravity="center"
+            android:letterSpacing="-0.02"
+            android:text="@string/btn_update_name"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/audio_selection_text_size"
+            android:textStyle="normal"/>
+
+        <ProgressBar
+            android:id="@+id/progress_update_name"
+            android:layout_width="@dimen/update_name_pb_height"
+            android:layout_height="@dimen/update_name_pb_height"
+            android:layout_gravity="center"
+            android:elevation="@dimen/update_name_pb_elevtn"
+            android:indeterminateDrawable="@drawable/progress_bar"
+            android:visibility="gone"/>
+    </FrameLayout>
+</RelativeLayout>

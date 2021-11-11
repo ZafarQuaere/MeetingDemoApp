@@ -1,0 +1,24 @@
+package com.pgi.convergencemeetings.meeting.gm5.services.audio.softphone
+
+enum class PGiSoftPhoneConstants {
+    VOIP_INIT,
+    VOIP_DIALOUT,
+    VOIP_MIC_ACTIVE,
+    VOIP_MIC_MUTED,
+    VOIP_SET_AUDIO_ROUTE,
+    VOIP_ACTIVATE_SPEAKER,
+    VOIP_ACTIVATE_BLUETOOTH,
+    VOIP_RAISE_VOLUME,
+    VOIP_LOWER_VOLUME,
+    VOIP_RELEASE_FOCUS,
+    VOIP_REQUEST_FOCUS,
+    VOIP_STOP,
+    VOIP_RESUME,
+    VOIP_PAUSE,
+    VOIP_DESTROY,
+    STOP_SERVICE,
+    VOIP_NETWORK_CHANGE,
+    VOIP_CONNECTED,
+    VOIP_DISCONNECTED,
+    VOIP_RECONNECTED
+}

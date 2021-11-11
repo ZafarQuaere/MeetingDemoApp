@@ -1,0 +1,10 @@
+{
+  "responseType": "ERROR",
+  "timestamp": "2018-10-10T18:43:19.826Z",
+  "errors": [
+    {
+      "errorCode": 403,
+      "errorMessage": "Access is denied"
+    }
+  ]
+}

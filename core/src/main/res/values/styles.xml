@@ -1,0 +1,310 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <!--<item name="android:windowAnimationStyle">@style/ThemeAnimation</item>-->
+
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="p">
+            never
+        </item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="RadioButtonStyleDialOut" parent="AppTheme">
+        <item name="colorControlNormal">@color/radio_unchecked_gray_color</item>
+        <item name="colorAccent">@color/primary_color_500</item>
+        <item name="android:textColorSecondary">@color/black</item>
+    </style>
+
+    <style name="TextHeading">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/heading_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="MeetingButtons">
+        <item name="android:layout_width">140dp</item>
+        <item name="android:layout_height">140dp</item>
+        <item name="android:background">@drawable/meeting_btn</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="MeetingImageButtons">
+        <item name="android:layout_width">@dimen/join_meeting_button_height</item>
+        <item name="android:layout_height">@dimen/join_meeting_button_width</item>
+        <item name="android:background">@android:color/transparent</item>
+        <!--<item name="android:src">@drawable/meeting_btn_selector</item>-->
+    </style>
+
+    <style name="MeetingButtonsText">
+        <item name="android:layout_width">140dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+    </style>
+
+    <style name="RadioButtonStyle" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@android:color/holo_blue_light</item>
+        <item name="android:textColorSecondary">@android:color/holo_blue_light</item>
+    </style>
+
+    <style name="EnterUrlJoinButton">
+        <item name="android:layout_width">163dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_bg</item>
+    </style>
+
+    <style name="EnterUrlJoinButtonText">
+        <item name="android:layout_width">140dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Theme.DesignStatusBar" parent="AppTheme"/>
+
+
+    <style name="TabViewStyle" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/tab_selected_color</item>
+        <item name="tabIndicatorHeight">3dp</item>
+    </style>
+
+    <style name="TabViewStyleCalls" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/black</item>
+        <item name="tabIndicatorHeight">3dp</item>
+    </style>
+    <style name="dialog_theme" parent="android:Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Widget.RoundedButton" parent="android:Widget">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="Widget.RoundedBorderButton" parent="Widget.RoundedButton">
+        <item name="android:background">@drawable/rounded_border_button</item>
+        <item name="android:textColor">@color/dark_grey</item>
+    </style>
+
+    <style name="Widget.RoundedSolidButton" parent="Widget.RoundedButton">
+        <item name="android:background">@drawable/rounded_solid_button</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AudioSelectionCheckBox" parent="android:Widget.CompoundButton.CheckBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/audio_selection_chkbx_mute_margin_btm</item>
+        <item name="android:layout_marginStart">@dimen/audio_selection_chkbx_margin_start</item>
+        <item name="android:button">@drawable/check_box_large</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/profile_pic_text_color</item>
+        <item name="android:textSize">@dimen/audio_selection_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingLeft">@dimen/audio_selection_chkbx_left_padding</item>
+    </style>
+
+    <style name="DialogTheme" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="android:textColor">#4d4d4d</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+
+    </style>
+
+    <style name="TextInputLayout" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/inputFieldThemeGray</item>
+        <item name="colorAccent">@color/inputFieldThemeGray</item>
+        <item name="colorControlNormal">@android:color/transparent</item>
+        <item name="colorControlActivated">@color/inputFieldThemeGray</item>
+    </style>
+
+    <style name="ActiveCallInputLayout" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/dialer_character_light_color</item>
+        <item name="colorAccent">@color/dialer_character_light_color</item>
+        <item name="colorControlNormal">@android:color/transparent</item>
+        <item name="colorControlActivated">@android:color/transparent</item>
+    </style>
+
+    <style name="LogoutProgressBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorAccent">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.ProfileActionBar">
+        <item name="colorPrimaryDark">#234552</item>
+        <item name="colorPrimary">#4085A1</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ToolbarTitleText">
+        <item name="android:textColor">@color/toolbarTitleTextGray</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/message_toolbar_text_size</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_8sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Toolbar" parent="Theme.AppCompat.Light">
+        <item name="android:textColorSecondary">@color/sendMessageButtonInactiveGray</item>
+    </style>
+
+    <style name="AppTheme.DialerDigit">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/dialer_digit_color</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">@dimen/dialer_number_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="AppTheme.DialerDigit.InCall" parent="AppTheme.DialerDigit">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.DialerCharacter">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/dialer_character_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginTop">@dimen/dialer_character_margin_top</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="AppTheme.DialerCharacter.InCall" parent="AppTheme.DialerCharacter">
+        <item name="android:textColor">@color/dialer_character_light_color</item>
+        <item name="android:textSize">@dimen/message_additional_data_text_size</item>
+    </style>
+
+    <style name="AppTheme.DialerButton">
+        <item name="android:background">@drawable/ripple_dialer</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="AppTheme.DialerButton.InCall" parent="AppTheme.DialerButton">
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@drawable/ripple_dialer_incall</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="AppTheme.ActiveCallActivity">
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/active_call_status_bar_color</item>
+    </style>
+
+    <style name="AppTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/dialer_digit_color</item>
+        <item name="tabIndicatorHeight">@dimen/xxxsmall</item>
+        <item name="tabBackground">@color/toolbarBackground</item>
+        <item name="tabTextAppearance">@style/AppTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/dialer_digit_color</item>
+        <item name="android:elevation">16dp</item>
+        <item name="android:windowElevation">16dp</item>
+        <item name="android:popupElevation">16dp</item>
+    </style>
+
+    <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/nav_view_text_size_active</item>
+        <item name="android:textColor">@color/sendMessageButtonInactiveGray</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="AppTheme.NavViewDrawer">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="BottomSheet"></style>
+    <style name="BottomSheet.Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/bottom_sheet_item_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/medium</item>
+        <item name="android:paddingTop">@dimen/xsmall</item>
+        <item name="android:paddingBottom">@dimen/xsmall</item>
+        <item name="android:paddingEnd">@dimen/xsmall</item>
+        <item name="android:drawablePadding">@dimen/medium</item>
+        <item name="android:drawableTint">@color/iconTint</item>
+    </style>
+
+    <style name="dividerBase">
+        <item name="android:background">@color/card_profile_divider</item>
+    </style>
+
+    <style name="dividerVertical" parent="dividerBase">
+        <item name="android:layout_width">3dp</item>
+        <item name="android:layout_height">52dp</item>
+    </style>
+
+    <style name="CardPopupMenu" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:dropDownHorizontalOffset">-8dp</item>
+        <item name="android:dropDownVerticalOffset">-54dp</item>
+    </style>
+
+    <style name="listDividerVertical">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/help_menu_line_seperator</item>
+    </style>
+    <style name="AppTheme.Switch" parent="AppTheme">
+        <item name="colorControlActivated">@color/primary_color_500</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:colorAccent">@color/primary_color_500</item>
+    </style>
+
+    <style name="ChatEnableSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/primary_color_500</item>
+        <item name="colorSwitchThumbNormal">@color/grayMedium</item>
+        <item name="android:colorForeground">@color/primary_color_500</item>
+    </style>
+</resources>

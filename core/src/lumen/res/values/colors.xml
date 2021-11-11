@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        initials background (Search/Recents/Home/Agenda/MyMeetingsAgenda)
+        no internet connection
+        bottom navigation
+        chat cursor
+        meeting url
+        connect your calendar text
+        bad network toast text
+        mic button selector
+        mic button selector SS
+        speaker button selector
+        speaker button selector SS
+        Search/Recents Url
+        Home Card action button 1&2
+        update name positive button
+        mic signal level
+        -->
+    <color name="primary_color_500">#0C9ED9</color>
+
+    <!--
+   Colour for tab indicator and text
+     -->
+    <color name="tab_text_color">#7a7a7a</color>
+    <color name="tab_selected_color">#000000</color>
+    <!--
+        Tour circle indicator
+        guest enter url intro
+        Welcome to ....
+        Continue Button
+        Background of enter url join button
+        -->
+    <color name="brand_color_300">#4FACEE</color>
+    <!--
+      mic pstn button selector
+      mic pstn signal indicator
+      mic pstn button selector SS
+    -->
+    <color name="accent_color_400">#1BC510</color>
+    <!--
+     mic pstn button selector
+     mic pstn button selector SS
+     -->
+    <color name="accent_color_700">#169C0E</color>
+    <!--
+
+    mic pstn button selector
+    mic voip button selector
+    mic button selector SS
+    -->
+    <color name="warn_color_800">#D00D34</color>
+    <!--
+    mic pstn button selector
+   mic voip button selector
+   mic button selector SS
+    -->
+    <color name="warn_color_600">#FE2450</color>
+    <!--
+    mic voip button selector
+    mic button selector SS
+    speaker button selector
+    speaker button selector SS
+    -->
+    <color name="primary_color_700">#007BB2</color>
+
+    <color name="brand_color_500">#0075C9</color>
+
+    <color name="btn_bg_card">#1595e9</color>
+</resources>

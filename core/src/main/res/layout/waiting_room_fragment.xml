@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/transparent_bg_color">
+        <TextView
+            android:id="@+id/tv_waiting_room_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_15_dp"
+            android:layout_marginTop="@dimen/waiting_welcome_top_y"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="@dimen/margin_6sp"
+            android:text="@string/waiting_room_title"
+            android:textColor="@color/copied_message"
+            android:textSize="@dimen/global_meet_text_size"
+            android:textStyle="normal" />
+        <TextView
+            android:id="@+id/tv_waiting_room_title_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_15_dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/tv_waiting_room_title"
+            android:lineSpacingExtra="@dimen/margin_6sp"
+            android:textColor="@color/copied_message"
+            android:textSize="@dimen/global_meet_text_size"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tv_waiting_room_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_waiting_room_title_name"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="@dimen/margin_26_dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="@dimen/space_4sp"
+            android:text="@string/waiting_room_message"
+            android:textColor="@color/duration_text_color"
+            android:textSize="@dimen/margin_16sp"
+            android:textStyle="normal" />
+
+        <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/pb_waiting_room"
+            android:gravity="center_horizontal"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large.Inverse"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_24dp"
+            android:layout_marginRight="@dimen/margin_168_dp"
+            android:layout_marginTop="@dimen/margin_102_dp"
+            android:layout_marginLeft="@dimen/margin_168_dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:indeterminateTint="@android:color/darker_gray"
+            android:layout_below="@+id/tv_waiting_room_message"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tv_waiting_for_host_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pb_waiting_room"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_19_dp"
+            android:letterSpacing="-0.01"
+            android:lineSpacingExtra="@dimen/space_4sp"
+            android:text="@string/waiting_for_host"
+            android:textColor="@color/rightMessageTextGray"
+            android:textSize="@dimen/text_size_meeting_full_message"
+            android:textStyle="normal" />
+</RelativeLayout>
+

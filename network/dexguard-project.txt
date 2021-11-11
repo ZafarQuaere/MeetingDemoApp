@@ -1,0 +1,2 @@
+-dontnote com.newrelic.agent.android.NewRelic
+-dontnote com.newrelic.agent.android.harvest.crash.Crash

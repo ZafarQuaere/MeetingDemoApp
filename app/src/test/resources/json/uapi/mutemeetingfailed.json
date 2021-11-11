@@ -1,0 +1,9 @@
+{
+  "eventType": "MUTE_MEETING_FAILED",
+  "timestamp": "2018-10-10T18:43:11.996Z",
+  "error": {
+    "code": 0,
+    "pgsErrorCode": 0,
+    "errorText": "Error text"
+  }
+}

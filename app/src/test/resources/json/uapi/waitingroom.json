@@ -1,0 +1,36 @@
+{
+  "responseType": "MEETING_EVENTS",
+  "timestamp": "2020-07-01T00:53:57.136Z",
+  "meetingId": "cn3ptztxjufio0r839iafvpp8",
+  "since": -1,
+  "lastSeqNum": 1043034,
+  "reset": false,
+  "events": [
+    {
+      "eventType": "MEETING_STARTED",
+      "timestamp": "2020-07-01T00:51:08.220Z",
+      "roomId": "336589",
+      "meetingCapacity": 125,
+      "audioConferenceId": "999974350",
+      "contentLimit": 20
+    },
+    {
+      "eventType": "MEETING_JOINED",
+      "timestamp": "2020-07-01T00:53:56.309Z",
+      "participantId": "6svlmmxwdn7idbdagbvgjue52",
+      "familyName": "User",
+      "givenName": "Test",
+      "name": "Test User",
+      "phone": null,
+      "phoneExt": null,
+      "email": "testuser@gmail.com",
+      "roomRole": "WAITING_GUEST",
+      "delegateRole": false
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://uapi.qac.globalmeet.net/uapi/v1/room/meeting/events?since=1043034&timeout=50000&talkers=2020-07-01T00:53:57.136Z&w=1"
+    }
+  }
+}

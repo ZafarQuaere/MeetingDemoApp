@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/white" />
+    <corners android:radius="@dimen/margin_32_dp" />
+    <padding
+        android:bottom="@dimen/chat_item_padding_vertical"
+        android:left="@dimen/chat_item_padding_horizontal"
+        android:right="@dimen/chat_item_padding_horizontal"
+        android:top="@dimen/chat_item_padding_vertical" />
+</shape>

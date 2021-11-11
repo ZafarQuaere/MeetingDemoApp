@@ -1,0 +1,501 @@
+{
+  "responseType": "MEETING_EVENTS",
+  "timestamp": "2018-10-17T05:20:32.476Z",
+  "meetingId": "8h1ngpbyst5w13nsq2nvc2rvr",
+  "since": 2421360,
+  "lastSeqNum": 2421361,
+  "events": [
+    {
+      "eventType": "MEETING_STARTED",
+      "timestamp": "2018-10-17T05:14:28.295Z",
+      "roomId": "2988345",
+      "meetingCapacity": 125,
+      "audioConferenceId": "147305988",
+      "contentLimit": 20
+    },
+    {
+      "eventType": "CONTENT_CREATED",
+      "timestamp": "2018-10-17T05:14:28.296Z",
+      "contentId": "55978stgrjpy2cgkvlcxw2lxu",
+      "type": "WEBCAM",
+      "version": "V1",
+      "visible": true,
+      "stageId": "",
+      "staticMetadata": "{\"streamSessionId\":\"9298545b-007f-428d-bafd-443644cd48db\"}",
+      "dynamicMetadata": "{}",
+      "allowGuestUpdate": true
+    },
+    {
+      "eventType": "MEETING_JOINED",
+      "timestamp": "2018-10-17T05:14:28.328Z",
+      "participantId": "3b8d8ov4idgmlkzn31leb2aq4",
+      "familyName": "Chilumula",
+      "givenName": "Sudheer",
+      "name": "Sudheer Chilumula",
+      "phone": "12518025838",
+      "phoneExt": "",
+      "email": "sudheer.chilumula@pgi.com",
+      "roomRole": "HOST",
+      "delegateRole": false
+    },
+    {
+      "eventType": "AUDIO_PARTICIPANT_JOINED",
+      "timestamp": "2018-10-17T05:16:05.233Z",
+      "partId": "7516-223265088",
+      "confId": "147305988",
+      "subConfId": "",
+      "firstName": "",
+      "lastName": "",
+      "company": "",
+      "email": "",
+      "phone": "",
+      "partType": "MODERATOR",
+      "ani": "GM.3b8d8ov4idgmlkzn31leb2aq4",
+      "dnis": "7777001044",
+      "codec": "PCMU/8000",
+      "hold": false,
+      "mute": false,
+      "listenOnly": false,
+      "listenLevel": 0,
+      "voiceLevel": 0,
+      "waiting": true
+    },
+    {
+      "eventType": "SIP_DIAL_OUT_SUCCEEDED",
+      "timestamp": "2018-10-17T05:16:05.258Z",
+      "webParticipantId": "3b8d8ov4idgmlkzn31leb2aq4",
+      "audioParticipantId": "7516-223265088"
+    },
+    {
+      "eventType": "ACTIVE_TALKERS",
+      "timestamp": "2018-10-17T05:16:05.400Z",
+      "talkingParticipants": ["7516-223265088"]
+    },
+    {
+      "eventType": "ACTIVE_TALKERS",
+      "timestamp": "2018-10-17T05:16:07.310Z",
+      "talkingParticipants": []
+    },
+    {
+      "eventType": "MUTE_AUDIO_PARTICIPANT",
+      "timestamp": "2018-10-17T05:16:09.765Z",
+      "audioParticipantId": "7516-223265088"
+    },
+    {
+      "eventType": "UNMUTE_AUDIO_PARTICIPANT",
+      "timestamp": "2018-10-17T05:16:13.177Z",
+      "audioParticipantId": "7516-223265088"
+    },
+    {
+      "eventType": "AUDIO_PARTICIPANT_LEFT",
+      "timestamp": "2018-10-17T05:16:22.929Z",
+      "partId": "7516-223265088",
+      "confId": "147305988",
+      "subConfId": ""
+    },
+    {
+      "eventType": "AUDIO_MEETING_ENDED",
+      "timestamp": "2018-10-17T05:16:22.941Z"
+    },
+    {
+      "eventType": "AUDIO_MEETING_STARTED",
+      "timestamp": "2018-10-17T05:16:57.394Z"
+    },
+    {
+      "eventType": "PARTICIPANT_DIAL_OUT_INITIATED",
+      "timestamp": "2018-10-17T05:16:57.688Z",
+      "dialoutId": "ay4iwkc1e9crdi35vpig3qnov",
+      "audioParticipantId": "7516-220188024",
+      "phoneNumber": "2518025838",
+      "countryCode": "1",
+      "phoneExtension": "",
+      "extensionDelay": 0,
+      "firstName": "Sudheer",
+      "lastName": "Chilumula",
+      "companyName": null,
+      "webParticipantId": "3b8d8ov4idgmlkzn31leb2aq4",
+      "locale": "en"
+    },
+    {
+      "eventType": "AUDIO_PARTICIPANT_JOINED",
+      "timestamp": "2018-10-17T05:17:27.433Z",
+      "partId": "7516-220188024",
+      "confId": "147305988",
+      "subConfId": "",
+      "firstName": "Sudheer",
+      "lastName": "Chilumula",
+      "company": "",
+      "email": "",
+      "phone": "12518025838",
+      "partType": "MODERATOR",
+      "ani": "12518025838",
+      "dnis": null,
+      "codec": "PCMU/8000",
+      "hold": false,
+      "mute": false,
+      "listenOnly": false,
+      "listenLevel": 0,
+      "voiceLevel": 0
+    },
+    {
+      "eventType": "PARTICIPANT_DIAL_OUT_SUCCEEDED",
+      "timestamp": "2018-10-17T05:17:27.453Z",
+      "audioParticipantId": "7516-220188024",
+      "dialoutId": "ay4iwkc1e9crdi35vpig3qnov",
+      "webParticipantId": "3b8d8ov4idgmlkzn31leb2aq4"
+    },
+    {
+      "eventType": "ACTIVE_TALKERS",
+      "timestamp": "2018-10-17T05:17:27.646Z",
+      "talkingParticipants": ["7516-220188024"]
+    },
+    {
+      "eventType": "AUDIO_PARTICIPANT_LEFT",
+      "timestamp": "2018-10-17T05:17:39.408Z",
+      "partId": "7516-220188024",
+      "confId": "147305988",
+      "subConfId": ""
+    },
+    {
+      "eventType": "AUDIO_MEETING_ENDED",
+      "timestamp": "2018-10-17T05:17:39.419Z"
+    },
+    {
+      "eventType": "MEETING_JOINED",
+      "timestamp": "2018-10-17T05:18:26.185Z",
+      "participantId": "40zc8tmysajaxyhcvqjfghqlb",
+      "familyName": "mmw",
+      "givenName": "sinsd",
+      "name": "sinsd mmw",
+      "phone": null,
+      "phoneExt": null,
+      "email": "weww@KKK.COM",
+      "roomRole": "GUEST",
+      "delegateRole": false
+    },
+    {
+      "eventType": "AUDIO_MEETING_STARTED",
+      "timestamp": "2018-10-17T05:18:47.703Z"
+    },
+    {
+      "eventType": "AUDIO_PARTICIPANT_JOINED",
+      "timestamp": "2018-10-17T05:19:00.242Z",
+      "partId": "7516-219410548",
+      "confId": "147305988",
+      "subConfId": "",
+      "firstName": "",
+      "lastName": "",
+      "company": "",
+      "email": "",
+      "phone": "",
+      "partType": "NORMAL",
+      "ani": "GM.40zc8tmysajaxyhcvqjfghqlb",
+      "dnis": "7777001044",
+      "codec": "PCMU/8000",
+      "hold": false,
+      "mute": false,
+      "listenOnly": false,
+      "listenLevel": 0,
+      "voiceLevel": 0
+    },
+    {
+      "eventType": "SIP_DIAL_OUT_SUCCEEDED",
+      "timestamp": "2018-10-17T05:19:00.264Z",
+      "webParticipantId": "40zc8tmysajaxyhcvqjfghqlb",
+      "audioParticipantId": "7516-219410548"
+    },
+    {
+      "eventType": "ACTIVE_TALKERS",
+      "timestamp": "2018-10-17T05:19:00.450Z",
+      "talkingParticipants": ["7516-219410548"]
+    },
+    {
+      "eventType": "MUTE_AUDIO_PARTICIPANT",
+      "timestamp": "2018-10-17T05:19:05.120Z",
+      "audioParticipantId": "7516-219410548"
+    },
+    {
+      "eventType": "UNMUTE_AUDIO_PARTICIPANT",
+      "timestamp": "2018-10-17T05:19:08.283Z",
+      "audioParticipantId": "7516-219410548"
+    },
+    {
+      "eventType": "PARTICIPANT_PROMOTED",
+      "timestamp": "2018-10-17T05:19:10.603Z",
+      "participantId": "40zc8tmysajaxyhcvqjfghqlb"
+    },
+    {
+      "eventType": "CONTENT_CREATED",
+      "timestamp": "2018-10-17T05:19:29.537Z",
+      "contentId": "dmyrspr3u58wptf3rz5wy2ubw",
+      "type": "SCREENSHARE",
+      "version": "1",
+      "visible": true,
+      "stageId": "",
+      "staticMetadata": "{}",
+      "dynamicMetadata": "{}",
+      "allowGuestUpdate": false
+    },
+    {
+      "eventType": "CONTENT_UPDATED",
+      "timestamp": "2018-10-17T05:19:32.304Z",
+      "contentId": "dmyrspr3u58wptf3rz5wy2ubw",
+      "dynamicMetadata": "{\"screenPresenter\":{\"partId\":\"40zc8tmysajaxyhcvqjfghqlb\",\"name\":\"sinsd mmw\",\"phoneNumber\":null,\"email\":\"weww@KKK.COM\"},\"type\":\"SCREENSHARE\",\"action\":\"START\"}"
+    },
+    {
+      "eventType": "CONTENT_UPDATED",
+      "timestamp": "2018-10-17T05:19:49.430Z",
+      "contentId": "dmyrspr3u58wptf3rz5wy2ubw",
+      "dynamicMetadata": "{\"action\":\"STOP\",\"screenPresenter\":{\"email\":\"weww@KKK.COM\",\"name\":\"sinsd mmw\",\"partId\":\"40zc8tmysajaxyhcvqjfghqlb\"},\"type\":\"SCREENSHARE\"}"
+    },
+    {
+      "eventType": "PARTICIPANT_DEMOTED",
+      "timestamp": "2018-10-17T05:19:49.572Z",
+      "participantId": "40zc8tmysajaxyhcvqjfghqlb"
+    },
+    {
+      "eventType": "CHAT_ADDED",
+      "timestamp": "2018-10-17T05:20:05.247Z",
+      "conversationId": "default",
+      "participantId": "3b8d8ov4idgmlkzn31leb2aq4",
+      "chatMsg": "Hi"
+    },
+    {
+      "eventType": "PARTICIPANT_DISMISSED",
+      "timestamp": "2018-10-17T05:20:18.876Z",
+      "reason": "BY_HOST",
+      "participantId": "40zc8tmysajaxyhcvqjfghqlb"
+    },
+    {
+      "eventType": "MEETING_ENDED",
+      "timestamp": "2018-10-17T05:20:32.214Z",
+      "reason": "BY_HOST"
+    },
+    {
+      "eventType": "MEETING_JOINED",
+      "timestamp": "2018-10-17T05:14:28.328Z",
+      "participantId": "3b8d8ov4idgmlkzn31leb2aq4",
+      "familyName": "VRC",
+      "givenName": "PGI",
+      "name": "PGI VRC",
+      "phone": "16789091777",
+      "phoneExt": "",
+      "email": "vrc@pgi.com",
+      "roomRole": "VRC",
+      "id": "vcruser9999999",
+      "delegateRole": false
+    },
+    {
+      "eventType":"AUDIO_PARTICIPANT_JOINED",
+      "timestamp":"2020-03-06T18:59:26.592Z",
+      "partId":"2101-155442264",
+      "confId":"122225327",
+      "subConfId":"",
+      "firstName":"",
+      "lastName":"",
+      "company":"",
+      "email":"",
+      "phone":"",
+      "partType":"NORMAL",
+      "ani":"16788422358",
+      "dnis":"6054755604",
+      "codec":"PCMU/8000",
+      "hold":false,
+      "mute":false,
+      "listenOnly":false,
+      "listenLevel":0,
+      "voiceLevel":0
+    },
+    {
+      "eventType":"AUDIO_PART_RENAMED",
+      "timestamp":"2020-03-06T19:03:07.201Z",
+      "firstName":"new",
+      "lastName":"name",
+      "audioParticipantId":"2101-155442264"
+    },
+    {"eventType":"MEETING_OPTION_UPDATED",
+        "timestamp":"2020-06-30T02:29:21.500Z",
+        "name":"waitingroom.enabled","value":true
+    },
+    {"eventType":"MEETING_OPTION_UPDATED",
+      "timestamp":"2020-06-30T02:29:21.500Z",
+      "name":"waitingroom.enabled","value":false
+    },
+    {
+      "eventType": "MEETING_JOINED",
+      "timestamp": "2020-06-30T02:51:33.920Z",
+      "participantId": "351g8f6sy0snxcrl6776d2ros",
+      "familyName": "GUEST",
+      "givenName": "WAITING",
+      "name": "WAITING GUEST",
+      "phone": "16789091777",
+      "phoneExt": "",
+      "email": "waiting@pgi.com",
+      "roomRole": "WAITING_GUEST",
+      "id": "waitinguser9999999",
+      "delegateRole": false
+    },
+    {"eventType":"PARTICIPANT_ADMITTED",
+      "timestamp":"2020-06-30T02:51:33.920Z",
+      "participantId":"351g8f6sy0snxcrl6776d2ros",
+      "roomRole":"GUEST"
+    },
+    {
+      "eventType" : "MEETING_OPTION_WS_UPDATED",
+      "timestamp" : "2020-06-25T21:25:43.328Z",
+      "name" : "waitingroom.enabled",
+      "value" : true
+    },
+    {
+      "eventType" : "MEETING_OPTION_WS_UPDATED",
+      "timestamp" : "2020-06-25T21:25:43.328Z",
+      "name" : "waitingroom.enabled",
+      "value" : false
+    },
+    {
+      "eventType": "MEETING_JOINED",
+      "timestamp": "2020-06-30T02:51:33.920Z",
+      "participantId": "351g8f6sy0snxcrl6776d2ros",
+      "familyName": "VRC",
+      "givenName": "WAITING",
+      "name": "WAITING VRC",
+      "phone": "16789091777",
+      "phoneExt": "",
+      "email": "waiting@pgi.com",
+      "roomRole": "WAITING_VRC",
+      "id": "waitingvrc9999999",
+      "delegateRole": false
+    },
+    {
+      "eventType": "MEETING_JOINED",
+      "timestamp": "2020-06-30T02:51:33.920Z",
+      "participantId": "351g8f6sy0snxcrl6776d2ros",
+      "familyName": "",
+      "givenName": "RECORDER",
+      "name": "RECORDER",
+      "phone": "16789091777",
+      "phoneExt": "",
+      "email": "recorder@pgi.com",
+      "roomRole": "RECORDER",
+      "id": "waitinguser9999999",
+      "delegateRole": false
+    },
+    {
+      "eventType" : "PARTICIPANT_DISMISSED",
+      "timestamp" : "2020-06-25T21:25:44.587Z",
+      "reason" : "BY_HOST",
+      "participantId" : "3b8d8ov4idgmlkzn31leb2aq4"
+    },
+    {
+      "eventType" : "PARTICIPANT_DISMISSED",
+      "timestamp" : "2020-06-25T21:25:44.587Z",
+      "reason" : "ROOM_AT_CAPACITY",
+      "participantId" : "3b8d8ov4idgmlkzn31leb2aq4"
+    },
+    {
+      "eventType" : "PARTICIPANT_DISMISSED",
+      "timestamp" : "2020-06-25T21:25:44.587Z",
+      "reason" : "INACTIVE_PARTICIPANT",
+      "participantId" : "3b8d8ov4idgmlkzn31leb2aq4"
+    },
+    {
+      "eventType" : "PARTICIPANT_DISMISSED",
+      "timestamp" : "2020-06-25T21:25:44.587Z",
+      "reason" : "LOCK",
+      "participantId" : "3b8d8ov4idgmlkzn31leb2aq4"
+    },
+    {
+      "eventType" : "PARTICIPANT_DISMISSED",
+      "timestamp" : "2020-06-25T21:25:44.587Z",
+      "reason" : "WAIT_TIMEOUT_HOST",
+      "participantId" : "3b8d8ov4idgmlkzn31leb2aq4"
+    },
+    {
+      "eventType" : "PARTICIPANT_DISMISSED",
+      "timestamp" : "2020-06-25T21:25:44.587Z",
+      "reason" : "WAIT_TIMEOUT_ADMIT",
+      "participantId" : "3b8d8ov4idgmlkzn31leb2aq4"
+    },
+    {
+      "eventType" : "AUDIO_PARTICIPANT_ADMITTED",
+      "timestamp" : "2020-12-28T13:29:08.194Z",
+      "requestorId" : "requestorId",
+      "audioParticipantId" : "PARTd01413a77a6088065925d5c1ed5162e200206460394654",
+      "audioMeetingId" : "audioMeetingId",
+      "meetingId" : "999966724"
+    },
+    {
+      "eventType" : "PARTICIPANT_RECONNECTED",
+      "timestamp" : "2020-12-28T13:29:07.505Z",
+      "participantId" : "3b8d8ov4idgmlkzn31leb2aq4"
+    },
+    {
+      "eventType" : "PARTICIPANT_DIAL_OUT_TIMED_OUT",
+      "timestamp" : "2020-12-28T13:29:09.434Z",
+      "dialoutId" : "dialoutId",
+      "webParticipantId" : "3b8d8ov4idgmlkzn31leb2aq4"
+    },
+    {
+      "eventType" : "PARTICIPANT_LEFT",
+      "timestamp" : "2020-12-28T13:29:03.891Z",
+      "participantId" : "3b8d8ov4idgmlkzn31leb2aq4"
+    },
+    {
+      "eventType" : "CHAT_CLEARED",
+      "timestamp" : "2020-12-28T13:29:10.441Z",
+      "conversationId" : "default"
+    },
+    {
+      "eventType":"AUDIO_PARTICIPANT_JOINED",
+      "timestamp":"2020-03-06T18:59:26.592Z",
+      "partId":"",
+      "confId":"122225327",
+      "subConfId":"",
+      "firstName":"",
+      "lastName":"",
+      "company":"",
+      "email":"",
+      "phone":"",
+      "partType":"NORMAL",
+      "ani":"16788422358",
+      "dnis":"6054755604",
+      "codec":"PCMU/8000",
+      "hold":false,
+      "mute":false,
+      "listenOnly":false,
+      "listenLevel":0,
+      "voiceLevel":0
+    },
+    {
+      "eventType":"AUDIO_PART_RENAMED",
+      "timestamp":"2020-03-06T19:03:07.201Z",
+      "firstName":"new",
+      "lastName":"name",
+      "audioParticipantId":""
+    },
+    {
+      "eventType" : "MEETING_OPTION_WS_UPDATED",
+      "timestamp" : "2020-06-25T21:25:43.328Z",
+      "name" : "privatechat.enabled",
+      "value" : true
+    },
+    {
+      "eventType" : "MEETING_OPTION_WS_UPDATED",
+      "timestamp" : "2020-06-25T21:25:43.328Z",
+      "name" : "privatechat.enabled",
+      "value" : false
+    },
+    {
+      "eventType": "PRIVATE_CHAT_ADDED",
+      "timestamp": "2018-10-17T05:20:05.247Z",
+      "conversationId": "default",
+      "participantId": "3b8d8ov4idgmlkzn31leb2aq4",
+      "chatMsg": "Hi"
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://uapi.iad1.globalmeet.com/uapi/v1/room/meeting/events?since=2421361&timeout=50000&talkers=2018-10-17T05:20:19.045Z"
+    }
+  }
+}

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="0dp"
+            android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="91dp"
+                    android:background="@{cardsViewModel.topbarBg}"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/medium_text"
+                        android:fontFamily="sans-serif-medium"
+                        android:textStyle="normal"
+                        android:lineSpacingExtra="@dimen/xxsmall_text"
+                        android:textColor="@color/card_greetings_color"
+                        android:layout_marginTop="8dp"
+                        android:paddingStart="16dp"
+                        android:text="@{cardsViewModel.greetingMsg}" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/margin_34_dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingStart="16dp"
+                        android:textStyle="normal"
+                        android:textColor="#ffffff"
+                        android:lineSpacingExtra="6sp"
+                        android:text="@{cardsViewModel.loginName}" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/card_container_bootom_bar_bg"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal">
+                        <LinearLayout
+                            android:id="@+id/noTasksLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            android:elevation="20dp"
+                            android:visibility="@{cardsViewModel.cardsData.size() == 0 ? View.VISIBLE : View.GONE }">
+                                <ImageView
+                                    android:id="@+id/no_cards_img"
+                                    android:layout_width="275dp"
+                                    android:layout_height="275dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/ic_no_tasks"
+                                    android:paddingTop="16dp"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="16sp"
+                                    android:fontFamily="sans-serif"
+                                    android:textStyle="normal"
+                                    android:textColor="#de000000"
+                                    android:lineSpacingExtra="4sp"
+                                    android:textAlignment="center"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/great_job"
+                                    />
+                                <TextView
+                                    android:layout_width="165dp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14sp"
+                                    android:fontFamily="sans-serif"
+                                    android:textStyle="normal"
+                                    android:textColor="#8a000000"
+                                    android:lineSpacingExtra="6sp"
+                                    android:textAlignment="center"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/no_cards_msg" />
+
+                                <Button
+                                    android:id="@+id/connectCalCalendar"
+                                    android:layout_width="165dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:text="@string/connect_calendar"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="@color/colorPrimary"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:visibility="gone"/>
+                        </LinearLayout>
+                </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/homeCardsContainerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="10dp"
+            android:background="@android:color/transparent"
+            android:visibility="@{cardsViewModel.cardsData.size() == 0 ? View.GONE : View.VISIBLE }">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/homeCardsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="30dp"
+                android:paddingTop="71dp"
+                android:clipToPadding = "false"
+                android:clickable="true"
+                android:adapter="@{cardsViewModel.cardsData.size() > 0 ? cardsViewModel.homeCardAdapter : null}"
+                android:background="@android:color/transparent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:focusable="true" />
+        </FrameLayout>
+    </RelativeLayout>
+    <data>
+        <import type="android.view.View" />
+        <import type="androidx.lifecycle.LiveData" />
+        <variable
+            name="cardsViewModel"
+            type="com.pgi.convergence.home.ui.HomeCardsViewModel" />
+    </data>
+</layout>

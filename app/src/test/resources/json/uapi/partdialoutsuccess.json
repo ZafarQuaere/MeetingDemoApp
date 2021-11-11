@@ -1,0 +1,7 @@
+{
+  "eventType": "PARTICIPANT_DIAL_OUT_SUCCEEDED",
+  "timestamp": "2018-10-10T18:43:11.634Z",
+  "audioParticipantId": "arg3",
+  "dialoutId": "arg1",
+  "webParticipantId": "arg2"
+}

@@ -1,0 +1,67 @@
+import com.pgi.convergence.Deps
+
+apply plugin: "com.android.library"
+apply from: "$rootProject.projectDir/tasks/common.gradle"
+
+android {
+  flavorDimensions "default"
+
+  sourceSets {
+    lumenqab {
+      res.srcDirs = ["${project.rootDir}/core/src/lumen/res"]
+      manifest.srcFile "${project.rootDir}/feature/home/src/lumen/AndroidManifest.xml"
+    }
+    lumenqac{
+      res.srcDirs = ["${project.rootDir}/core/src/lumen/res"]
+      manifest.srcFile "${project.rootDir}/feature/home/src/lumen/AndroidManifest.xml"
+    }
+    lumendev{
+      res.srcDirs = ["${project.rootDir}/core/src/lumen/res"]
+      manifest.srcFile "${project.rootDir}/feature/home/src/lumen/AndroidManifest.xml"
+    }
+
+  }
+
+  productFlavors {
+    prod {
+      dimension "default"
+    }
+    stage {
+      dimension "default"
+    }
+    qab {
+      dimension "default"
+    }
+    qac {
+      dimension "default"
+    }
+    dev {
+      dimension "default"
+    }
+    lumen {
+      dimension "default"
+    }
+    lumenqab {
+      dimension "default"
+    }
+    lumenqac {
+      dimension "default"
+    }
+    lumendev {
+      dimension "default"
+    }
+  }
+}
+
+tasks.whenTaskAdded {task ->
+  if(task.name.contains("compileQacDebugAndroidTestJavaWithJavac")) {
+    task.enabled = false
+  }
+}
+
+dependencies {
+  implementation fileTree(dir: "libs", include: ["*.jar"])
+  api project(path: ":network")
+  api project(path: ":common")
+  kapt Deps.annotationlibs.get("lifecycle")
+}

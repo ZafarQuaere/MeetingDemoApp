@@ -1,0 +1,10 @@
+{
+  "responseType" : "UPDATE_CONTENT",
+  "timestamp" : "2018-10-10T18:43:17.522Z",
+  "contentId" : "8y5uwfvrms4w2lcnm49hicx2w",
+  "_links" : {
+    "self" : {
+      "href" : "https://uapi.globalmeet.com/uapi/v1/room/meeting/contents/8y5uwfvrms4w2lcnm49hicx2w"
+    }
+  }
+}

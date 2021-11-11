@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/landscpe_ss_controls"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:paddingTop="@dimen/dp_16"
+    android:paddingBottom="@dimen/dp_16"
+    android:background="@drawable/full_screen_controls_bg">
+
+  <RelativeLayout
+      android:id="@+id/participant_talking_rl"
+      android:layout_width="@dimen/margin_250_dp"
+      android:layout_height="wrap_content"
+      android:layout_toRightOf="@+id/frame_icon"
+      android:layout_marginLeft="@dimen/margin_15_dp"
+      android:layout_centerVertical="true"
+      >
+
+    <TextView
+        android:id="@+id/tv_participant_name_ss_portrait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="1"
+        android:paddingTop="@dimen/margin_5_dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_talking_state_ss_portrait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_participant_name_ss_portrait"
+        android:layout_marginBottom="@dimen/margin_10_dp"
+        android:singleLine="true"
+        android:text="@string/is_talking"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_participant_name_ss_landscape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:paddingRight="@dimen/margin_5_dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_talking_state_ss_landscape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/tv_participant_name_ss_landscape"
+        android:singleLine="true"
+        android:text="@string/is_talking"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+
+  </RelativeLayout>
+
+  <TextView
+      android:id="@+id/tv_no_one_spoken_ss"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_gravity="center"
+      android:fontFamily="sans-serif-medium"
+      android:gravity="center"
+      android:text="@string/no_one_taking"
+      android:textColor="@color/search_box_text_color"
+      android:textStyle="normal"
+      android:visibility="visible" />
+
+  <FrameLayout
+      android:layout_width="wrap_content"
+      android:id="@+id/frame_icon"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_marginStart="@dimen/margin_55_dp"
+      android:layout_alignStart="@+id/btn_mute_meeting_ss"
+      android:layout_gravity="center">
+
+    <ToggleButton
+        android:id="@+id/btn_camera_ss"
+        android:layout_width="@dimen/dp_38"
+        android:layout_height="@dimen/dp_38"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:button="@drawable/ss_camera_btn_selector"
+        android:checked="false"
+        android:clickable="false"
+        android:enabled="true"
+        android:textOff="@null"
+        android:textOn="@null" />
+
+    <ProgressBar
+        android:id="@+id/progress_camera_disabled"
+        android:layout_width="@dimen/dp_38"
+        android:layout_height="@dimen/dp_38"
+        android:elevation="7dp"
+        android:indeterminateDrawable="@drawable/progress_bar_meeting_controls" />
+
+  </FrameLayout>
+
+  <ToggleButton
+      android:id="@+id/btn_mute_meeting_ss"
+      android:layout_width="@dimen/dp_38"
+      android:layout_height="@dimen/dp_38"
+      android:layout_alignParentStart="true"
+      android:layout_centerVertical="true"
+      android:layout_gravity="center"
+      android:layout_marginStart="@dimen/margin_17_dp"
+      android:background="@null"
+      android:button="@drawable/mic_button_selector_ss"
+      android:checked="false"
+      android:clickable="false"
+      android:contentDescription="mute"
+      android:enabled="false"
+      android:textOff="@null"
+      android:textOn="@null" />
+    <ProgressBar
+        android:id="@+id/progress_mic_disabled"
+        android:layout_width="@dimen/dp_38"
+        android:layout_marginStart="@dimen/margin_17_dp"
+        android:layout_height="@dimen/dp_38"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:elevation="@dimen/dp_7"
+        android:indeterminateDrawable="@drawable/progress_bar_meeting_controls" />
+
+</RelativeLayout>

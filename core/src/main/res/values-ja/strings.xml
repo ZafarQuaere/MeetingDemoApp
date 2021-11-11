@@ -1,0 +1,517 @@
+<resources>
+    <string name="continue_txt">続行</string>
+    <string name="dialog_ok">OK</string>
+
+    <string name="greet_morning">おはようございます、</string>
+    <string name="greet_afternoon">こんにちは、</string>
+    <string name="greet_evening">こんばんは、</string>
+
+
+    <string name="join_meeting">会議に\n参加</string>
+    <string name="start_meeting">\n会議を開始</string>
+    <string name="close">閉じる</string>
+
+    <string name="welcome_slide_intro_welcome">\nGlobalMeetにようこそ</string>
+    <string name="welcome_slide_intro_join">\nどこからでもすぐに会議に参加</string>
+    <string name="welcome_slide_audio_content">簡単に発言者を確認し​音声を管理​</string>
+    <string name="welcome_slide_files_content">\n他のユーザーとコンテンツを共有</string>
+    <string name="welcome_slide_chat">\n会議の参加者全員とチャット</string>
+    <string name="sign_in">サインイン</string>
+    <!-- Default vals -->
+    <string name="str_ok">OK</string>
+
+    <!-- ImageView Content description -->
+    <string name="cd_drawer_icon">ナビゲーションドロワー</string>
+    <!-- Recent Meetings UI constants -->
+    <string name="btn_title_join">参加</string>
+    <string name="title_recently_joined">最近</string>
+    <string name="search_join_header">このURLに参加する</string>
+    <string name="no_recent_meetings">会議のURLを検索して今すぐ会議に参加してください。結果はここに表示されます。</string>
+
+    <string name="no_results">結果がありません</string>
+    <string name="enter_invalid_url">無効なURL</string>
+    <string name="enter_url_join_button">参加</string>
+
+    <!--EnterUrl UI constants -->
+    <string name="enter_url_search_hint">URLを入力</string>
+
+    <!--Navigation Drawer menu constants -->
+    <string name="open_drawer">ドロワーを開く</string>
+    <string name="close_drawer">ドロワーを閉じる</string>
+    <string name="sign_out">サインアウト</string>
+    <string name="settings">設定</string>
+    <string name="about">情報</string>
+    <!--<string name="share">共有</string> Not used currently -->
+    <string name="help">ヘルプ</string>
+
+    <!-- Permissions -->
+    <string name="permission_call_rationale">会議に参加するには通話の許可が必要です</string>
+    <!-- Not used currently
+    <string name="calendar_permission_rationale">カレンダーのアクセスを無効にすると、一部機能が利用できなくなることがあります。</string>
+    <string name="type_calendar">カレンダー</string>
+    <string name="calendar_permission_desc">近日中に行われる会議のGlobalMeetでの表示を有効にする</string>
+    -->
+    <string name="permission_rationale_alert_title">よろしいですか? </string>
+    <string name="rationale_alert_option_allow">許可する</string>
+    <string name="rationale_alert_option_deny">拒否する</string>
+
+
+    <string name="invalid_access_token">アクセストークンが無効です。継続するために再度ログインしてください。</string>
+    <!-- Share this app subject and content -->
+    <string name="share_with">共有先</string>
+    <string name="share_this_app_subject">GlobalMeetをお試しください</string>
+    <string name="share_this_app_content">私は、GlobalMeetを新しい会議アプリとして使用しています。あなたもその便利さに気付くと思います。https://globalmeet.comでご確認ください</string>
+    <string name="share_this_app_hash_tag_content">私は、GlobalMeetを新しい会議アプリとして使用しています。あなたもその便利さに気付くと思います。https://globalmeet.comでご確認ください</string>
+    <string name="mute_meeting">ミュートボタン</string>
+
+    <!-- meeting room -->
+    <string name="host_exit_leave_meeting_confirmation_msg">自分だけ退室しますか？それとも全員退出させて会議を終了しますか？​</string>
+    <string name="host_exit_dialog_exit_btn">会議を終了する</string>
+    <string name="host_exit_dialog_leave_btn">会議から退室する</string>
+    <string name="host_exit_dialog_negative_btn">キャンセル</string>
+    <string name="guest_exit_leave_meeting_confirmation_msg">会議から退室してもよろしいですか? </string>
+    <string name="guest_exit_dialog_positive_btn">退室</string>
+    <string name="guest_exit_dialog_negative_btn">キャンセル</string>
+    <string name="loading">ロード中</string>
+    <string name="connect_voip">VoIPで今すぐ接続する</string>
+    <string name="dial_in_btn_txt">ダイヤルイン</string>
+    <string name="dial_in">電話でダイヤルする</string>
+    <string name="call_phone">自分の電話にかける</string>
+    <string name="call_me_btn_txt">自分に電話​</string>
+    <string name="phone_number">電話番号</string>
+    <string name="activate_speaker">スピーカーフォンのアクティブ化</string>
+    <string name="use_speaker">スピーカーフォンを使用する</string>
+    <string name="mute_me">接続後、マイクをミュートする</string>
+    <string name="mute_all">すべて</string>
+    <string name="do_not_connect_audio">音声を接続しない</string>
+    <string name="audio_selection_msg"><![CDATA[%1$s さんの会議に参加したいですか？]]></string>
+    <string name="audio_selection_msg_own_room">音声接続を選択してください</string>
+    <string name="invite_participant">参加者を招待する</string>
+    <string name="change_connection">接続を変更する</string>
+    <string name="disconnect_audio">音声接続を解除する</string>
+    <string name="lock_meeting">会議をロックする</string>
+    <string name="record_meeting">録音</string>
+    <string name="turn_off_waiting">待合室をオフにする</string>
+    <string name="people_are_waiting_message">待機している参加者がいます。待合室を管理して、許可もしくは拒否してください。</string>
+    <string name="meeting_locked_error_msg">参加を希望する会議がロックされています。会議主催者に連絡してください</string>
+    <string name="is_talking">発言中</string>
+    <string name="currently_talking">現在発言中</string>
+    <string name="was_taking">最後に発言しました</string>
+    <string name="were_taking">最後に発言しました</string>
+    <string name="no_one_taking">まだ発言した人はいません</string>
+    <string name="someone_is_presenting_a_file">ファイルのプレゼンテーション</string>
+    <string name="someone_presenting_screen_share"><![CDATA[<b>%s</b>が画面を共有中]]></string>
+    <string name="someone_is_presenting">他のユーザーが表示しています</string>
+    <string name="you_are_not_sharing_camera">カメラの共有は解除されています</string>
+    <string name="you_are_sharing_camera">カメラを共有しています</string>
+    <string name="someone_sharing_camera">他のユーザーがカメラを共有しています</string>
+    <string name="someone_sharing_whiteboard">他のユーザーがホワイトボードを共有しています</string>
+    <string name="presenting_whiteboard">ホワイトボード</string>
+    <string name="someone_sharing_with_one_camera"><![CDATA[画面共有＆%sウェブカメラ]]></string>
+    <string name="someone_sharing_with_cameras"><![CDATA[画面共有＆%sウェブカメラ]]></string>
+    <string name="someone_presenting_with_cameras"><![CDATA[ファイルのプレゼンテーションおよび%sウェブカメラ]]></string>
+    <string name="someone_presenting_with_one_camera"><![CDATA[ファイルのプレゼンテーションおよび%sウェブカメラ]]></string>
+    <string name="someone_sharing_whiteboard_with_cameras"><![CDATA[ホワイトボードおよび%sウェブカメラ]]></string>
+    <string name="someone_sharing_whiteboard_with_one_camera"><![CDATA[ホワイトボードおよび%sウェブカメラ]]></string>
+    <string name="presenting_webcams_count"><![CDATA[%s ウェブカメラ]]></string>
+    <string name="speakerTurnOn">スピーカー：オンにする</string>
+    <string name="speakerTurnOff">スピーカー：オフにする</string>
+    <string name="your_webcam_is_on">ウェブカメラはオンです</string>
+    <string name="your_webcam_is_off">ウェブカメラはオフです</string>
+    <string name="webcam_presenter_name"><![CDATA[%s ウェブカメラ]]></string>
+    <!-- Not used, to be implemented:
+    <string name="unable_to_display_shared_file">ファイルプレゼンテーションを表示できませんでした</string>
+    -->
+    <string name="screenshare_with_webcam_pagination"><![CDATA[画面共有 & %s]]></string>
+    <string name="file_with_webcam_pagination"><![CDATA[ファイルのプレゼンテーション & %s]]></string>
+    <string name="whiteboard_with_webcam_pagination"><![CDATA[ホワイトボード & %s]]></string>
+    <string name="webcam_page_info"><![CDATA[%s webcams (%s-%s)]]></string>
+    <string name="low_bandwidth_mode_on">低帯域幅モード：オンにする</string>
+    <string name="low_bandwidth_mode_off">低帯域幅モード：オフにする</string>
+    <string name="low_bandwidth_mode">低帯域幅モード</string>
+    <string name="low_bandwidth_mode_cam_hidden">低帯域幅モード（ウェブカメラ非表示）</string>
+    <!-- Internet connectivity -->
+    <string name="internet_not_connected">インターネットに接続されていません</string>
+    <string name="voip_not_enabled">このユーザーに対してVoIPが有効化されていません</string>
+    <string name="choose_dial_in_number">ダイヤルイン番号を選択してください​</string>
+    <string name="no_dialin_numbers">ダイアルイン番号が見つかりません</string>
+    <string name="dial_in_not_enabled">ダイアルインが無効です</string>
+    <string name="dial_out_not_enabled">ダイアルアウトが無効です</string>
+    <string name="dial_in_number">ダイヤルイン番号</string>
+    <string name="search_string">検索</string>
+    <!-- About Page -->
+    <string name="software_credits">ソフトウェアクレジット</string>
+    <string name="contact_us">お問い合わせ</string>
+    <string name="call_me">自分に電話​</string>
+    <string name="add_number">番号の追加</string>
+    <string name="call_my_phone">自分の電話にかける</string>
+    <string name="add_number_title">番号の追加</string>
+    <string name="phone_number_selection_msg">会議に参加するための番号を選択するか、新しい番号を入力してください。</string>
+    <string name="enter_phone_number_sub_title">会議に参加するには電話番号を入力してください。</string>
+    <string name="include_country_code">国番号を含める</string>
+    <string name="phone_num_example">555 555 5555</string>
+    <string name="cntry_code_example">+1</string>
+    <string name="cancel">キャンセル</string>
+    <string name="add">追加</string>
+    <!-- Call me flow -->
+    <string name="please_add_phone_number">電話番号を入力してください。</string>
+    <string name="please_select_phone_number">電話番号を選択してください。</string>
+    <string name="please_enter_valid_country_code">有効な国番号を入力してください。</string>
+    <string name="please_valid_phone_number">有効な電話番号を入力してください。</string>
+    <string name="number_already_exist_in_list">番号はすでにリストに存在します。</string>
+
+    <!-- participant header -->
+    <string name="one_participant">1名の参加者</string>
+    <string name="participants">名の参加者</string>
+    <string name="no_participants">参加者なし</string>
+    <string name="exit">終了</string>
+    <string name="speaking">発言者</string>
+    <!-- Tab Content Text -->
+    <string name="tab_text_guest">ゲスト</string>
+    <string name="tab_text_metting">会議</string>
+    <string name="tab_text_chat">チャット</string>
+    <!-- support -->
+    <string name="support_msg_on_meeting_join">Eメールまたはカレンダーの招待状で会議のURLを確認するか、会議の主催者にお問い合わせください。</string>
+    <string name="trouble_joining_title">参加の操作でトラブルが発生していますか？</string>
+    <string name="action_contact_support">サポートへの問合せ</string>
+    <string name="primary_access_number">プライマリアクセス番号</string>
+
+    <!-- Setting -->
+    <string name="invalid_phone_number">正しい電話番号を入力してください</string>
+    <string name="first_name">名</string>
+    <string name="last_name">姓</string>
+    <string name="update_name">名前を更新</string>
+    <string name="forgot_password">パスワードをお忘れの場合</string>
+    <string name="select_room">会議室を選択</string>
+    <string name="default_meeting_url">デフォルトの会議のURL</string>
+    <string name="display_name_in_meeting">会議で表示する名前​</string>
+    <string name="reset_password">リセット／パスワードをお忘れの場合</string>
+    <string name="client_Id">Client ID</string>
+    <string name="send_chat">送信</string>
+    <string name="default_room_title">デフォルトの会議のURL</string>
+    <string name="display_name_msg">\n会議の名前を表示</string>
+    <string name="btn_update_name">更新</string>
+    <string name="client_id">クライアント ID</string>
+
+    <!--Thank you Fragment -->
+    <string name="thankyou_quote">会議にご参加いただきありがとうございました</string>
+    <string name="thankyou_ok">OK</string>
+    <string name="thankyou_join_another_meeting">別の会議に参加する</string>
+    <string name="notification_title">GlobalMeet</string>
+    <string name="notification_content">あなたの会議は進行中です</string>
+    <string name="welcome_to_imeet">GlobalMeetへようこそ</string>
+    <string name="tap_a_meeting_link">Eメールの招待状の会議のリンクをタップするか、下の会議室のURLを入力してください：</string>
+    <string name="app_update_alert_message">お使いのGlobalMeetはサポート対象の最低バージョンよりも古いため、問題が発生する可能性があります。アプリを更新して、最適な状態でお使いください。</string>
+    <string name="app_update_alert_button_later">後で</string>
+    <string name="app_update_alert_button_update">更新</string>
+
+    <!-- sign out text-->
+    <string name="host_signout_text">サインアウトしても\n よろしいですか？</string>
+    <string name="guest_signout_text">サインアウトすると、最近参加した会議などのデータが失われます。</string>
+    <string name="alert_option_signout">サインアウト</string>
+    <string name="alert_option_cancel">キャンセル</string>
+    <string name="error_on_signout">サインアウトで問題が発生しました</string>
+    <string name="you">あなた</string>
+    <string name="parsing_erro_client_info">クライアント情報を解析できません</string>
+    <string name="empty_join_url_error">参加しようとしている会議のURLは存在しません。URLを確認して、もう一度試してください</string>
+    <string name="please_provide_a_first_and_last_name">名と姓を入力してください。</string>
+    <string name="please_provide_a_first_name">あなたの名前（名）を入力してください</string>
+    <string name="please_provide_a_last_name">あなたの名前（姓）を入力してください</string>
+    <string name="display_name_update_sucess_msg">会議の名前の表示が更新されました。</string>
+    <string name="no_one_has_spoken_yet">まだ\n発言した人はいません</string>
+    <string name="presenter_name"><![CDATA[%1$s画面 ]]></string>
+
+    <string name="menu_mute">ミュート</string>
+    <string name="menu_unmute">ミュート解除</string>
+    <string name="menu_promote">プレゼンターに指名​</string>
+    <string name="menu_demote">プレゼンターの指名解除​</string>
+    <string name="menu_dismiss">退出</string>
+    <string name="menu_private_chat_with">プライベートチャット：</string>
+
+    <string-array name="menu_host_controls">
+        <item checked="false">@string/menu_mute</item>
+        <item checked="false">@string/menu_promote</item>
+        <item checked="false">@string/menu_dismiss</item>
+    </string-array>
+
+    <!-- Not used, but could be useful
+    <string name="coming_soon">近日中</string>
+    <string name="meeting_chat_coming_soon">会議チャットが近日中に行われます。</string> -->
+    <string name="no_chats_title">メッセージがありません</string>
+    <string name="no_chats_description">チャットメッセージを送受信するとここに表示されます​</string>
+    <string name="hint_chat_say_something">入力してください... </string>
+    <string name="chat_sub_content_bullet">&#8226;</string>
+
+    <!-- Not used, but could be useful
+    <string name="airplane_mode_prompt_title">エアプレーンモード</string>
+    <string name="airplane_mode_prompt_message">エアプレーンモードでこの機能は使用できません。</string> -->
+    <string name="invalid_url_meeting_prompt_title">会議が見つかりません</string>
+    <string name="invalid_url_meeting_prompt_message">参加しようとしている会議のURLは存在しません。URLを確認して、もう一度試してください。</string>
+
+    <string name="leave_current_meeting_prompt_title">現在の会議から退室しますか？</string>
+    <string name="leave_current_meeting_prompt_message">新しい会議に参加するには、現在の会議から退室する必要があります。</string>
+    <string name="dialog_wifi_to_mobile_data_switch_message">現在、Wi-Fiに接続されていません。電話会社によって生じたデータ料金は、お客様が責任を負います。</string>
+    <string name="dialog_dont_show_again">再度表示しない</string>
+    <string name="dialog_internet_connection_time_out">会議サーバーへの接続が確立されませんでした。インターネット接続を確認して、もう一度試してください。</string>
+    <string name="reconnecting">再接続中</string>
+    <string name="dialog_dismiss">退出</string>
+    <string name="no_network">ネットワーク接続が利用できません</string>
+
+    <string name="dialog_wifi_to_mobile_data_switch_message_for_webcam">現在、Wi-Fiを使用していません。通信料が発生する可能性があります。ウェブカメラのご利用にはWi-Fiが必須です。</string>
+
+    //Retry messages
+    <string name="failed_to_join_meeting">会議に参加できませんでした</string>
+    <string name="failed_to_start_meeting">会議を開始できませんでした</string>
+    <string name="failed_to_dial_out">ダイアルアウトできませんでした</string>
+    <string name="failed_to_complete_search">検索を完了できませんでした</string>
+    <string name="failed_to_mute">ミュートできませんでした</string>
+    <!-- <string name="failed_to_unmute">ミュート解除できませんでした</string> Not used -->
+    <string name="failed_to_dismiss">退出できませんでした</string>
+    <!-- <string name="failed_to_update_audio_connection">オーディオ接続を更新できませんでした</string> Not used -->
+    <string name="failed_to_promote">昇格できませんでした</string>
+    <string name="failed_to_demote">降格できませんでした</string>
+    <string name="failed_to_mute_all">全員をミュートできませんでした</string>
+    <string name="failed_to_set_participant_option">できませんでした</string>
+    <string name="failed_to_get_meeting_events_head">予期しないエラーが発生しました</string>
+    <string name="failed_to_get_meeting_events_body">エラーが発生しました。会議に再度参加してください</string>
+    <string name="failed_to_get_meeting_events_positive">会議に再度参加する</string>
+    <string name="failed_to_get_meeting_events_negative">キャンセル</string>
+    <string name="failed_to_leave_meeting">会議から退出できませんでした</string>
+    <string name="bad_network_conditions_message">ネットワーク品質の低下が検出されました。オーディオ接続を変更してみてください。</string>
+    <string name="bad_network_conditions_title">音声接続を変更</string>
+    <string name="bad_network_low_bandwidth_message">ネットワーク品質の低下が検出されました。低帯域幅モードを使用してみてください。</string>
+    <string name="bad_network_low_bandwidth_title">低帯域幅モードをオンにする</string>
+    <string name="metered_network_conditions_message">不良ネットワークが検出されました。問題が発生する可能性があります。接続を確認してください。</string>
+    <string name="failed_camera_start">ウェブカメラをオンにできません。</string>
+    <string name="failed_camera_stop">ウェブカメラをオフにできません。</string>
+    <string name="failed_camera_btn_retry">再試行</string>
+
+    // generic error messages
+    <string name="unable_to_update_information">情報を更新できませんでした</string>
+    //RoomRoles
+    <string name="host">主催者</string>
+    <string name="presenter">プレゼンター</string>
+    <string name="roleDelegateHost">共同主催者</string>
+    <string name="host_lowercase">主催者</string>
+    <string name="presenter_lowercase">プレゼンター</string>
+    <string name="roleDelegateHost_lowercase">共同主催者</string>
+    //About Meeting
+    <string name="device_model">デバイスモデル</string>
+    <string name="os_version">OSバージョン</string>
+    <string name="app_version">アプリバージョン</string>
+    <string name="help_app_subject">GlobalMeetフィードバック</string>
+    <string name="meeting_locked_title">会議はロックされています</string>
+    <string name="meeting_full_title">会議は定員に達しています</string>
+    <string name="meeting_locked_message">\n詳細は、会議の主催者にお問い合わせください。</string>
+    <string name="meeting_full_message">この会議は、\n最大利用人数に達しました。後でもう一度試してください。</string>
+    <string name="skip_enter_url">スキップ</string>
+    <string name="start_recording">録音を開始する</string>
+    <!-- help menu -->
+    <string name="call_support">サポート担当者に連絡する</string>
+    <string name="email_support">サポート担当者にEメールを送信する</string>
+    <string name="visit_support">サポートサイトを見る</string>
+    <string name="turn_on_speaker">スピーカーオン</string>
+    <string name="turn_off_speaker">スピーカーオフ</string>
+    <string name="required_service_failure">Required service is not operational. You may want to restart the app.</string>
+    <string name="mute_all_participants">ゲスト全員をミュートする</string>
+    <string name="unmute_all_participants">ゲスト全員をミュート解除する</string>
+    <string name="unlock_meeting">会議のロックを解除する</string>
+    <string name="stop_recording">録音を停止する</string>
+    <!-- <string name="skip">スキップ</string> -->
+    <string name="preparingToRecordToast">録音準備中…</string>
+    <string name="recordingStopped">録画が終了しました。準備ができ次第、リンクをEメールでお送りします</string>
+    <string name="recording_failed">録画に失敗しました</string>
+    <string name="try_again">もう一度試してください</string>
+
+    <string name="home_screen_tab">Home Screen Tab</string>
+    <string name="signing_out">Signing out</string>
+    <string name="activity_tab_toolbar_avatar">Activity Tab Toolbar Avatar</string>
+
+    <!--newucc strings-->
+    <string name="home_tab_home">ホーム</string>
+    <!-- Not used yet
+    <string name="home_tab_calls">Calls</string>
+    <string name="home_tab_chats">Chat</string>
+    <string name="home_tab_contacts">Contacts</string> -->
+    <string name="email">Eメール</string>
+
+    <!-- Home Cards -->
+    <string name="home_card_time_ago_in_mins">%1$d分前</string>
+    <string name="home_card_time_ago_in_min">%1$d分前</string>
+    <string name="home_card_time_ago_in_hrs">%1$d時間前</string>
+    <string name="home_card_time_ago_in_hr">an hour ago</string>
+    <string name="home_card_time_in_hour">%1$d時間以内</string>
+    <string name="home_card_time_in_min">%1$d分以内</string>
+    <string name="home_card_time_meetings_left">会議が%1$d件残っています</string>
+    <string name="home_card_time_one_meeting_left">会議が1件残っています</string>
+
+    <string name="home_card_time_late">%1$d分遅く</string>
+    <string name="home_card_time_now">今すぐ</string>
+    <string name="home_card_time_future">%1$d分早く</string>
+    <string name="home_card_time_upcoming">次の予定</string>
+    <string name="home_card_time_in_hours">%1$d時間以内</string>
+    <string name="home_card_time_in_mins">%1$d分以内</string>
+    <string name="home_late_badge">late</string>
+
+    <string name="home_card_current_header_title">今すぐ参加する</string>
+    <string name="home_card_upcoming_header_title">次回の会議</string>
+    <string name="home_card_wait_header_title">参加者が会議で待機中です</string>
+    <string name="home_card_finished_header_title">終了しました</string>
+    <string name="home_card_missed_calls_header_title">その他の不在着信</string>
+    <string name="home_card_missed_chats_header_title">その他のチャットの不在着信</string>
+
+    <string name="home_card_connect_calendat_btn_text">カレンダーに接続</string>
+    <string name="home_card_schedule_btn_text">スケジュール</string>
+    <string name="home_card_view_btn_text">表示</string>
+    <string name="home_card_view_all_btn_text">すべてを表示</string>
+    <string name="home_card_view_details_btn_text">詳細の表示</string>
+    <string name="home_card_follow_up_btn_text">フォローアップ</string>
+    <string name="home_card_join_btn_text">参加</string>
+    <string name="home_card_decline_btn_text">辞退</string>
+    <string name="home_card_message_bth_text">メッセージ</string>
+    <string name="home_card_call_back_btn_text">電話をかけ直す</string>
+    <string name="home_card_contact_host_btn_text">主催者に連絡する</string>
+    <string name="home_card_contact_organizer_btn_text">オーガナイザーに連絡する</string>
+
+
+    <!-- Meetings Fragment -->
+    <string name="hometab">ホーム</string>
+    <string name="meetingstab">会議</string>
+    <string name="great_job">スケジュールは順調です！</string>
+    <string name="no_cards_msg">予定されている会議、通話やチャットの不在着信は何もありません。</string>
+    <string name="connect_calendar">カレンダーに接続</string>
+
+    <string name="card_dismiss">退出</string>
+    <string name="msal_welcome_text">ようこそ</string>
+    <string name="msal_welcome_msg">このタブでは、近日中に行われる会議や不在着信・留守電メッセージ、チャットの不在着信などの概要を一箇所で確認できます。開始するには、カレンダーをリンクします。</string>
+    <!-- Meetings Fragment -->
+    <string name="home_tab_meetings">会議</string>
+    <string name="connect_to_calendar_or_search">カレンダーに接続</string>
+    <string name="search_meeting_now">または、会議のURLを検索して今すぐ参加する.</string>
+    <string name="no_agenda">アジェンダはありません</string>
+    <string name="my_meeting_room">自分の会議室</string>
+    <string name="agenda">アジェンダ</string>
+    <string name="today">今日</string>
+    <string name="all_clear">すべてクリアです</string>
+    <string name="no_upcoming_meetings">今日予定されている会議はありません.</string>
+    <!-- <string name="host_meeting_name">%1$s %2$s</string> Not used-->
+    <string name="host_meeting_room_url">%1$s</string>
+    <string name="copy_message">コピーしました！</string>
+    <string name="copy_message_universal">会議のURLをコピーしました！</string>
+    <string name="overflow_join_my_meeting">自分の会議室に参加</string>
+    <string name="overflow_copy_meeting_url">自分の会議URLをコピー</string>
+
+    <string name="mobile">携帯電話番号</string>
+    <string name="overflow_schedule_a_meeting">会議をスケジュールする</string>
+    <string name="all_day_meeting">終日</string>
+    <string name="no_title">（無題）</string>
+    <string name="schedule_meeting_named_header">次のURLから%1$s会議に参加</string>
+    <string name="or_dial_in_using_phone_label">またはご使用の電話でダイアルイン:</string>
+    <string name="access">アクセス</string>
+    <string name="guest_passcode">ゲスト用パスコード</string>
+    <string name="other_access_numbers">他のアクセス番号</string>
+    <string name="join_using_sip_header">ビデオルームシステムから参加する場合は、次の情報を使用してください</string>
+    <string name="sip_uri">SIP URI</string>
+    <string name="toll_number">有料</string>
+    <string name="international_toll_free">国際フリーダイヤル</string>
+    <string name="local_number">ローカル</string>
+    <string name="lo_call_number">市内通話</string>
+    <string name="h323_address_details">H323 アドレス</string>
+    <string name="no_calendar_app_available">このデバイスには、互換性のあるカレンダーアプリケーションがインストールされていません。別のカレンダーアプリケーションをインストールしてください。</string>
+    <string name="open_with">…で開く</string>
+
+    <!--calls strings-->
+    <!-- Not used yet
+    <string name="recent_calls">最近</string>
+    <string name="missed_calls">不在</string>
+    <string name="voicemails">留守電</string> -->
+    <string name ="enter_url_or_name">会議のURLまたは会議名を入力してください</string>
+    <string name="main_menu_profile_title">マイプロファイル</string>
+    <string name="maximum_webcams_limit_reached">ウェブカメラをオンにすることができません。最大数に達しました。</string>
+
+    <!-- Not used yet
+    <string name="make_or_recieve_call">新規の通話を開始または受信すると、\nここに表示されます</string>
+    <string name="missed_calls_appear_here">不在着信はここに表示されます</string>
+    <string name="no_recent_calls">最近の通話はありません</string>
+    <string name="no_missed_calls">不在着信はありません</string> -->
+    <string name="no_audio">音声接続が見つかりませんでした。</string>
+    <string name="connect_audio_title">音声を接続</string>
+    <string name="unknown">不明</string>
+    <string name="meeting_search_fragment">会議の検索フラグメント</string>
+    <!--WaitingRoom-->
+    <string name="waiting_room_fragment">待合室</string>
+    <string name="waiting_room_meeting_name">%1$sます</string>
+    <string name="waiting_room_title">の会議に接続し</string>
+    <string name="waiting_room_message">主催者があなたを許可すれば、\n会議に参加できます。</string>
+    <string name="waiting_for_host">主催者を待っています…</string>
+    <string name="please_contact_host">会議の主催者にお問い合わせください</string>
+    <string name="host_denied_waiting_message">この会議の主催者は、あなたの入室リクエストを承認しませんでした。詳細については、会議の主催者に直接お問い合わせください</string>
+    <string name="meeting_ended_wait_state">%1$s の会議 が終了しました</string>
+    <string name="meeting_locked">現在、%@の会議はロックされています</string>
+    <string name="meeting_is_locked_message">参加する場合は、主催者に連絡してください</string>
+    <string name="meeting_full">%1$sの会議は定員に達しています</string>
+
+    <!-- Meeting Security -->
+    <string name="meeting">会議</string>
+    <string name="meeting_security">会議のセキュリティ</string>
+    <string name="lock_room">ルームをロックする</string>
+    <string name="lock_room_description">追加のゲストが会議に参加できないようにします。</string>
+    <string name="enable_waiting_room">待合室を有効にする</string>
+    <string name="waiting_room_description">主催者または指名されたゲストによって許可されるまで、部屋の外でゲストを待機させます。</string>
+    <string name="restrict_sharing">共有を制限する</string>
+    <string name="restrict_sharing_description">主催者および指名されたゲストのみがコンテンツを共有できるようにします。</string>
+    <string name="no_waiting_room_guest_msg">待合室にゲストはいません</string>
+    <string name="host_waiting_room_no_guest">待合室には誰もいません</string>
+    <string name="host_waiting_room_guest_count_msg">%1$d人が待合室にいます</string>
+    <string name="admit">許可</string>
+    <string name="deny">拒否</string>
+    <string name="meeting_is_locked">会議はロックされています</string>
+    <string name="host_turn_off_waiting_room_message">待機している参加者がいます。待合室をオフにして、参加者の入室を許可してください。</string>
+    <string name="manage_waiting_room">待合室の管理</string>
+    <string name="waiting_room_toggle_failed">待合室オプションを変更できませんでした。もう一度試してください。</string>
+    <string name="one_person_in_waiting_room">待合室で1名待機しています</string>
+    <string name="admit_all">全員を受け入れる</string>
+    <string name="foxden_error_msg">ウェブカメラおよび画面の表示または共有ができません。会議への再参加をお試しください。</string>
+    <string name="presenting_webcams_count_lowercase"><![CDATA[%s ウェブカメラ]]></string>
+    <string name="no_one">誰もいません</string>
+    <string name="speaking_string">発言者</string>
+    <string name="unable_to_get_audio_permission">マイクロフォン許可を取得できませんでした</string>
+    <string name="unable_to_get_camera_permission">カメラの使用許可を得ることができません</string>
+    <string name="guests">ゲスト</string>
+    <string name= "dismiss_user"><![CDATA[表示を消す%s]]></string>
+    <string name= "private_chat_with"><![CDATA[プライベートチャット： %s]]></string>
+    <string name= "unmute_user"><![CDATA[ミュート解除%s]]></string>
+    <string name= "demote_user"><![CDATA[プレゼンターの指名解除%s]]></string>
+    <string name= "promote_user"><![CDATA[プレゼンターに指名%s]]></string>
+    <string name= "mute_user"><![CDATA[ミュート%s]]></string>
+    <string name="everyone">全員</string>
+    <string name="no_message">メッセージがありません</string>
+
+    <string name="how_would_rate">会議アプリケーションを実際にお使いになってみて、いかがでしたか？</string>
+    <string name="positive_feedback_label">素晴らしかった！</string>
+    <string name="negative_feedback_label">さらなる改善を期待します。</string>
+
+    <string name="how_can_improve">弊社製品の改善点を教えてください。</string>
+    <string name="optional">(オプション)</string>
+    <string name="feedback">フィードバック</string>
+    <string name="send_feedback">フィードバックを送信</string>
+    <string name="thank_you_for_feedback">ご意見ありがとうございました。</string>
+    <string name="overflow_share_my_meeting_url">会議のURLを共有する</string>
+    <string name="please_join_the_video_meeting_at">ビデオ会議にご参加ください。参加先：</string>
+    <string name="or_dial_in_with_this_number">お電話での参加はこちら：</string>
+    <string name="invitation_to"><![CDATA[%sへの招待状]]></string>
+    <string name="guest_passcode_share_sheet">ゲスト用パスコード</string>
+    <string name="text_new_chat">新規のチャット</string>
+    <string name="guest_lowercase">ゲスト</string>
+    <string name="private_chat">プライベートチャット</string>
+    <string name="enable_private_chat">プライベートチャットを有効にする</string>
+    <string name="save">保存</string>
+    <string name="notification_host_disable_private_chat">主催者がプライベートチャットを無効化しました</string>
+    <string name="notification_for_host_on_chat_disable">プライベートチャットは、すべての会議で無効化されました。</string>
+    <string name="no_participant_available_to_chat">チャット可能な参加者はいません。</string>
+    <string name="add_conversation_error_msg">エラーが発生しました。しばらく待ってから、もう一度試してください。</string>
+    <string name="private_chat_failure">メッセージの送信に失敗しました。タップして再試行する</string>
+    <string name="msg_private_chat_restriction">v6.44またはそれ以前のバージョンを使用している参加者は、プライベートチャットのメッセージを送受信できません。</string>
+    <string name="offline_error_msg">ユーザーはオフラインです.</string>
+    <string name="text_offline">オフライン</string>
+</resources>

@@ -1,0 +1,51 @@
+{
+  "responseType": "MEETING_EVENTS",
+  "timestamp": "2018-10-17T05:20:32.82Z",
+  "meetingId": "8h1ngpbyst5w13nsq2nvc2rvr",
+  "since": 2431361,
+  "lastSeqNum": 2431362,
+  "events": [
+    {
+      "eventType": "MEETING_STARTED",
+      "timestamp": "2018-10-17T05:14:28.295Z",
+      "roomId": "2988345",
+      "meetingCapacity": 125,
+      "audioConferenceId": "147305988",
+      "contentLimit": 20
+    },
+    {
+      "eventType": "CONTENT_CREATED",
+      "timestamp": "2018-10-17T05:14:28.296Z",
+      "contentId": "8524dgv4aqfijlx1wrgl9d173",
+      "type": "WHITEBOARD",
+      "version": "1",
+      "visible": true,
+      "stageId": "",
+      "staticMetadata": "{\"streamSessionId\":\"10f95b85-a749-4024-a07b-157c072347c6\"}",
+      "dynamicMetadata": "{}",
+      "allowGuestUpdate": false
+    },
+    {
+      "eventType": "CONTENT_UPDATED",
+      "timestamp": "2018-10-17T05:19:32.304Z",
+      "contentId": "8524dgv4aqfijlx1wrgl9d173",
+      "dynamicMetadata": "{\"whiteboardPresenter\":{\"partId\":\"3b8d8ov4idgmlkzn31leb2aq4\",\"name\":\"k n\",\"phoneNumber\":null,\"email\":\"weww@KKK.COM\"},\"type\":\"WHITEBOARD\",\"action\":\"START\"}"
+    },
+    {
+      "eventType": "CONTENT_UPDATED",
+      "timestamp": "2018-10-17T05:19:49.430Z",
+      "contentId": "8524dgv4aqfijlx1wrgl9d173",
+      "dynamicMetadata": "{\"action\":\"STOP\",\"whiteboardPresenter\":{\"email\":\"weww@KKK.COM\",\"name\":\"k n\",\"partId\":\"3b8d8ov4idgmlkzn31leb2aq4\"},\"type\":\"WHITEBOARD\"}"
+    },
+    {
+      "eventType": "CONTENT_DELETED",
+      "timestamp": "2018-10-17T05:19:49.430Z",
+      "contentId": "8524dgv4aqfijlx1wrgl9d173"
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://uapi.iad1.globalmeet.com/uapi/v1/room/meeting/events?since=2421362&timeout=50000&talkers=2018-10-17T05:20:19.045Z"
+    }
+  }
+}

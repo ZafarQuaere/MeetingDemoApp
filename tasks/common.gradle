@@ -1,0 +1,199 @@
+import com.pgi.convergence.Deps
+import com.pgi.convergence.TestDeps
+import com.pgi.convergence.Versions
+
+apply plugin: "org.greenrobot.greendao"
+apply plugin: "kotlin-android"
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlinx-serialization'
+apply plugin: 'realm-android'
+apply plugin: "com.jfrog.artifactory"
+apply plugin: "kotlin-allopen"
+apply from: "$rootProject.projectDir/tasks/quality-check.gradle"
+if (gradle.startParameter.taskRequests.toString().contains("Release")) {
+    apply plugin: "newrelic"
+}
+
+android {
+    compileSdkVersion Versions.compileSdk
+    buildToolsVersion Versions.buildTools
+    defaultPublishConfig "prodRelease"
+    def verCode = project.hasProperty("vcode") ? vcode as Integer : 1000
+    def verName = project.hasProperty("vname") ? vname : "6.0.0"
+    defaultConfig {
+        minSdkVersion Versions.minSdk
+        targetSdkVersion Versions.targetSdk
+        versionCode verCode
+        versionName verName
+        manifestPlaceholders = [appAuthRedirectScheme: 'androididentity']
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunnerArguments clearPackageData: 'true'
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+    }
+
+    productFlavors {
+        prod {
+
+            resValue "string", "app_link_host", "web.globalmeet.com"
+            resValue "string", "app_link_host_na", "web-na.globalmeet.com"
+            resValue "string", "app_link_host_eu", "web-eu.globalmeet.com"
+            resValue "string", "app_link_host_ap", "web-ap.globalmeet.com"
+            dimension "default"
+        }
+        stage {
+
+            resValue "string", "app_link_host", "web.stage3.globalmeet.net"
+            resValue "string", "app_link_host_na", "web-na.stage3.globalmeet.net"
+            resValue "string", "app_link_host_eu", "web-eu.stage3.globalmeet.net"
+            resValue "string", "app_link_host_ap", "web-ap.stage3.globalmeet.net"
+            dimension "default"
+        }
+        qab {
+
+            resValue "string", "app_link_host", "web.qab.globalmeet.net"
+            resValue "string", "app_link_host_na", "web-na.qab.globalmeet.net"
+            resValue "string", "app_link_host_eu", "web-eu.qab.globalmeet.net"
+            resValue "string", "app_link_host_ap", "web-ap.qab.globalmeet.net"
+            dimension "default"
+        }
+        qac {
+
+            resValue "string", "app_link_host", "web.qac.globalmeet.net"
+            resValue "string", "app_link_host_na", "web-na.qac.globalmeet.net"
+            resValue "string", "app_link_host_eu", "web-eu.qac.globalmeet.net"
+            resValue "string", "app_link_host_ap", "web-ap.qac.globalmeet.net"
+            dimension "default"
+        }
+        dev {
+
+            resValue "string", "app_link_host", "web.dev.globalmeet.net"
+            resValue "string", "app_link_host_na", "web-na.dev.globalmeet.net"
+            resValue "string", "app_link_host_eu", "web-eu.dev.globalmeet.net"
+            resValue "string", "app_link_host_ap", "web-ap.dev.globalmeet.net"
+            dimension "default"
+        }
+
+        lumen {
+
+            resValue "string", "app_link_host", "web.yourlumenworkplace.com"
+            resValue "string", "app_link_host_na", "web-na.yourlumenworkplace.com"
+            resValue "string", "app_link_host_eu", "web-eu.yourlumenworkplace.com"
+            resValue "string", "app_link_host_ap", "web-ap.yourlumenworkplace.com"
+            dimension "default"
+        }
+
+        lumenqab {
+
+            resValue "string", "app_link_host", "web.qab.centuryLinkccc.net"
+            resValue "string", "app_link_host_na", "web-na.qab.centuryLinkccc.net"
+            resValue "string", "app_link_host_eu", "web-eu.qab.centuryLinkccc.net"
+            resValue "string", "app_link_host_ap", "web-ap.qab.centuryLinkccc.net"
+            dimension "default"
+        }
+        lumenqac {
+
+            resValue "string", "app_link_host", "web.qac.centuryLinkccc.net"
+            resValue "string", "app_link_host_na", "web-na.qac.centurylinkccc.net"
+            resValue "string", "app_link_host_eu", "web-eu.qac.centurylinkccc.net"
+            resValue "string", "app_link_host_ap", "web-ap.qac.centurylinkccc.net"
+            dimension "default"
+        }
+
+        lumendev {
+
+            resValue "string", "app_link_host", "web.dev.globalmeet.net"
+            resValue "string", "app_link_host_na", "web-na.dev.yourlumenworkplace.com"
+            resValue "string", "app_link_host_eu", "web-eu.dev.yourlumenworkplace.com"
+            resValue "string", "app_link_host_ap", "web-ap.dev.yourlumenworkplace.com"
+            dimension "default"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFile 'dexguard-project.txt'
+            ndk {
+                abiFilters "arm64-v8a", "armeabi-v7a"
+            }
+        }
+        debug {
+            testCoverageEnabled true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFile 'dexguard-project.txt'
+            ndk {
+                abiFilters "arm64-v8a", "armeabi-v7a", "x86", "x86_64"
+            }
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+    greendao {
+        schemaVersion 4
+        generateTests = false
+    }
+    kotlinOptions {
+        jvmTarget = "${Versions.targetCompat}"
+    }
+    kapt {
+        useBuildCache = true
+        correctErrorTypes = true
+        javacOptions {
+            option("-Xmaxerrs", 15000)
+            option("-Xmaxwarns", 15000)
+        }
+    }
+    allOpen {
+        annotation("com.pgi.convergencemeetings.OpenForTest")
+    }
+    dexOptions {
+        javaMaxHeapSize "3g"
+    }
+    compileOptions {
+        incremental true
+        sourceCompatibility Versions.sourceCompat
+        targetCompatibility Versions.targetCompat
+    }
+    // Need to modify this for lumen builds
+    variantFilter { variant ->
+        def flavor = project.hasProperty('flavor') ? project.properties['flavor'].toString().toLowerCase() : "prod"
+        if (!variant.flavors*.name.contains(flavor) ) {
+            setIgnore(true)
+        }
+    }
+}
+
+dependencies {
+    implementation Deps.kotlinlibs.values()
+    implementation Deps.androidXlibs.values()
+    implementation Deps.uilibs.values()
+    implementation Deps.greendaolibs.values()
+    implementation Deps.rxlibs.values()
+    implementation Deps.networkinglibs.values()
+    implementation Deps.appauthlibs.values()
+    implementation Deps.devtoolslibs.values()
+    implementation Deps.sharedCodeLib
+    implementation Deps.koin
+    implementation Deps.jodaTime
+    implementation Deps.newRelic
+    implementation Deps.misclibs.values()
+    implementation Deps.relinker
+    debugImplementation TestDeps.androidXtestlibs.get("fragment")
+    kapt Deps.autoService // TODO:: figure out why this is getting referenced. This impacts build performance
+    testImplementation TestDeps.testframeworks.values()
+    testImplementation TestDeps.powermock.values()
+    testImplementation TestDeps.androidXtestlibs.values()
+    testImplementation TestDeps.espressolibs.values()
+    testImplementation TestDeps.mockWebServer
+    testImplementation TestDeps.hamcrest
+    testImplementation TestDeps.coroutineTest
+}

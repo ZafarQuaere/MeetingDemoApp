@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@color/transparent"
+    android:minHeight="@dimen/height_72_dp"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    android:focusable="true"
+    android:padding="@dimen/margin_16_dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/recents_clear_background_drawable"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_profile_name"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/oval"
+        android:backgroundTint="@color/primary_color_500"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        android:letterSpacing="-0.04"
+        android:text="@{cardProfile.initials}"
+        android:textColor="@android:color/white"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_no_profile"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/oval"
+        android:backgroundTint="@color/primary_color_500"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:visibility="invisible" />
+
+
+    <LinearLayout
+        android:id="@+id/view_name_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tv_profile_name"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/margin_16_dp"
+        android:paddingEnd="19dp">
+        <TextView
+            android:id="@+id/tv_meeting_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="#de000000"
+            android:lineSpacingExtra="4sp"/>
+
+        <TextView
+            android:id="@+id/tv_meeting_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:maxLines="1"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:visibility="gone"
+            android:textColor="@color/primary_color_500"
+            android:lineSpacingExtra="6sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="@dimen/active_talker_header_height"
+    android:layout_width="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="224dp"
+        android:paddingTop="24dp"
+        android:background="@color/active_talker_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name_initials"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_14_dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:textColor="@color/profile_pic_text_color"
+            android:background="@drawable/active_talker_circle_disabled"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/tv_no_one_spoken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="@dimen/margin_20_dp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="normal"
+            android:textColor="@color/search_box_text_color"
+            android:gravity="center_horizontal"
+            android:text="@string/no_one_taking"/>
+
+        <TextView
+            android:id="@+id/tv_full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/active_talker_full_name_margin_start_end"
+            android:layout_marginStart="@dimen/active_talker_full_name_margin_start_end"
+            android:layout_marginTop="@dimen/margin_10_dp"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/profile_pic_text_color"
+            android:textSize="32sp"
+            android:textStyle="normal"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/tv_talking_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_4_dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="@color/profile_pic_text_color"
+            android:layout_marginBottom="@dimen/margin_16_dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_mute_all"
+        android:layout_width="58dp"
+        android:layout_height="29dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="12dp"
+        android:paddingLeft="@dimen/margin_10_dp"
+        android:paddingRight="@dimen/margin_10_dp"
+        android:background="@drawable/mute_all_rounded_corner"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_vertical"
+        android:text="@string/mute_all"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:drawableEnd="@drawable/mic_hd"/>
+</FrameLayout>

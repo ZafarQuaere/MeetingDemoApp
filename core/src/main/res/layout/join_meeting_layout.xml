@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    tools:context="com.pgi.convergencemeetings.activities.JoinMeetingActivity">
+
+  <com.google.android.material.appbar.AppBarLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_34_dp"
+        android:background="@color/tab_host_bg_color" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        style="@style/TabViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_34_dp"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="textStart"
+        android:textColor="@color/profile_pic_text_color"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:tabBackground="@color/tab_host_bg_color"
+        app:tabSelectedTextColor="@color/primary_color_500"
+        app:tabTextColor="@color/profile_pic_text_color" />
+
+  </com.google.android.material.appbar.AppBarLayout>
+
+  <com.pgi.convergence.utils.CustomViewPager
+      android:id="@+id/viewPager"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@android:color/white"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

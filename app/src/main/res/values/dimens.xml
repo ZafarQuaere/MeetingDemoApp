@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="baseToolbarHeight">56dp</dimen>
+  <dimen name="toolbarHeaderSize">20sp</dimen>
+  <dimen name="toolbarIconsSize">44dp</dimen>
+  <dimen name="defaultAvatarSize">24dp</dimen>
+  <dimen name="defaultAvatarInitialSize">24sp</dimen>
+
+  <dimen name="searchToolbarHeight">64dp</dimen>
+  <dimen name="gradient_height">4dp</dimen>
+    <dimen name="height_56_dp">56dp</dimen>
+</resources>

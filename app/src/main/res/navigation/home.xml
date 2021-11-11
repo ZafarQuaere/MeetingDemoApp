@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    app:startDestination="@id/home_tab">
+  <fragment
+      android:id="@+id/home_tab"
+      android:name="com.pgi.convergence.home.ui.HomeCardFragment"
+      android:label="@string/hometab"
+      tools:layout="@layout/ucchomecardcontainer" />
+</navigation>

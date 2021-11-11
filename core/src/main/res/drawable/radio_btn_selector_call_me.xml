@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android" tools:ignore="MissingDefaultResource">
+    <item android:state_checked="false" >
+        <shape  android:shape="oval" >
+            <stroke android:width="@dimen/margin_1_dp" android:color="@color/grey"/>
+            <size android:width="@dimen/dp_30" android:height="@dimen/dp_30"/>
+            <solid android:color="@android:color/transparent"/>
+        </shape>
+    </item>
+    <item android:state_checked="true">
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <stroke android:width="@dimen/margin_1_dp" android:color="@color/primary_color_500"/>
+                    <size android:width="@dimen/dp_30" android:height="@dimen/dp_30"/>
+                    <solid android:color="@android:color/transparent"/>
+                </shape>
+            </item>
+            <item android:top="@dimen/margin_5_dp" android:bottom="@dimen/margin_5_dp" android:left="@dimen/margin_5_dp" android:right="@dimen/margin_5_dp">
+                <shape android:shape="oval">
+                    <solid android:width="@dimen/margin_1_dp" android:color="@color/primary_color_500"/>
+                    <size android:width="@dimen/margin_10_dp" android:height="@dimen/margin_10_dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

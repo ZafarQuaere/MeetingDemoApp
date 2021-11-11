@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlytChatSingleRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:paddingBottom="@dimen/margin_10_dp"
+    android:gravity="center"
+    android:paddingLeft="@dimen/margin_10_dp">
+
+    <include layout="@layout/layout_chat_profile_pic"
+        android:id="@+id/lytProfilePic"/>
+
+    <TextView
+        android:id="@+id/tv_chat_badge_count"
+        android:layout_width="@dimen/margin_18_dp"
+        android:layout_height="@dimen/margin_18_dp"
+        android:layout_alignEnd="@+id/lytProfilePic"
+        android:layout_marginTop="@dimen/margin_5_dp"
+        android:layout_marginRight="@dimen/margin_5_dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:background="@drawable/tv_chat_count_borders"
+        android:textSize="@dimen/xsmall_text"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_5_dp"
+        android:layout_toRightOf="@+id/lytProfilePic"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_chat_name"
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="0dp"
+                android:layout_weight=".75"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:layout_gravity="center_vertical"
+                android:lineSpacingExtra="@dimen/xsmall_text"
+                android:text="@string/everyone"
+                android:textColor="@color/participant_name_color"
+                android:textSize="@dimen/xxmedium_text"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_alignParentLeft="true"
+                android:minLines="1"
+                android:layout_marginRight="@dimen/margin_6_dp"
+                android:layout_toLeftOf="@+id/textTimeStamp"
+                android:singleLine="true"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/textTimeStamp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".25"
+                android:fontFamily="sans-serif-medium"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:minLines="1"
+                android:gravity="start"
+                android:lineSpacingExtra="@dimen/xsmall_text"
+                android:text=""
+                android:textColor="@color/grayMedium"
+                android:textSize="@dimen/small_text"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_below="@+id/ll_chat_name"
+            android:id="@+id/textLastMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="@dimen/xsmall_text"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:minLines="1"
+            android:singleLine="true"
+            android:layout_marginEnd="@dimen/margin_64_dp"
+            android:text="@string/no_message"
+            android:textColor="@color/grayMedium"
+            android:textSize="@dimen/small_text"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

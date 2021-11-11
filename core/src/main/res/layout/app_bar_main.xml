@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_home"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_48_dp"
+    android:background="?attr/colorPrimary">
+
+    <ImageView
+        android:id="@+id/img_drawer_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/cd_drawer_icon"
+        android:paddingEnd="@dimen/margin_32_dp"
+        android:paddingStart="@dimen/margin_5_dp"
+        app:srcCompat="@drawable/home_menu_btn" />
+</androidx.appcompat.widget.Toolbar>
+

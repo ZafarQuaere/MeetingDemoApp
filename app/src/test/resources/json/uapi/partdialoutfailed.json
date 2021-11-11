@@ -1,0 +1,11 @@
+{
+  "eventType": "PARTICIPANT_DIAL_OUT_FAILED",
+  "timestamp": "2018-10-10T18:43:13.335Z",
+  "dialoutId": "arg1",
+  "webParticipantId": "arg2",
+  "error": {
+    "code": 0,
+    "pgsErrorCode": 0,
+    "errorText": "Error text"
+  }
+}

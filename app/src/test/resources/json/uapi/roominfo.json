@@ -1,0 +1,69 @@
+{
+  "responseType": "MEETING_ROOM_INFO",
+  "timestamp": "2018-10-10T18:43:09.671Z",
+  "title": "My Meeting Room",
+  "meetingOwnerClientId": "123456",
+  "meetingOwnerGivenName": "John",
+  "meetingOwnerFamilyName": "Doe",
+  "meetingOwnerName": "John Doe",
+  "companyId": "companyId",
+  "productName": "GlobalMeet",
+  "meetingHost": "meeting.globalmeet.com",
+  "staticHost": "cdn.globalmeet.com",
+  "supportPhone": "719-867-5309",
+  "supportEmail": "customersupport@pgi.com",
+  "securityCode": "1234",
+  "audio": {
+    "audioConferenceId": "123",
+    "hostPasscode": "456",
+    "guestPasscode": "147",
+    "audioSecurityCode": "444",
+    "primaryAccessNumber": "1-234-567-8910",
+    "accessPhoneNumbers": [
+      {
+        "phoneNumber": "12345678",
+        "phoneType": "Toll",
+        "description": "USA"
+      },
+      {
+        "phoneNumber": "23456789",
+        "phoneType": "Toll Free",
+        "description": "USA"
+      }
+    ],
+    "sipURI": "1234556@example.com",
+    "premiumAudio": true,
+    "dialOutBlocked": false
+  },
+  "recordingEnabled": true,
+  "deleted": true,
+  "freemiumEnabled": false,
+  "vrc": {
+    "vrcServer": "127.0.0.1",
+    "vrcUri": "123456@127.0.0.1"
+  },
+  "showOldLoginFlow": false,
+  "_links": {
+    "companyLogo": {
+      "href": "https://cobranding-pgi.s3.amazonaws.com/1/Logo1.png"
+    },
+    "productLogo": {
+      "href": "https://static.globalmeet.com/branding/logos/MyMeetingRoomLogo.png"
+    },
+    "primaryLogo": {
+      "href": "https://cobranding-pgi.s3.amazonaws.com/1/Logo4.png"
+    },
+    "iconLogo": {
+      "href": "https://cobranding-pgi.s3.amazonaws.com/1/Logo5.png"
+    },
+    "friendlyUrl": {
+      "href": "https://pgi.globalmeet.com/MyMeetingRoom"
+    },
+    "privacyPolicyUrl": {
+      "href": "http://www.pgi.com/legal-notices/privacy-policy"
+    },
+    "privacyTermsUrl": {
+      "href": "http://www.pgi.com/terms-of-service"
+    }
+  }
+}

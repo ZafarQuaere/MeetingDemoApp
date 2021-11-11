@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/about_heading_layout_margin_start"
+        android:layout_marginTop="@dimen/about_heading_layout_margin_top"
+        android:text="@string/about"
+        android:textStyle="bold"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/about_heading_text_size" />
+
+    <TextView
+        android:id="@+id/tv_app_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_about"
+        android:layout_below="@+id/tv_about"
+        android:layout_marginTop="@dimen/about_app_version_margin_top"
+        android:layout_marginBottom="@dimen/about_app_version_margin_bottom"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="normal"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/about_app_version_text_size" />
+
+    <ImageView
+        android:id="@+id/iv_about_close"
+        android:layout_width="@dimen/about_close_image_layout_height_width"
+        android:layout_height="@dimen/about_close_image_layout_height_width"
+        android:layout_above="@+id/tv_app_version"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/about_close_image_margin_bottom"
+        android:layout_marginEnd="@dimen/about_close_image_margin_end"
+        app:srcCompat="@drawable/ic_about_xbtn" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_about_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/about_recycler_view_margin_top"
+        android:layout_below="@+id/tv_app_version"
+        android:scrollbars="vertical"/>
+</RelativeLayout>

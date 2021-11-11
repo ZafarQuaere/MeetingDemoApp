@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <group
+      android:id="@+id/profile_group">
+    <item
+        android:id="@+id/drawer_profile"
+        android:icon="@drawable/ic_account_circle"
+        android:title="@string/main_menu_profile_title" />
+  </group>
+  <group
+      android:id="@+id/settings_group">
+    <item
+        android:id="@+id/drawer_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings" />
+    <item
+        android:id="@+id/drawer_about"
+        android:icon="@drawable/ic_info"
+        android:title="@string/about" />
+
+  <item
+      android:id="@+id/drawer_help"
+      android:icon="@drawable/ic_feedback"
+      android:title="@string/help" />
+  </group>
+
+  <group
+      android:id="@+id/signout_group">
+    <item
+        android:id="@+id/drawer_signout"
+        android:icon="@drawable/ic_close"
+        android:title="@string/sign_out" />
+  </group>
+</menu>

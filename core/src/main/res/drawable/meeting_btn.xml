@@ -1,0 +1,11 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="@dimen/join_meeting_button_width"
+        android:height="@dimen/join_meeting_button_height"
+        android:viewportHeight="140.0"
+        android:viewportWidth="140.0">
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M70,70.32m-70,0a70,70 0,1 1,140 0a70,70 0,1 1,-140 0"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"/>
+</vector>

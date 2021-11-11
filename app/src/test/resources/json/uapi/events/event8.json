@@ -1,0 +1,94 @@
+{
+  "responseType": "MEETING_EVENTS",
+  "timestamp": "2018-10-17T05:16:13.205Z",
+  "meetingId": "8h1ngpbyst5w13nsq2nvc2rvr",
+  "since": 2421332,
+  "lastSeqNum": 2421333,
+  "events": [
+    {
+      "eventType": "MEETING_STARTED",
+      "timestamp": "2018-10-17T05:14:28.295Z",
+      "roomId": "2988345",
+      "meetingCapacity": 125,
+      "audioConferenceId": "147305988",
+      "contentLimit": 20
+    },
+    {
+      "eventType": "CONTENT_CREATED",
+      "timestamp": "2018-10-17T05:14:28.296Z",
+      "contentId": "55978stgrjpy2cgkvlcxw2lxu",
+      "type": "WEBCAM",
+      "version": "V1",
+      "visible": true,
+      "stageId": "",
+      "staticMetadata": "{\"streamSessionId\":\"9298545b-007f-428d-bafd-443644cd48db\"}",
+      "dynamicMetadata": "{}",
+      "allowGuestUpdate": true
+    },
+    {
+      "eventType": "MEETING_JOINED",
+      "timestamp": "2018-10-17T05:14:28.328Z",
+      "participantId": "3b8d8ov4idgmlkzn31leb2aq4",
+      "familyName": "Chilumula",
+      "givenName": "Sudheer",
+      "name": "Sudheer Chilumula",
+      "phone": "12518025838",
+      "phoneExt": "",
+      "email": "sudheer.chilumula@pgi.com",
+      "roomRole": "HOST",
+      "delegateRole": false
+    },
+    {
+      "eventType": "AUDIO_PARTICIPANT_JOINED",
+      "timestamp": "2018-10-17T05:16:05.233Z",
+      "partId": "7516-223265088",
+      "confId": "147305988",
+      "subConfId": "",
+      "firstName": "",
+      "lastName": "",
+      "company": "",
+      "email": "",
+      "phone": "",
+      "partType": "MODERATOR",
+      "ani": "GM.3b8d8ov4idgmlkzn31leb2aq4",
+      "dnis": "7777001044",
+      "codec": "PCMU/8000",
+      "hold": false,
+      "mute": false,
+      "listenOnly": false,
+      "listenLevel": 0,
+      "voiceLevel": 0
+    },
+    {
+      "eventType": "SIP_DIAL_OUT_SUCCEEDED",
+      "timestamp": "2018-10-17T05:16:05.258Z",
+      "webParticipantId": "3b8d8ov4idgmlkzn31leb2aq4",
+      "audioParticipantId": "7516-223265088"
+    },
+    {
+      "eventType": "ACTIVE_TALKERS",
+      "timestamp": "2018-10-17T05:16:05.400Z",
+      "talkingParticipants": ["7516-223265088"]
+    },
+    {
+      "eventType": "ACTIVE_TALKERS",
+      "timestamp": "2018-10-17T05:16:07.310Z",
+      "talkingParticipants": []
+    },
+    {
+      "eventType": "MUTE_AUDIO_PARTICIPANT",
+      "timestamp": "2018-10-17T05:16:09.765Z",
+      "audioParticipantId": "7516-223265088"
+    },
+    {
+      "eventType": "UNMUTE_AUDIO_PARTICIPANT",
+      "timestamp": "2018-10-17T05:16:13.177Z",
+      "audioParticipantId": "7516-223265088"
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://uapi.iad1.globalmeet.com/uapi/v1/room/meeting/events?since=2421333&timeout=50000&talkers=2018-10-17T05:16:07.310Z"
+    }
+  }
+}

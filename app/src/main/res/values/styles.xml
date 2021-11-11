@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="toolbarWithBackArrow">
+    <item name="navigationIcon">@drawable/ic_arrow_back</item>
+    <item name="android:elevation">4dp</item>
+  </style>
+</resources>

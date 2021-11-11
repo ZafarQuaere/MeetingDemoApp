@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_welcome_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:layout_marginLeft="@dimen/welcome_slide_welcome_margin_sides"
+    android:layout_marginRight="@dimen/welcome_slide_welcome_margin_sides">
+
+
+    <ImageView
+        android:id="@+id/iv_logo_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_welcome_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_85_dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/splash_logo" />
+
+    <TextView
+        android:id="@+id/tv_welcome_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/welcome_onboard_margin_bottom_68dp"
+        android:layout_marginTop="@dimen/welcome_onboard_margin_top_44dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="@dimen/welcome_onboard_line_spacing"
+        android:text="@string/welcome_slide_intro_welcome"
+        android:textColor="@color/tour_page_text"
+        android:textSize="@dimen/welcome_slide_welcome_title_text_size"
+        android:textStyle="normal" />
+
+</RelativeLayout>

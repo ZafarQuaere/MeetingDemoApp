@@ -1,0 +1,6 @@
+{
+  "eventType": "CONTENT_UPDATE_FAILED",
+  "timestamp": "2018-10-10T18:43:14.165Z",
+  "contentId": "arg0",
+  "failStatus": "MEETING_ENDED"
+}

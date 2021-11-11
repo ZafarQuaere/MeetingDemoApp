@@ -1,0 +1,26 @@
+{
+  "responseType": "MEETING_EVENTS",
+  "timestamp": "2018-10-17T05:20:19.172Z",
+  "meetingId": "8h1ngpbyst5w13nsq2nvc2rvr",
+  "since": 2421357,
+  "lastSeqNum": 2421358,
+  "events": [
+    {
+      "eventType": "AUDIO_PARTICIPANT_LEFT",
+      "timestamp": "2018-10-17T05:20:19.036Z",
+      "partId": "7516-219410548",
+      "confId": "147305988",
+      "subConfId": ""
+    },
+    {
+      "eventType": "ACTIVE_TALKERS",
+      "timestamp": "2018-10-17T05:20:19.045Z",
+      "talkingParticipants": []
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://uapi.iad1.globalmeet.com/uapi/v1/room/meeting/events?since=2421358&timeout=50000&talkers=2018-10-17T05:20:19.045Z"
+    }
+  }
+}

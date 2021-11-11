@@ -1,0 +1,73 @@
+{
+  "responseType": "MEETING_EVENTS",
+  "timestamp": "2020-07-01T00:54:33.885Z",
+  "meetingId": "cn3ptztxjufio0r839iafvpp8",
+  "since": -1,
+  "lastSeqNum": 1043036,
+  "reset": false,
+  "events": [
+    {
+      "eventType": "MEETING_STARTED",
+      "timestamp": "2020-07-01T00:51:08.220Z",
+      "roomId": "336589",
+      "meetingCapacity": 125,
+      "audioConferenceId": "999974350",
+      "contentLimit": 20
+    },
+    {
+      "eventType": "CONTENT_CREATED",
+      "timestamp": "2020-07-01T00:51:08.220Z",
+      "contentId": "4flv0mvdqyl17ov9oq9y7ijj3",
+      "participantId": "a5nhlgzfj3g3pdq50rmnjtxb3",
+      "type": "WEBCAM",
+      "version": "V1",
+      "visible": true,
+      "stageId": "",
+      "staticMetadata": "{\"streamSessionId\":\"fdd28508-b100-4a29-9545-6847f9b8b0a2\"}",
+      "dynamicMetadata": "{}",
+      "allowGuestUpdate": true
+    },
+    {
+      "eventType": "MEETING_JOINED",
+      "timestamp": "2020-07-01T00:51:08.236Z",
+      "participantId": "a5nhlgzfj3g3pdq50rmnjtxb3",
+      "familyName": "Chilumula",
+      "givenName": "Sudheer",
+      "name": "Sudheer Chilumula",
+      "phone": "12518025838",
+      "phoneExt": "",
+      "email": "Sudheer.Chilumula@pgi.com",
+      "roomRole": "HOST",
+      "delegateRole": false
+    },
+    {
+      "eventType": "AUDIO_MEETING_STARTED",
+      "timestamp": "2020-07-01T00:51:09.396Z"
+    },
+    {
+      "eventType": "MEETING_JOINED",
+      "timestamp": "2020-07-01T00:53:56.309Z",
+      "participantId": "6svlmmxwdn7idbdagbvgjue52",
+      "familyName": "User",
+      "givenName": "Test",
+      "name": "Test User",
+      "phone": null,
+      "phoneExt": null,
+      "email": "Sudheer@gmail.com",
+      "roomRole": "WAITING_GUEST",
+      "delegateRole": false
+    },
+    {
+      "eventType": "PARTICIPANT_ADMITTED",
+      "timestamp": "2020-07-01T00:54:31.661Z",
+      "participantId": "6svlmmxwdn7idbdagbvgjue52",
+      "roomRole": "GUEST",
+      "delegateRole": false
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://uapi.qac.globalmeet.net/uapi/v1/room/meeting/events?since=1043036&timeout=50000&talkers=2020-07-01T00:54:33.885Z&w=0"
+    }
+  }
+}
